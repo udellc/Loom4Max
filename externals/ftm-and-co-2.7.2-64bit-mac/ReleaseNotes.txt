@@ -1,0 +1,1514 @@
+*************************************************
+* 
+*   FTM
+*   real-time object system for Max/MSP
+*
+*   © Copyright 2004-2009 IRCAM - Centre Pompidou
+*
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.7.2 (23/05/2018)
+
+ftmlib:
+- fix crash when fvec lookup index data is nan (makes cataRT patches work again)
+
+ftm.mess:
+- fixed click graphical feedback
+
+ftm.editor:
+- reactivate pixel view
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.7.1 (16/03/2018) 
+
+ftmlib:
+- use new patch to libsndfile 1.0.28 to revive marker import for wav and aiff
+  (issue #1385: https://forge.ircam.fr/p/ftm-and-co/issues/1385)
+
+ftm.object, ftm.mess:
+- observe presentation mode position
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.7.0 (30/12/2016) 
+
+- 64bit build
+
+ftm.message, ftm.object:
+- fixed MRO bug with #1, #2, ...
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.6.1 (xx/xx/2014) 
+
+fmat class:
+- add error functions (cumulative gaussian) erf, erfc, erfinv
+- correct gaussian normal distribution and bell shape curve
+
+ftm.sqlite: 
+- fix crashes for result matrix
+
+ftm.editor:
+- added "col"/"column" arg to get/set selection methods (used by Matrix editor)
+- added ouputSelection attribute to ftm.editor
+
+gbr.bands:
+- fixed bug in  "bounds" mode (just repeated the first value of each segment)
+
+gbr.morph, gbr.addpartials:
+- minor change to unify morph and addpartials (vec/plain mode)
+
+mnm.submat:
+- remove bogus error message for empty matrices
+
+mnm.biquad, mnm.onepole:
+- corrected bug in stream mode (fmat input)
+
+mnm.distribute:
+- new external implementing unispring algorithm by Ianis Lallemand
+
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.6.0 BETA (14/09/2012) 
+
+- ftm installer replaced by 2 installers, one for Max5 and one for Max6
+
+- FTMLib.framework replaced by ftm.mxo external, in order to simplify Max Standalone creation
+and to allow "patch freeze" in MaxForLive. Now you have just to add ftm.mxo as last object in the main patch,
+just before to build the standalone or to freeze the patch in MaxForLive.
+
+ftm.editor:
+- fixed crash with "inf" value as timetags in bpf editor
+- fixed scroll over maximum bound, with negative minimum bound
+- fixed wrong display of cursor when  minimum domain bound is negative
+- fixed init of domain scrollbar with negative minimum bound
+- fixed cursor visibility for negative values
+- added mouseWheel scroll to domain scrollbar
+- fixed editing of objects inside a matrix (ex. dict inside dict)
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-24 (27/07/2012) 
+
+ftm.editor:
+- fixed display changing domain bounds (1 point less was displayed)
+- fixed user "tab names" display switching from juxtaposed to superposed layout
+- fixed update of foremostEditor in juxtaposed layout (when clicking into)
+- added stavecolor attribute for score editor
+- Matrix editor: added resize of columns width, with mouse interaction in "column header"  
+- Score editor: fixed refresh changing opacity
+- added domainruler unit "none"
+- added showname view attribute, to show view name in juxtaposed layout
+
+- several other bug fixes
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-23 (13/04/2012) 
+
+fmat class:
+- fixed FFT size limits
+
+mat class:
+- fix setcol of last atom
+
+ftm.play:
+- integrated changes by Adrian Gierakowski
+
+ftm.record: 
+- fixed refresh of editor after recording
+
+mnm.hist: 
+- force bounds by @min, @max attributes
+- @weighted attribute: use 2nd column as weight
+
+mnm.meanstd:
+- fixed wrong mode assignment
+
+mnm.linreg.weighted:
+- linear regression with per-point weighting
+
+mnm.normalizer:
+- fix initialisation of size
+
+gbr.slice~:
+- document @order attribute
+
+gbr.fft:
+- added @size as dynamic attribute
+
+ftm.editor:
+- added "remove track" button in tabs bar (mouse move over tabs with Alt+Command)
+- added buttons to scroll tabs
+- added scroll in toolbar when clipped
+- several bug fixes in matrix editor
+- added pattern colormode (and colorpattern attribute) in Multiwave and multibpf editors
+- other several minor bug fixes
+
+Windows release:
+- fixed ftm installer to be relocatable (max5 or Max6)
+
+Known bugs:
+- javascript support broken in Max6
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-22 (24/10/2011) 
+
+mat, fmat class:
+- fix unique not removing pairs
+- fix setcol not rearranging grown space properly
+
+sequence, track class:
+- added array function for ftm.list
+
+ftm.editor: 
+- added scatterplot interface to fmat, mat class
+- added outputkeys attribute
+- bpf editor can now display times < 0
+- fixed bpf interface for sequence/track of numbers
+- in Matrix editor fixed init of newly added rows for classes
+- fixed refresh of editor
+- set calls directly a repaint only if the refresh period is zero or superior of the default
+
+ftm.sqlite:
+- set column names from the query result to the output mat
+- freely choosable nullatom for NULL values
+
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-20 (22/04/2011) 
+
+ftm.object:
+- update editor after changes of contained object description
+
+ftm.editor: 
+- setting an object as content of editor with not implemented interface causes a warning and the object will be displayed with the default interface 
+- fixed wrong display of "multi-words labels" in markers editor 
+- fixed components layout in horizontal layout
+- fixed refresh bug of scrollbars  in matrix editor
+- fixed crash on edit of sequence tuple
+- added view_fontsize attribute to multiwave and multibpf editors
+- autoviewbounds attribute moved from globals to views
+- extended header visibility in matrix editor
+- optimized real-time display for all views
+
+ftm.sdif.write:
+- message "reserve" extends frame slots, copying framespecs
+
+fmat class:
+- suppress printing too many lines (> 5000)
+
+fvec class:
+- linscale, exscale mapfuns also for fvec
+
+sequence class:
+- import markers from MIDI text events
+
+tuple class:
+- unify element index clipping with (f)mat
+- fix crash on empty tuple element access
+
+gbr.slice:
+- added scheduling order
+
+mnm.submat:
+- added column picking
+
+mnm.mv:
+- add optional arg to make mnm.mv work on columns
+
+mnm.q, mnm.ring:
+- adapt to new (0x0) default fmat
+
+mnm.normalizer:
+- avoid NaN by checking for 0-range data columns
+
+mnm.knn:
+- fixed missing initialisation and check for rare degenerate data condition
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-19 (21/01/2011) 
+
+fmat class:
+- fix crash when resizing matrix now created with (0, 0) size
+- added linear and exponential scaling methods linscale, exscale
+
+functions: 
+- added linear and exponential scale functions linscale, exscale
+- added atan2 and gaussian functions
+
+llist class: 
+- correct doc for "pop" method (does not return value)
+
+ftm.maxhelp, FTM Overview, ftm.object.maxhelp:
+- split lines too long for umenu in class browser
+
+gbr.morph:
+- fix mt crash for two empty fmats
+
+mnm.submat:
+- give row indices to copy in fvec/fmat
+
+mnm.det (new abstraction):
+- calculate determinant of a matrix: wrapper around mnm.lu
+
+mnm.pdf (new abstraction):
+- get random number(s) according to discrete pdf(s)
+
+ftm.editor:
+- MatrixEditor: fixed delete value from cell
+- Multibpf/Muliwave: fixed wrong display of range in rangeRuler 
+- MatrixEditor: fixed update of toolbar when opening editor inside a matrix
+- fixed crash outputting selection from editor inside matrix (ex: fvec inside a mat)
+- fixed matrix interface editing for track/sequence without type
+- track: fixed refresh in remove method
+- fixed output of foremost index when all tabs removed (index + null object)
+- fixed bug that didn't allow to choose the draw tool by message
+- other several minor bug fixes
+
+ftm.mess:
+- added graphical feedback for triggerall and untuple attributes
+
+ftm.object: 
+- current interface in editor, saved as attribute
+
+ftm.play:
+- fixed loop period for segments with end beyond last event
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-18 (25/11/2010) 
+
+fmat: 
+- fixed issue for "insert" and "insertcol" on empty fmats
+- default number of cols and minimum is now 0!!!!!!!!!! 
+- added warning for appending rows to fmats without column
+
+ftm.editor: 
+- new help patch
+- added directional drag in Bpf and MultiBpf editors (ALT+click on point then drag horizontally or vertically)
+- reorder of attributes in inspector
+- added tooltip for clipped column names in MatrixEditor
+- added "view add" "view set" and "view delete" messages, to change data by messages
+- added "view selection" message, to change selection by message
+- reorder of editor outputs: 
+  - output of selection
+  - output after interaction in tabs (visible/visible solo/foremost)
+  - output of current tool/ current interface, after change in toolbar
+  - output of mouse position; switched on/off with flag "outputmouse 1/0"
+  - output after data editing, switched on/off with flag "outputvalues 1/0"
+  - added object pointer in output of foremost: now is "foremost index <fts_obj>"
+
+ftm.mess: 
+- exclude quoted parentheses and (semi)colon from parenthesis autocompletion
+
+ftm.buffer: 
+- fixed issue in paste (size was just a 1/4 of the required size)
+- fixed refresh after copy from buffer to fmat 
+
+ftm.sqlite: 
+- insert values in a dict into table columns given by keys
+
+mnm:
+- added mnm.cca.maxhelp: example with two datasets linearly dependent 
+- New mnm.dtw help patch
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-17 (22/10/2010) 
+
+classes:
+- hashtable entries are now ordered
+
+- ftm.editor: 
+- added NaN and Inf values support; this fixes several crash
+- Spectrogram editor renamed as Sonogram editor
+- fixed Matrix editor for sequences and tracks with no type
+- fixed crash editing sequence of midi/numbers, with Bpf or Markers interface
+- added "view visible solo" message
+- added output of foremost view in juxtaposed layout
+- fixed refresh of Matrix editor after editing
+- fixed refresh after change of orientation
+- fixed views sizes in juxtaposed layout with some views invisible
+- fixed refresh of editors after "set bounds" with alignviewbounds == 1
+- fixed refresh of rangeRuler (in juxtaposed layout) after "set view visible" 
+- fixed range ruler grid for BpfEditor
+- placeholder (component replacing a view not visible in juxtaposed layout) 
+colors are synchronized with associated View colors
+- fixed rangeRuler for invisible views in juxtaposed layout
+- other several minor bug fixes
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-16 (11/10/2010) 
+
+- Windows only release.
+- ftm.editor: added NaN and Inf values support; this fixes several crashes.
+- ftm.iter: added iteration over llist (not thread-safe)
+- ftm.mess: fix of multi-threading and recursive call problem
+- several minor bug fixes
+
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-15 (30/07/2010)
+
+- fixed bug with SDIF import to sequence/track of fmat (actually there were two) (reported by Kristian Nymoen)
+
+ftm.copy: 
+- fixed freeze with copying mat to fmat (reported by Ev Buckley)
+
+ftm.object: 
+- fixed double name in arguments for import;
+- fixed crash opening editor for sequence/track with no type
+
+fmat: 
+- fixed refresh after set_col
+- new fmat message "reshape"
+
+mnm.knn:
+- enable multi-buffer operation: can pass list of fmats as data, 
+  result matrix has then element and buffer index columns
+- fix stupid bug that made knn crash when changing k
+
+mnm.obsprob.c:
+- Fixed a max crash when loading an empty states matrix in right inlet. 
+- Fixed the errors causing a max crash when the incoming states matrix was not complete. Outputs a NaN for the log-likelihood instead of 0. 
+
+ftm.buffer:
+- new implementation (see help patch);
+
+ftm.editor: 
+- MarkersEditor: 
+     * added labels/cue editing: select a marker, press spaceKey to edit label, press spaceKey again to edit cue; press enter to exit; 
+     * added column names as attributes
+     * added optional offset
+- DomainRuler: added time unit property (milliseconds, seconds, minutes)
+- added centered zoom: Command+click and drag vertically changes zoom whitout moving click point;
+- fixed matrix interface for sequence/track without type;
+- fixed flickering with mouseMove
+- some component have been renamed (with compatibility for old names):
+ * dscroll renamed as domainscrollbar
+ * infopanel renamed as rangeruler
+ * ruler renamed as domainRuler 
+- several other minor bug fixes
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-14 (9/05/2010)
+
+- fixed crash in mat init from list (reported by Hans Leeuw);
+- fixed bug in FTM external redefinition (for FTM externals depending on name definitions);
+- introduced colors for invalid ftm.mess and ftm.object externals;
+- bpf class: fixed bug in bpf_copy_function (making that "load" didn't work);
+- fmat class: 
+  - added methods "transpose" (for vectors only) and "reshape";
+  - introduced inclusive ramp messages called "rampinc";
+
+- ftm.copy now accepts lists;
+- ftm.buffer:
+  - ftm.buffer now requires a buffer~ external in the patch (maybe to be revised later);
+  - the fmat and buffer~ are now copying data instead of sharing (which is not possibile without memoy violations);
+  - now uses notifications and thread-safe primitives;
+- ftm.object: fixed wrong resize setting persistency;
+- ftm.sqlite: 
+  - new message "create" that creates a new empty database file and opens the right type of file dialog;
+  - find files and normalise paths (since 5.0.7, file dialog and dropfile output Mac path);
+- ftm.editor: 
+  - inlet message for "list of fts_objects reference", allows now optional interface names; they will be used only 
+    for first message used as "set"; following messages used as "replace" don't consider them.
+  - added drawname attribute to Multiwave and Multibpf editors (in juxtaposed view layout);
+  - added thickness attribute (used by Wave, Multiwave, bpf, Multibpf and Markers editors);
+  - fixed view bounds changing interface in juxtaposed layout;
+  - added new Traces interface and editor;
+  - fixed source of deadlocks: ftmeditor_refresh, inside objectChanged, is deferred
+    (this fixes the crash reported by bathysphere the 27th april);
+  - fixed bug of persistency of tabs/dscroll visibility, reported by PA Tremblay;
+  - fixed crash opening inspector on empty editor;
+  - added visual feedback on tabs for invisible views;
+  - Command+click on tabs hide/show editor; ALT+Command+Click on tab make visible this tab and invisible the others;
+  - Markers editor: added optional duration to markers;
+  - fixed refresh of editors opened inside Matrix/Multiwave/Multibpf;
+  - fixed cursor layout; 
+
+- mnm.hist: fix bin calculation
+____________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-13 (8/04/2010)
+
+*) ftm.editor:
+- a new global Toolbar substitutes previous toolbars for every editor;
+  interface buttons are updated to the current editor (foremost when layout == superposed);
+  size, background color and position can be changed;
+- editors inherit selection changing interface;
+- current editor is highlighted in juxtaposed layout; 
+- introduced Multibpf interface (supported by fmat class);
+- Wave and Multiwave editors: 
+  - optimized for very big audio files; 
+  - added drawmean attribute to optionally display mean;
+- Multiwave and Multibpf editors:
+  - added "view layout" attribute (superposed or juxtaposed)
+  - added "visibleindexes" attribute (to display just a subset of waves/bpfs);
+  - added "view opacity" and "view foremost" attributes (to highlight one wave/bpf)
+  - double click on wave/bpf open inner WaveEditor/BpfEditor;
+- MultiWaveEditor is editable;
+- fixed refresh of objects inside MatrixEditor (ex. fmat inside mat) 
+- fixed insertpoint in Bpf gui for fmat
+- all editors are editable with keys (arrows [+SHIFT] to changes selection, COMMAND+arrows to move/increment values)
+- fixed wrong coordinates rounding in MultiwaveEditor;
+- added toggle of tabs with Shift+TabKey;
+- MarkersEditor: label's background become opaque when superposed;
+- several other minor bug fixes;
+
+*) ftm.object: 
+ - fixed wrong resize changing persistency;
+
+- further minor bug fixes;
+
+*) all FTM & Co externals
+ - added an option "Convert FTM References" controlling the conversion of all FTM object references output by the given external into symbol ids
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-12 (14/01/2010)
+
+Release for Max 5 (requires Max.5.0.7 or later)
+
+*) ftm.editor:
+ - improved responsiveness to mouse interaction;
+ - fixed mouse wheel scroll support;
+ - fixed toolbar position changing interface;
+ - fixed toolbar position in MatrixEditor;
+ - fixed insertPoint method in bpf interface on sequence class;
+ - improved trheadsafeness; 
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-11 (18/12/2009)
+
+Release for Max 5 (requires Max.5.0.7 or later)
+
+*) mnm.median fixed bug;
+*) bpf class: fixed bug in bpf_copy_function (making that "load" didn't work)
+*) ftm.mess:
+     - fixed text color bug;
+     - added point on the left when "output at loading" is on;
+*) ftm.object: 
+     - fixed text color bug;	
+     - fixed toggle of editing with Tab key;
+*) ftm.editor:  
+     - improved MaxMsp integration: 
+		- no more drawing on patcher window scrollbars;
+		- fixed display inside bpatcher
+                - thread-safeness improved
+     - fixed move of selection in ScoreEditor
+     - added DrawTool (doing only add/draw in editors)
+     - fixed editor transparency
+     - fixed disable attribute for views
+     - fixed refresh after editing bpf as matrix
+     - fixed other several minor bugs
+*) key command for ftm.mess is now 'x' (replacing 'l' stolen by MaxForLive)
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-10 (20/11/2009)
+
+Release for Max 5 (requires Max.5.0.7 or later)
+
+- ftmlib:
+*) fixed error on opening files with special characters
+- bpf class: fixed insert method
+- sequence class: fixed shift method
+- ftm.editor:
+*) added "domain reset" message
+*) added "binary colormode" in PixelsEditor
+*) added "view interface" message to change interface from patch
+*) added "view layout" for MultiwaveEditor (superposed/juxtaposed)
+*) added "view colormode" for MultiwaveEditor (fore_color/all_colors)
+*) changed behaviour of toolbar; one click on closed toolbar open it 
+   for just one button selection; doubleclik on closed toolbar open it permanently 
+*) fixed display of Ruler and Grid
+*) fixed display of long string in MatrixEditor
+*) fixed move of selection in MarkersEditor
+*) fixed other several minor bugs
+- ftm.tween: fixed thread-safeness
+- ftm.inter: fixed thread-safeness
+
+- gbr.addenv: fixed thread-safeness
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-9 (10/10/2009) Windows only
+
+Release for Max 5 (requires Max.5.0.7 or later)
+
+*) general improvement of thread-safeness for Windows platform
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-8 (23/10/2009)
+
+Release for Max 5 (requires Max.5.0.7 or later)
+
+- ftm.editor:
+*) popupmenu in views replaced by a Toolbar (toolbar can be opened/closed and moved)
+*) new Matrix editor; that fix several related bugs. Optimisation allow display of very big matrix
+*) several other minor fixes
+
+- fixed crash  in fmat find 
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-7 (02/10/2009)
+
+Release for Max 5 (requires Max.5.0.7 or later)
+
+- ftm.editor:
+*) redesigned popup menu in views;
+*) fixed crash changing interfaces from popupmenu;
+*) added View attributes in Max inspector: 
+	1) select .View Tab in inspector
+	2) choose the view to inspect with "choose track" attribute
+	3) all attributes are now updated to the selected view and you can edit
+*) fixed editing bugs in MarkersEditor
+*) several other minor fixes
+
+- fixed crash closing very big ftm patches
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-6 (15/09/2009)
+
+Release for Max 5 (requires Max.5.0.7 or later). This release fixes API incompatibility introduced by Max.5.0.8.
+
+CLASSES:
+ - fmat class: allow negative (wrapped) index for setrow/setcol
+ - mat class:  added setrow/setcol methods, to replace and complement deprecated row method
+ - fmat and mat set from dict method: changed behaviour to what is documented (copy keys and value to first and second column).
+     renamed existing method "setindexed" (indexed copy: copy dict values with int key i or tuple key {i j} to fmat/mat row i, col j (col 0 if only int))
+- mat/fmat class:  added row/col schema fields and method to get/set it (schema column names are used for column names ftm.editor's MatrixEditor)
+- schema class: added print, clear, append methods
+- fixed track sdif import
+
+EXTERNALS:
+- ftm.play: fixed crash on sync on empty sequence when in pause
+- ftm.object: fixed inconsistency with changes in Max API (jgraphics_oval replaced by jgraphics_ellipse in Max 5.08)
+- ftm.editor: 
+  *) fixed bug changing interface with juxtaposed lauout (wrong number of split bars)
+  *) fixed resize_with_window in patching and presentation mode
+  *) fixed crash in MatrixEditor (mouse click during matrix update)
+  *) fixed wrong display inside bpatcher
+  *) fixed opacity for Pixels and Spectrogram editors
+  *) several other minor fixes
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.4.0 BETA-3 (10/09/2009)
+
+This release for Max/MSP 4.6 is equivalent to the 2.5.0 BETA-5 for Max 5.
+
+- added missing objects mnm.mean and mnm.median
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-5 (07/08/2009)
+
+Release for Max 5 (requires Max.5.0.7 or later).
+
+- ftm.editor: 
+*) fixed wrong display in Ruler
+*) fixed unwanted scroll ading a last event (ex. Bpf, Score, Markers)
+*) fixed other minor bugs
+
+- ftm.mess: fixed refresh of text after #set message
+
+- mat class:
+*) fixed crash in set message on empty mat
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-4 (31/07/2009)
+
+Release for Max 5 (requires Max.5.0.7 or later).
+
+- ftm.editor: 
+*) fixed scroll in presentation mode
+*) fixed several threadsafe problems
+*) added insert and append methods
+*) added infopanel grid property
+*) finalized infopanel for Bpf and Wave editors
+*) added resize with window attribute
+*) added rows index column in MatrixEditor
+*) added messages to change appearence of header and grid in MatrixEditor
+*) added possibility to replace interface in editors from popup menu
+*) ftm.editor visible in unlocked patcher as an image snapshot of the component
+*) added Pixels interface
+*) added MultiWave interface
+*) added "visible" property on editors 
+*) added continous mouse display in Bpf editor (mouseMove + CommandKey) 
+*) several other minor bug fixes
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-3 (04/06/2009)
+
+Release for Max 5 (requires Max.5.0.7 or later).
+
+- ftm.mess and ftm.object: fixed Undo/Redo bug.
+- ftm.editor: 
+ *) fixed performance problem moving cursor
+ *) fixed cell editing in Matrix editor
+ *) added expression evaluation to matrix editor
+ *) new ftm.editor help patch 
+ *) added replace and append messages (see help patch)
+ *) added input method for list of object references: 
+        if the editor is empty, "set" method is called, otherwise "replace" method is called
+ *) added alignviewbounds and autoviewbounds attributes: 
+	alignviewbounds aligns view bounds to current min and max of all view bounds; 
+	autoviewbounds force view bounds to fit with his content.
+ *) several other minor bug fixes
+- sequence class: added bpf and spectrogram gui interfaces
+- fvec class: added matrix gui interface 
+
+- ftm.object: fixed init of textfield importing old 2.3 files
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.4.0 BETA-2 (25/05/2009)
+
+This release for Max/MSP 4.6 is equivalent to the 2.5.0 BETA-2 for Max 5.
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-2 (22/05/2009)
+
+Release for Max 5 (requires Max.5.0.7 or later).
+
+ - introduced extensions of Gabor modules processing multichannel grains/frames 
+   (to be further generalized to all Gabor modules)
+ - fixed issue with negative float abstraction arguments in ftm.object and ftm.mess
+ - added missing inbuilt documentation strings to FTM externals
+   (message "postdoc" and published on http://ftm.ircam.fr/index.php/FTM_Modules)
+ - fixed FTM JavaScript support
+ - removed obsolete warning when loading patch files containing FTM externals saved with FTM 1.x
+ - added SDIF file import and export to FTM sequence
+ - fixed wrong ftm.vecdisplay history display 
+ - fixed issue (crash) for list input to MnM modules
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.0 BETA-1 (08/05/2009)
+
+Release for Max 5 (requires Max.5.0.7 or later).
+It is recommended (even though not required) to manually erase former alpha or beta versions of FTM & Co from the Max 5 Application folders ("Cycling '74/max-startup", "Cycling '74/ftm-and-co" and "patches/extras", etc.).
+
+- finalized thread-safeness for all FTM classes and externals
+  (this should fix all known issues due to multi-threading)
+
+- introduced compatibility and consistency check for files generated by all former FTM versions
+  (the loading of older files formats may generate a warning message asking to re-save the file with Max 5)
+
+- FTM object ids are now symbols (ids are obtained by the getid function)
+- MnM externals are now also accepting and outputting lists (experimental, to be documented in detail)
+- ftm.editor: introduced table view ("matrix" editor interface) for all FTM classes (sequence, dict, mat, etc.)
+- introduced Max 5 key-commands for ftm.object ('o') and ftm.mess ('l')
+
+DOCUMENTATION
+
+- added 'FTMExtras" folder with examples and objects overview 
+  (copied into Max Application "extras" folder by the installer)
+- added new FTM tutorials by Chris Dobrian
+- completed online documentation (message "postdoc")
+
+BUG FIXES
+
+- ftm.mess and ftm.object: all issues of text editing (incl. copy/paste, undo, etc.) have been fixed
+- ftm.vecdisplay: fixed memory leak when not visible
+- fixed known issues of Gabor timing within poly~
+- numerous minor bug fixes
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.BETA.0 (12/03/2009)
+
+- all patches in this release are saved for Max5 (.maxpat .maxhelp) 
+
+Fixed Bugs:
+
+- track.c: fixed crash printing events sequence
+- ftm.mess ftm.object: 
+	- activated at instantiation
+	- set patcher dirty when modified
+- ftm.play: fixed crash when sequence not set 
+- ftm.editor: fixed crash during drag in SpectrogramEditor
+- ftm.editor: fixed crash moving cursor
+- ftm.object: fixed #open crash
+- several other minor fixes
+- fixed various help patches
+
+known bugs:
+- the MnM and Gabor externals are not yet fully thread-safe (planned for FTM & Co 2.5.x)
+- copy/paste/select-all of text in the ftm.mess and ftm.object doesn't work
+- Gabor analysis/resynthesis doesn't work in Pluggo plugins
+
+RELEASE NOTES for FTM & Co 2.5.ALPHA.5 (09/03/2009)
+
+- fixed bugs in bpf class
+- fixed issue with missing Max symbols after loading old (Max 4 / FTM <= 2.3) files
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.ALPHA.5 (09/03/2009)
+
+- fixed bugs in bpf class
+- fixed issue with missing Max symbols after loading old (Max 4 / FTM <= 2.3) files
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.ALPHA.4 (06/03/2009)
+
+- fixed crash loading patchers from a "Max/MSP 4.6 / FTM <= 2.3" file
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.ALPHA.3 (05/03/2009)
+
+- set of features equivalent to FTM & Co 2.3.7.
+- patches created and saved with FTM & Co 2.3 in Max/MSP 4 should load and execute
+- patches can be saved properly in the Max 5 file format
+- implemented handling abstraction arguments (#0, #1, #2, ...)
+
+- ftm.object now supports persistence ("Save in Patcher")
+- ftm.absargs now works (also for bpatcher and poly~)
+- ftm.editor now saves global properties as attributes (also exposed in inspector)
+- added external mnm.knn
+
+BUG FIXES:
+- ftm.mess and ftm.object: selection and edit now works properly (first click selects the object, second click enables editing)
+- ftm.mess, ftm.object, ftm.editor: UTF-8 characters supported
+- fmat: fixed crash in sort method
+- ftm.editor: fixed crash changing domain and other minor several bugs
+- ftm.object: fixed crash opening editor with double click
+- several minor bug fixes
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.ALPHA.2 (20/02/2009)
+
+- FTM & Co for Max 5 (still in alpha phase)
+
+- patches developed with FTM 2 on Max 4.6 should load and execute correctly including graphical objects 
+  (fully functional versions of ftm.editor, ftm.mess, ftm.object and ftm.vecdisplay are included)
+
+- all Java editor has been replaced by similar components (based on Juce)
+
+- patches can be saved, but without ftm.object persistence ("Save in Patcher")
+  (content is lost when saving patches with persistent FTM objects)
+
+- abstraction arguments (#1, #2, #3, ...) in Max 5 patches are not replaced
+  (although they are replaced when opening FTM 2.3 patches)
+
+- thread-safeness is improved but not completed for Gabor and MnM
+
+- missing externals: Javascript support and ftm.absargs
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.ALPHA.1 (10/11/2008)
+
+- Universal Binary release
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.5.ALPHA.0 (31/10/2008)
+
+- very first version (load and execute only) of FTM & Co for Max 5
+- patches developed with FTM 2 on Max 4.6 should load and execute correctly
+
+Missing features
+- the externals ftm.mess and ftm.object cannot be edited, copied nor saved
+- the externals ftm.absargs has not been ported yet
+- the externals ftm.editor and ftm.vecdisplay do not display anything yet
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.4.0.b0 (30/10/2008)
+
+- replaced java editors with ftm.editor. Double click on ftm.object now opens a patch with ftm.editor associated
+
+Externals
+- ftm.editor: 
+   - fixed display bug (when object is inside a bpatcher and not visible)
+   - Fvec edito editable
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.3.6 (07/10/2008)
+
+Classes
+- fmat: bugfix for the 'delete' methods (removing rows at the end of an fmat crashed)
+- fmat: added unique method
+
+Externals
+- mnm.onepole added: one pole low-pass or high-pass filtering
+- mnm.biqoefs and mnm.biquad added: two poles two zeros filtering
+- mnm.median added: median and moving median filtering
+- mnm.mean added: mean and moving mean filtering
+- mnm.svd: bugfix for the windows (non-veclib) version
+- gbr.bands, gbr.dct, gbr.lifter, mnm.delta: removed warnings for automatic size adaptation
+
+- ftm.editor:
+	- added Matrix editor
+	- finalized Score editor
+	- added time ruler 
+	- adedd windresize property (if on editor resize it self proportionally to window size)
+	- added persistency 
+	- added "interfaces" property (editor allow only objets with given interfaces in the given order)
+	- added floating inspector for every editor (open it with popup menu and it with double click) 
+Abstractions
+- mnm.matmap and mnm.svmmap: memory leak fix (queues were always fed, even in playing mode)
+- mnm.list2col, mnm.list2row, mnm.list2vec: bug fix for list of 1 element
+
+Windows platform:
+- no Flac support yet;
+- no windresize property for ftm.editor object;
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.3.5 (06/06/2008)
+
+Classes
+- track: marker import from aiff, wav
+- fmat: FLAC import
+- mat: added getcol message
+- bpf: fixed stack overflow loading big bpf (changed dump function)
+
+Externals
+- ftm.editor: 
+  - optimization in Spectrogram and BPF editor
+  - added tools: edit, scroll&zoom, region, cursor and lock
+  - added resizable split bars in juxtaposed layout (see help patch for properties)
+  - added orientation (horizontal/vertical)
+  - added messages for tabs (size/visible) (see help patch)
+- ftm.value: now accepts and output messages as symbols (bug #3)
+- ftm.object.c:	fixed issue with abstraction arguments in class name and name (bugs #15 and #16)
+- mnm.moments: added statistical moments (up to any order) for centroid, spread, skewness and kurtosis computation 
+-mnm.svd: bugfix for the windows (non-veclib) version
+
+- updated help patches
+  - ftm.help, ftm.object.help: option to sort meth list alphabetically
+  - ftm.help: alphabetical function list
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.3.4 (28/03/2008)
+
+- mat/fmat editors: fixed display bug
+- ftm.editor: first version of final message API (to be tested, see the help patch)
+- track: fixed make_bars function
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.3.2 (03/2008)
+
+This release fixes the following bugs:
+
+Classes
+- track: fix highlight problem after midi import into scoob track
+- fmat: rotate with optional second argument to rotate columns added phase unwrapping method
+- metric: added class property "num" to get/set bar number by method
+
+Functions
+- extended info function by media-wiki compatible output
+
+Externals
+- ftm.object: deprecated file dialog functions
+- ftm.print: now can properly print empty string symbols
+- ftm.sdif.info: fixed crash on windows due to incompatible compile options of the SDIF library
+- ftm.sdif.write: new attribute/message @reserve to set number of frame slots for write message
+- ftm.editor: avoid quadratic run time for float tracks
+- ftm.record: fixed crash because missing reference when calling fmat copy function
+- gbr.slice~/gbr.psy~: added message "active" to enable/disable calculation and output
+
+___________________________________________________
+RELEASE NOTES for FTM & Co 2.3.0 and 2.3.1 (02/2008)
+
+This release should replace all former releases of FTM and is taking into account all issues concerning the (backward) compatibility with existing FTM 1.x & 2.x patches.
+With this release the stability of FTM on multi-processor machines has been significantly improved (and will be further improved from here).
+This version is also the basis of an FTM release for PureData currently under development.
+
+The work on the new ftm.editor external is still in progress and will be finalised for one of the following releases.
+
+Tracked improvements and bug fixes:
+
+FTM
+- the set of FTM classes (fmat, dict, sequence) has been stabilised and fully documented
+- the set of functions has been extended and fully documented
+- the features of the FTM message box (expressions) have been consolidated and fully documented (see ftm.mess.help)
+- finalised variable declarations with ftm.object (using the var "keyword")
+- finalised ftm.o and ftm.m externals as non-graphical versions of ftm.object and ftm.mess (especially for first Pd port)
+- ftm.object now outputs the object after importing via a file open dialog (messages "import" and "importas" without filename argument)
+- calls to "import" and "importas" methods without filename within expressions "($myobj import)" are deprecated
+- the optional dictionary argument for the "eval" method of the "expr" class has been removed (see help patch)
+- fixed several issues concerning the FTM 1.7 file compatibilty
+- fixed issues concerning the replacement of abstraction arguments (#1, #2, #3 etc.) in ftm.mess and ftm.object
+- fixed import of text files with '.'-leaded floats (e.g. ".007")
+- fixed issue of weird characters appearing at the end of an expression in the FTM message box (ftm.mess)
+
+Gabor
+- added attribute @sr to gbr.yin and gbr.bands (to enable resampled inputs)
+- added attribute @unit to gbr.copy, gbr.dline~/drain~/paste/ola~/slice~/fire~/tapin~/tapout~ (unit for duration and frequency parameters)
+- gbr.resample now provides a mode for integer downsampling (by taking the mean)
+- gbr.yin now outputs the autocorrelation (which was already calculated internally)
+- fixed gbr.peaks (now working again)
+- limited gbr.resampling factor (increment) from 1/8 to 8
+- improved the performance of gbr.yin (pitch output is now more tolerant for noisy input signals)
+- included new example patches
+- fixed issue in gbr.dline, gbr.drain and gbr.ola~ causing clicks when the grain/frame size equals the delay line size
+- fixed issue for gbr.copy/paste/tapin~/tapout~ referencing gbr.dline~/drain~ by a simple symbol (without $)
+- fixed issue in gbr.addpartials for single int input for frequency and amplitude
+- fixed issue of missing initialisation with default values for declared number arguments (e.g. for "gbr.slice~ #1 #2")
+
+MnM
+- added mnm.svmmap to the distribution
+- help patches fixed
+- fixed issue in mnm.delta when using cascaded deltas, the second filter being longer (the reoutput input was not delayed)
+- improved help patches
+
+API and SDK
+ - a first version of an FTM external API is available that is compatible with this version
+ - the doxygen documentation of the FTM core API has been improved (even if there is still a lot of work to do)
+
+Please note that the error checking in the FTM message box is slightly more strict than before and might report some errors that have been omitted in former versions. If you encounter error messages in your patches where you didn't see any before, please consider first the possibility that this error always was existing (even though not reported) and should be fixed in your patch (the error messages also should be significantly clearer in this version).
+
+Attention: FTM is still not entirely thread-safe. A completely thread-safe release of FTM is expected for spring 2008.
+Messages or expressions that are executed in different threads (alarm, GUI/main, UDP input, etc) and simultaneously modify FTM data structures (objects) can cause crashes. The easiest way to avoid this is to reschedule congruent accesses to FTM object into the same thread. The externals "pipe" or "ftm.schedule" (that now is thread-safe) with a 0 delay time would always output in the alarm ("high priority") thread while "defer" and "deferlow" can be used to reschedule messages in the Max main application (GUI) thread.
+
+___________________________________________________
+RELEASE NOTES for FTM 2.2.4 (08/11/2007)
+
+FTM
+- added filename parsing functions basename, dirname, extension, stripext
+- track: allow (cue, label) arguments for insert_marker
+- track: added wavesurfer .lab import into scoob track's markers, with duration as property
+- mat: added getrow message with index, offset, size that returns tuple
+- mat: added equals message
+- fmat: sound import from FLAC Free Lossless Audio Codec files
+- several bug fixes
+- ftm.editor: more features (see help patch)
+- other several minor bug fixes
+
+Gabor
+- gbr.bands @mode mel: bug fix for initialisation arguments
+
+MnM
+- mnm.sum: bug fix for first input after instantiation
+
+SDIF
+- export of fvec track to SDIF
+- ftm.sdif.write: write message to write several tracks interleaved
+
+___________________________________________________
+RELEASE NOTES for FTM 2.2.3 BETA (25/10/2007)
+
+Gabor:
+- gbr.ifft bug fix for real mode
+- gbr.fft and gbr.ifft bug fixes for complex mode
+Known Bugs:
+- gbr.peaks broken on Mac Intel platform
+
+FTM:
+- ftm.mess: fixed editing bug
+- ftm.editor: more features (see help patch)
+- other several minor bug fixes
+___________________________________________________
+RELEASE NOTES for FTM 2.2.2 BETA (13/09/2007)
+
+Gabor:
+ - gbr.slice~ now correctly handles slices smaller than period
+ - gbr.bands bug fix for input size initialisation
+ - gbr.lpc added
+ - gbr.preemphasis added
+
+MnM:
+- mnm.delta CHANGED (delta outputs now to the middle outlet, so as to facilitate cascading for delta-delta calculations)
+
+FTM standalone:
+- added a FTM Standalone Kit
+
+Bug Fixes:
+- gbr.peaks: fixed bug due to bogus range initialisation (didn't output anything)
+- fixed issue in eval method of expression object
+- other several minor bug fixes
+___________________________________________________
+RELEASE NOTES for FTM 2.2.1 BETA (09/08/2007)
+FTM abstraction:
+ - ftm.reschedule: to avoid FTM crashes on messages from the low-priority queue 
+ - several bug fixes
+
+Gabor:
+- gabor.dct, and gbr.lifter are finally added to calculate the MFCCs
+
+MnM:
+- mnm.delta added (to calculate delta-MFCCs and other deltas over a stream of fmats)
+
+___________________________________________________
+RELEASE NOTES for FTM 2.2.0 BETA (13/07/2007)
+
+FTM classes:
+- normalised messages to FTS objects (fill, clear, zero, set, get)
+- completed set-methods between classes fmat, fvec, mat, dict, bpf and sequence
+- The expression "(info functions)" now prints a complete list of functions with a short description.
+- ftm.editor object added (editor for ftm classes: at the moment just bpf and track of fmat); VERY EXPERIMENTAL!!!
+
+FTM expression evaluator changes:
+ - The functionalities in expressions for the following cases have been unified:
+	- assignment of objects and expression-private variables, e.g. ($x = ...)
+	- assignment of object elements, e.g. ($x[0] = ...)
+	- increment of objects with '+=', '-=', '*=' and '/=' of objects and expression-private variables, e.g. ($x += ...) or ($x -= ...)
+	- increment of object elements, e.g. ($x[0] += ...) or ($x[0] += ...)
+	- binary operators, e.g. ($1 * 0.5 + 3 / 2)
+
+  - In all cases apply the following rules:
+	- the '+' and '+=' operators concatenate symbols
+	- binary division '/' always has a float result
+	- objects can be assigned (implemented using the "set" methods), e.g. ($myfmat = $yourfmat)
+	- fmats can be incremented ('+=', '-=', '*=', '/=') (implemented using the methods "add", "sub", etc), e.g. ($myfmat += $yourfmat)
+	- fmats can be used in binary operators ('+', '-', '*', '/') (implemented using the methods for "add", "sub", "bus", etc), e.g.  
+	  ($myfmat + $yourfmat * $hisfmat)
+
+Gabor:
+- Added MFCC to gabor:
+- gbr.bands modified: there is now several mel bands modes
+- gbr.dct added: discrete cosine transform
+- gbr.lifter added
+
+Bug fixes:
+- fixed clear method for fmat (was declared for number argument instead of void)
+- vecdisplay: fixed crash on fvec input 
+- fixed gbr.paste and gbr.ola~ for fvec
+
+___________________________________________________
+RELEASE NOTES for FTM 2.1.4 BETA (June 8, 2007)
+
+Gabor:
+- addpartials: added amp and phase inlets also with @format fa and ifa.
+- new tutorial patches.
+
+Gabor known bug:
+- At the moment the interpolation (option "@interp on") of gbr.paste (with gbr.drain~) and gbr.ola~ generated clicks (will be fixed as soon as possible).
+___________________________________________________
+RELEASE NOTES for FTM 2.1.3 BETA (June 1, 2007)
+
+- ftm.vecdisplay: fixed memory leak (for vecdisplay running when not visible)
+- new object mnm.fftfilter
+- new example in MnM: gesture_follower
+- other several minor bug fixes
+___________________________________________________
+RELEASE NOTES for FTM 2.1.2 BETA (May 4, 2007)
+
+- fixed major java bug.
+- other several minor bug fixes
+___________________________________________________
+RELEASE NOTES for FTM 2.1.1 BETA (April 24, 2007)
+
+- This is a "very experimental", but complete (with Gabor and MnM), release.
+- Installation has changed, so please read at README for more details
+
+___________________________________________________
+RELEASE NOTES for FTM 2.1.0 BETA (April 20, 2007)
+
+- This is a "very experimental" release. This release contains FTM externals only (not Gabor and MnM).
+- Java and JavaScript support has to be installed with the FTMJava.mpkg installer.
+
+___________________________________________________
+RELEASE NOTES for FTM 2.0.0 BETA (November 17, 2006)
+
+Misc changes
+- objects are now send with a ftm_object message instead of "ftm.obj" (permitting JavaScript support)
+- new functions "getid" and "getobj" (permitting JavaScript support)
+- print outs of unnamed objects to the Max console don't use pointer addresses any more but always object ids (generated on the fly when necessary)
+- more objects (still not all) have assist strings for inlets and outlets (see FTM external API below)
+- FTM externals (using the FTM external API) accept full FTM expressions as arguments
+- externals with an invalid argument expression show an error message instead of the assist string when passing over the inlets or outlets
+- in case of an error in the argument expression, the external will be instantiated without any arguments
+- all arguments are re-evaluated each time the definition of a name used by the expression (with $-suffix) changes
+- loadbang now works properly in new patches (see )
+- old patches work as before (using delayed loadbangs or ftm.mess with loadbang flag set)
+- loadbang of old patches work properly after having been saved and re-loaded ones using this new version of FTM
+- ftm.mess automatically tries to add missing parentheses and slightly cleans up the message description
+- several FTM external have been re-implemented
+- the ftm.mess initialisation arguments (set via the inspector) are now parsed correctly (concerning abstraction arguments and name definitions)
+- added ftm.guilistener object: listener for click/selection events in java editors
+_________________________________________________________________________________________________________
+FTM external API
+- positional external arguments are now declared in the class definition
+- arguments can be declared one by one with a default value
+- alternatively a single varargs method can be declared to set and update the arguments
+- all fts_init_arg_... functions have been removed (code using the old API has to be updated)
+- standard FTM externals should not have a variable number of inputs or outputs (can not depend upon expressions using names)
+- all declarations in the class definition now require a doc string as last argument (code using the old API has to be updated)
+- doc string of argument, attribute, and message declarations are not retrievable and not used yet (automatic documentation planned)
+- inlet and outlet declarations are used by a hidden mechanism implementing a generic "assist" method
+_________________________________________________________________________________________________________
+Max/MSP file format concerning FTM externals
+- descriptions of FTM externals now include a special syntax concerning the scope using "<--" (permitting a correct functioning of the loadbang)
+- "_#aa" messages have been replaced by a single "_#absargs" message (after _#scope begin)
+
+BUG FIXES:
+- fixed bug opening files with special characters (as ˆ, –, Ÿ, ...etc.) in name or path.
+- ftm.vecdisplay: fixed bug resizing vecdisplay with history open, history_height is now clipped to 
+the vecdisplay height. This fix corrupted vecdisplay generation saving patch.
+
+___________________________________________________
+RELEASE NOTES for FTM 1.7.7 (August 1, 2006)
+
+- added ftm.sqlite external for database access
+- added fvec fill with list and expression
+- fmat setrow, setcol, append now accept tuple
+
+BUG FIXES:
+- ftm.mess: fixed crash on #set when ftm.mess is in a closed sub-patcher
+- final fix for marker tracks and events
+- fixed fmat/fvec env interpolation with fmat
+- fixed undo bug in track editor
+- fixed scroll problem adding an event in track
+- fixed popup trigger with right button
+- BETA MACINTEL: fixed editing bug in ftm.mess
+
+MnM:
+- added mnm.hist external to calculate histogram of matrix elements
+
+KNOWN BUGS for Gabor:
+- gbr.trace crashes
+
+KNOWN BUGS for FTM 1.7.7 BETA for Max 4.6 PPC:
+- The gabor objects in this release only work in MAX 4.6.  Everything else works in MAX 4.5 and 4.6.
+
+KNOWN BUGS for FTM 1.7.7 BETA for Max 4.6 MACINTEL:
+- gbr.psy~ crash at dsp on...
+
+___________________________________________________
+RELEASE NOTES for FTM 1.7.6 (July 5, 2006)
+
+- java client is no more loaded at start-up, but at first opening of a java editor.
+- fmat editor can deal with very long sound files.
+- several minor bug fixes
+
+KNOWN BUGS for FTM 1.7.6 BETA MACINTEL:
+- gbr.psy~ crash at dsp on...
+- ftm.mess, ftm.object editing bug.
+
+KNOWN BUGS for FTM 1.7.6 BETA PPC:
+- The gabor objects in this release only work on MAX 4.6.  Everything else works in MAX 4.5 and 4.6.
+
+___________________________________________________
+RELEASE NOTES for FTM 1.7.5 (May 5, 2006)
+
+- scoob track chordseq import/export in SDIF
+- MnM. New mnm.nmd object (OSX version only):
+
+Non-Negative Matrix Decomposition (NMD) using Sparseness Constraints:
+
+This object is destined for realtime decomposition of an incoming vector (fmat, first inlet) using known template structures (matrix fmat, second inlet) with a normalisation factor that can be controlled in realtime (number, 3rd inlet). It can be used for mapping of an incoming signal to "known" templates that are shown once to the object in the second inlet as a matrix. Note that both the input vector and templates should contain non-negative values. Other controllable parameters include:
+
+@sH : between 0 and 1, the sparsity measure
+@criteria : the error criteria (default is 0.01)
+@maxiter : Maximum number of iteration used at each instance (default is 100)
+
+As application examples, the object can be used to recognise instrumental templates or multiple-pitches of known pitches of an instrument in realtime. One application is described in:
+
+Arshia Cont, "Realtime Audio to Score Alignment for Polyphonic Music Instruments Using Sparse Non-negative constraints and Hierarchical HMMs", in IEEE International Conference in Acoustics and Speech Signal Processing (ICASSP), May 2006.
+
+- bug fixes:
+ - ftm.mess and ftm.object: editing bugs in windows version
+
+___________________________________________________
+RELEASE NOTES for FTM 1.7.4 (April 19, 2006)
+
+- expressions:
+  - added tail reference $| (remove first from list)
+  - added binary and/or
+  - added logical "not" function, because (! ...) is a syntax error
+  - added function checkversion to test for minimal FTM version
+- added fmat method find <expression>
+- added mat row method to change number of rows
+
+- SDIF support: 
+  - added ftm.sdif.write, ftm.sdif.info objects
+  - track import/export complete for float, fmat, dict, marker tracks
+  - first sdif help patches and summary ftm.sdif.help
+
+- bug fixes:
+  - fixed editing bug when java editors opened (after close and reopening editors)
+  - ftm.record.c: fixed bug: events right after start didn't record
+  - ftm.vecdisplay: fixed bounds change bug on windows platform
+  - fixed bug on post with marker (track)
+
+- externals now have the bundle bit set 
+  (on some installations, they showed up as directories)
+
+Gabor Version 2 Release Notes:
+- Gabor can now run without "Scheduler in Audio Interrupt"!!!
+- added object gbr.fire~ (gabor synced metronome)
+- added gbr.mask object
+- added gbr.morph and gbr.trace
+
+___________________________________________________
+RELEASE NOTES for FTM 1.7.3 (February 01, 2006).
+
+- introduced fvec java editor
+- this release replace the previous release in which some MnM objects were missing.
+
+___________________________________________________
+RELEASE NOTES for FTM 1.7.2 (January 13, 2006).
+
+- introducing: FTMlight:
+  - shouldn't change anything for the full FTMlib (to be verified in detail)
+  - has only the "most important" services of FTM (to be discussed)
+  - all file access removed and concentrated into separate C-modules (.c/.h)
+  - "connects" to another running FTMlib or FTMlight (of the same major version)
+    via the new sharing mechanism (to be perfectionized)
+  - towards a "modular" and light FTM
+
+- introduced global FTM system values $FTM.audio.sr and $FTM.audio.vs,
+  which are automatically updated when runtime environment
+  (e.g. Max/MSP) changes the sample rate or signal vector size
+- removed sample rate field and "sr" access methods from fmat/fvec
+
+- made fmat and fvec methods that use log 0-safe (no more NaN or underflow)
+- fmat soundfile import: 
+  complete import arguments <offset> <length> <channel> <sr>
+  (channel ignored for the moment) no arg or 0 or string mean: all/as is
+- cumsum method: cumulative sum on fmat/fvec in place
+
+- changed FTMInit.sh script to deal also with paths containing spaces...
+
+___________________________________________________
+RELEASE NOTES for FTM 1.7.1 (December 14, 2005).
+
+- ftm.mess: on evaluation error, print expression and containing patcher
+- mat, fmat, fvec: methods "set" to copy from track with columns time, content
+- completed fvec methods (copy function, change onset, size, sr)
+- mat: added initialisation from atom list
+
+
+___________________________________________________
+RELEASE NOTES for FTM 1.7.0 (December 2, 2005).
+
+- introduced shared pointers between multiple versions of FTM loaded
+- added FTM startup/splash_screen
+- fixed crash on reopening patch after loading corrupt sdif file:
+- fvec: 
+  - new method prod to get product of all values
+  - changed init arg parsing: no argument gives empty column fvec
+  - added messages get (gets referenced fmat), sort and sortrev to fvec class
+
+___________________________________________________
+RELEASE NOTES for FTM 1.6.4 (September 29, 2005).
+
+- fixed very bad bug in messages dispatcher, responsible of recurrent crashes difficult to reproduce. 
+- fix in gbr.slice~ init.
+- other several minor bug fixes
+___________________________________________________
+RELEASE NOTES for FTM 1.6.3 (August 03, 2005).
+
+- multitrack editor: 
+   - fixed save track editor state in multitrack; 
+   - delete of events from table view (with Apple+BACKSPACE);
+- track editor: 
+   - range is saved in float/int track; 
+   - range max and min moved to float;
+   - all actions on track properties, moved from popup menu to a track inspector dialog.
+    The inspector is opened from the track popup menu. 
+
+- dict & mat editors: 
+  DoubleClick on the cell is needed to open editors of objetcs contained in a dict or mat.
+
+- gabor: 
+  - added new objects gbr.autox, gbr.cossx and gbr.bands (to be documented)
+  - gbr.fft, gbr.ifft: introduced new (altivec implemented) FFT routines
+
+- other several minor bug fixes
+___________________________________________________
+RELEASE NOTES for FTM 1.6.2 (June 28, 2005).
+
+ - fixed bug of missing local scope in abstractions (scope was surrounding top level patcher)
+ - track: fixed bug in methods importas/exportas (didn't work properly for files without extension)
+ - track editor: several bug fixes concerning markers
+ - ftm.copy works now for track
+ - ftm.print works as before
+
+ - SDIF support is progressing: 
+   - new object sdif.info gives the duration, a summary of the data,
+     and header information from an SDIF file (set <filename>, print, bang)
+   - import/export SDIF to fmat track
+   - import SDIF into track of dict of matrices per frame
+   - import labels and frame times to marker track
+
+   - give definition of private types at end of export message
+   - non-crashing when importing corrupt sdif files (\n -> \r\n)
+   - files are found on max path
+   - later: scoob track:        import chordseq from audiosculpt
+	    float or int track: import first selected matrix element
+
+___________________________________________________
+RELEASE NOTES for FTM 1.6.1 (June 10, 2005).
+- this release works on OSX 10.4 
+- several bug fixes in ftm.mess and ftm.object editing
+
+___________________________________________________
+RELEASE NOTES for FTM 1.6.0 (May 12, 2005).
+ - new features for FTM message box (ftm.mess):
+    - multiple inlets
+    - loadbang
+    - initialization values for $-arguments ($1 $2 ...)
+    - trigger mode (left inlet / all inlets)
+ - bug fix in text import for fmat
+ - code restructuring for portability
+
+___________________________________________________
+RELEASE NOTES for FTM 1.5.2 (April 25, 2005).
+
+ - ftm.vecdisplay finalized.
+
+ - minor adjustments to the FTM API
+ - fixed bug in recursive saving
+
+ - track: implemented methods markers to get and set marker track (replaces getmarkers message)
+ - fixed multitrack dump
+
+ - other several minor bug fixes
+
+___________________________________________________
+RELEASE NOTES for FTM 1.5.1 (April 13, 2005).
+
+ - import/export distinguishes file types by extension,
+   importas/exportas take an extension or type as first argument to
+   force a type 
+ - use import - args... to choose a file interactively
+   and pass arguments to the import handler
+ - libsndfile is used for audio import/export to fmat
+ - SDIF import/export fixed, files are found in Max search path or on
+   absolute path
+ - introduced track and channel selection for MIDI file import
+
+ - use new fmat messages colref, rowref, diagref to get fvec references
+ - use new fmat messages setrow, setcol to set an fmat row/col from a list, fvec, or fmat
+ - fmat messages col, row are deprecated
+
+ - renamed fmat/fvec ee message to more common eq, leave ee for now as deprecated
+ - added fvec message to set/get sample rate and persistence for sample rate
+ - new functions: mod (modulo), case, if (n.b.: all arguments are evaluated!)
+ - the usual bug fixes
+
+___________________________________________________
+RELEASE NOTES for FTM 1.4.1 (March 21, 2005).
+ - object.c: fixed argument passing in impot/export via file chooser
+ - seqmidi.c: now deleting scoobs with 0-duration in MIDI import
+ - added channel and track selection to MIDI file input
+ - extended dict to accept anything as key
+ - removed unused equal functions of several classes (everything but primitives and tuple is hashed by its pointer)
+ - renamed "sequence" class to "multitrack" (addidng "sequence" alias)
+ - fixed tuple representation in Java table editor (removed name)
+ - added mehods next and prev to ftm.tween
+ - other several minor bug fixes
+
+___________________________________________________
+RELEASE NOTES for FTM 1.4.0 (March 01, 2005).
+ - the classes fcol and frow have been replaced by a new fvec class (see help patches)
+   (the related fmat methods and externals should work as before)
+ - fixed problem of import of MIDI files into track objects
+ - this release contains the Gabor package and the first externals of MnM
+ - several minor bug fixes
+ - updated help patches
+
+___________________________________________________
+RELEASE NOTES for FTM 1.3.3 (February 14, 2005).
+
+- fixed text parsing bug in ftm.mess (bug introduced in the previous release)
+- various bug fixes in fmat object:
+  --> fixed access to empty matrix: no error, just return 0
+  --> fixed row index wraparound
+  --> zero rest of partially initialised fmat
+
+___________________________________________________
+RELEASE NOTES for FTM 1.3.2 (February 10, 2005).
+
+- allow multiple indexing syntax, e.g. $mydict[a][0 1][2 3]
+- access marker track of a scoob track with markers method
+- import text labels (as exported by audacity) into marker track
+- fixed crashes in ftm.mess during multi-lines text editing and paste of very long text
+- fmat, mat, dict: fixed bug in editor refresh when using ftm.copy
+
+___________________________________________________
+RELEASE NOTES for FTM 1.3.1 (February 4, 2005).
+
+ - implemented mat method set from other mat
+ - removed bogus error messages from SDIF import/export, fixed framespec bug  
+ - bug fixes in ftm.mess and Mat editor
+
+___________________________________________________
+RELEASE NOTES for FTM 1.3.0 (January 25, 2005).
+
+ - introduced ftm.buffer object, fmat interface to Max/MSP buffer~ (see ftm.buffer.help)
+ - removed fmat format from fmat and all related modules
+    -> removed difference between complex vectors and matrices of two columns
+    -> several fmat methods don't handle complex vectors as before
+    -> introduced dedicated complex methods with leading 'c' (cabs, cexp, clog, etc.)
+    -> method "polar" converts two-column matrices from complex rectangular to polar format
+    -> method "rect" converts two-column matrices from complex polar to rectangular format
+ - various minor bug fixes
+
+___________________________________________________
+RELEASE NOTES for FTM 1.2.1 (January 20, 2005).
+
+ - fixed ftm.list version confusion
+ - various minor bug fixes
+
+___________________________________________________
+RELEASE NOTES for FTM 1.2.0 (January 18, 2005).
+
+ - first FTM release in Mach-0 format
+ - import and export of SDIF matrices to a track of type fmat with messages
+    	import [filename] [frame-specification...]
+     	export  filename   frame-specification
+ - added ftm.tween and ftm.inter externals (doc missing)
+ - revised and added help and first tutorial patches
+
+___________________________________________________
+RELEASE NOTES for FTM 1.1.0
+
+ - added sqrt and pow functions
+
+___________________________________________________
+RELEASE NOTES for FTM 1.0.1 (October 25, 2004)
+
+ - implemented "append bar" and "make_trill from scoobs" in track 
+ - several minor bugs have been fixed 
+ - added ftm.class help patches
+
+___________________________________________________
+RELEASE NOTES for FTM 1.0.0 (October 15, 2004)
+ - added persistency of markers in track 
+ - implemented tempo change in markers 
+ - several minor bugs have been fixed 
+
+___________________________________________________
+RELEASE NOTES for FTM 0.12.1 (BETA, October 4, 2004)
+ - several minor bugs have been fixed in ftm.vecdisplay
+ - fixed persistency bug for objects containing tuples (mat, dict...)
+
+___________________________________________________
+RELEASE NOTES for FTM 0.12 (BETA, September 30, 2004)
+
+ - some basic objects doubling functionalities of the message box have been removed (ftm.get, ftm.invoke, ftm.send)
+ - ftm.tolist has been renamed to ftm.list
+ - ftm.live has been renamed to ftm.schedule (no doc yet)
+ - ftm.iter init syntax is now @mode (elem|row|col|frow|fcol|tuple)
+ - the outlet of ftm.vecdisplay have been finalized
+ - editors of mat, dict now display included objects correctly
+ - several minor bugs have been fixed
+
+(This version of FTM is meant to be the last version of FTM in Carbon CFM
+binary format - future releases will use the Mach-O native OS X binary format)
+
+___________________________________________________
+RELEASE NOTES for FTM 0.11 (BETA, August 30, 2004)
+
+ - ftm.object now defines as well constants (any expression) and can refer to any (locally or globally defined) name
+ - ftm.define is deprecated (please use ftm.object instead)
+ - FTM now implements a complete object serialization for ftm.object and the objects contained by and FTM object defined with ftm.object: when marked as persistent (save with patcher) the content of an FTM object is properly saved/loaded, copied/pasted and restored by undo
+ - the file format for Max patches containing FTM objects changed (compatibility with older FTM Max patches will be provided for some month)
+ - abstraction arguments (#0, #1, #2, etc) in ftm.object (expression and name) and ftm.mess are replaced when loading a patch as abstraction
+ - names defined with ftm.object stay local by default
+ - the scope of a ftm.object name definition can be toggled between local and global with alt-shift-click on the name field in the right of the object box in an unlocked patcher
+ - the ftm.object name definition can be edited directly in the display field on the right of the object box
+ - ftm.object persistence can be toggled with alt-shift-click on the left side of an ftm.object box in an unlocked patcher
+ - the FTM objects dict, mat and fmat have a simple editor allowing to access contained objects recursively (double click on ftm.object)
+ - copy and paste of text between any Max/MSP object and ftm.object or ftm.mess is fixed
+ - new functions int (or i), float (or f), print, floor and ceil were added
+ - unicode accents in ftm.object and ftm.mess are now displayed correctly
+ - several bug have been fixed (fmat aiff import, closing Java editor windows with command-w, etc.)
+ 
+___________________________________________________
+RELEASE NOTES for FTM 0.9 (BETA, June 15, 2004)
+
+Changes mainly introduce several new methods for fmat and track classes and
+minor bug fixes.
+
+The track now can display bars and tempo changes (import from standard MIDI
+files for scoob tracks).
+
+FTM externals from now on check for a specific FTM version.
+9.1 : bug fixes in fmat methods (exp, log)
+9.2 : bug fix in gui communication (was crashing on certain GUI actions such as deleting scoobs from a track)
+
+___________________________________________________
+RELEASE NOTES for FTM 0.8 (BETA, April 15, 2004)
+
+- FTM supports now global and local scopes for names.
+- For ftm.object the scope of a named FTM object is set via the inspector (see help patch ftm.object.help).
+- With ftm.define a new object was included to the set of FTM externals. This object allows the definition of constants (simple values and tuples associated to an FTM name in local or global scope - see help patch ftm.define.help) and mainly was introduced as a straight forward way to define FTM names from the arguments of an abstraction (#1, #2, #3, etc).
+- Numerous minor fixes and extensions are not mentioned in these release notes.
+
+___________________________________________________
+RELEASE NOTES for FTM 0.7 (BETA, March 16, 2004)
+
+Yes, it's already number 7 but actually the second one released to the public.
+While the first public release (6) was labeled "version I" this one is
+correctly marked as BETA.  The following releases will stay BETA until we think
+one really serves to be I.
+
+The only but important change of this release is that the FTS message box
+(ftm.mess) references the arguments (elements of the incoming list) starting
+from 1 ($1, $2, $3, etc.) just like the traditional Max message box and not
+from 0 as is was still in release 6.

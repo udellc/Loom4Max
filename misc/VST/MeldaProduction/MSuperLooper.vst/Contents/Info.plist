@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>CFBundleDevelopmentRegion</key>
+<string>English</string>
+<key>CFBundleExecutable</key>
+<string>MSuperLooper.bin</string>
+<key>CFBundleGetInfoString</key>
+<string>MSuperLooper</string>
+<key>CFBundleIdentifier</key>
+<string>com.meldaproduction.MSuperLooper</string>
+<key>CFBundleInfoDictionaryVersion</key>
+<string>6.0</string>
+<key>CFBundleName</key>
+<string>MSuperLooper</string>
+<key>CFBundlePackageType</key>
+<string>BNDL</string>
+<key>CFBundleSignature</key>
+<string>Meld</string>
+<key>CFBundleVersion</key>
+<string>14.07</string>
+<key>VSTWindowCompositing</key>
+<true/>
+<key>NSHighResolutionCapable</key>
+<true/>
+</dict>
+</plist>

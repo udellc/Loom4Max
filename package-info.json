@@ -1,0 +1,31 @@
+{
+	"author" : “Chet “Udell,
+	"description" : "Contains applications and tools for connecting and using your Optron or Optron Mini. See Extras > Optron to get started!. ",
+	"name" : "Optron",
+	"extensible" : 1,
+	"homepatcher" : "HelloWorld.maxpat",
+	"max_version_max" : "none",
+	"max_version_min" : "Max 8.1.4",
+	"name" : “Optron”,
+	"os" : 	{
+		"macintosh" : 		{
+			"platform" : [ "x64" ],
+			"min_version" : "none"
+		}
+,
+		"windows" : 		{
+			"platform" : [ "x64" ],
+			"min_version" : "none"
+		}
+
+	}
+,
+	"package_extra" : 	{
+		"reverse_domain" : "com.myoptron”,
+		"copyright" : “CC BY-NC-SA 4.0 Chet Udell. 2021"
+	}
+,
+	"tags" : [ “Optron”, “alternative controller” ],
+	"version" : “1.0.0”,
+	"website" : "https://myoptron.com”
+}
