@@ -53,3 +53,4 @@ Servo
 Stepper
 SetInterval
 WifiSetup
+wifiUpdate

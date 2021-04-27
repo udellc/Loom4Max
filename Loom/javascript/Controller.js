@@ -63,7 +63,6 @@ function json(j)
 //	this.patcher.getnamed("outlet_data").message("bang")
 }
 
-
 // Update all UI elements
 function update_UI()
 {
@@ -146,10 +145,41 @@ function set_instance(i)
 }
 
 
+function wifiConnect(argSymbol) {
+	//	-1 at the end or an extra space is included
+	ssid = argSymbol.substring(argSymbol.indexOf("ssid: ") + "ssid: ".length, argSymbol.indexOf("password: ") - 1)
+	password = argSymbol.substring(argSymbol.indexOf("password: ") + "password: ".length)
+	
+	var cmd = {};
+	cmd["type"] = "command"
+	cmd["dst"] = {
+		"name":"test",
+		"instance":instance
+	}
+
+	cmd["commands"] = [{
+		"module":"MaxSub",
+		"func":"c".charCodeAt(0),
+		"params":[ssid, password]
+	}];	
+
+	post(JSON.stringify(cmd));
+	post()
+	
+	outlet(0, JSON.stringify(cmd) )
+}
+
 
 // Build command to send to device
 function command(argSymbol)
 {
+	//	We must add a check if this is a wifi connection command
+	//	An SSID and password can have spaces in it
+	if(argSymbol.indexOf ('wifiConnect') > -1) {
+		wifiConnect(argSymbol)
+		return
+	}
+
 	post(label, "Cmd : ", argSymbol, "\n")
 	var args = argSymbol.split(" ")
 	
