@@ -156,12 +156,17 @@ function wifiConnect(argSymbol) {
 		"name":"test",
 		"instance":instance
 	}
-
-	cmd["commands"] = [{
-		"module":"MaxSub",
-		"func":"c".charCodeAt(0),
-		"params":[ssid, password]
-	}];	
+	// A "bang" password means there is no password
+	if(ssid == "bang") {
+		post("\nCannot connect to network with no SSID. Select Access Point and press send to make the Loom return to AP mode")
+		return
+	} else {
+		cmd["commands"] = [{
+			"module":"MaxSub",
+			"func":"c".charCodeAt(0),
+			"params":[ssid, password]
+		}];	
+	}
 
 	post(JSON.stringify(cmd));
 	post()
