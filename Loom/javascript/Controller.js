@@ -144,7 +144,7 @@ function set_instance(i)
 	has_replied_ip = false // has not broadcast to this new device yet
 }
 
-
+// In case a wifi command is sent to the device, this function correctly formats it
 function wifiConnect(argSymbol) {
 	//	-1 at the end or an extra space is included
 	ssid = argSymbol.substring(argSymbol.indexOf("ssid: ") + "ssid: ".length, argSymbol.indexOf("password: ") - 1)
