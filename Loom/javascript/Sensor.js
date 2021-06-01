@@ -57,6 +57,7 @@ function json(j)
 	update_UI_parameter_value()	
 }
 
+// Parse sensorRanges.json
 function parse_ranges() {
 	//	Credit to https://cycling74.com/forums/sharing-is-fun-example-write-and-read-json-in-javascript
 	memstr = ""
@@ -74,6 +75,7 @@ function parse_ranges() {
 	ranges = JSON.parse(memstr);
 }
 
+// Set the scroller min/max to different values based on menu. Either default range or range specified in sensorRanges.json
 function update_range() {
 	var scroller = this.patcher.getnamed("scroller");
 	var param_menu = this.patcher.getnamed("parameter_selection").getvalueof();
