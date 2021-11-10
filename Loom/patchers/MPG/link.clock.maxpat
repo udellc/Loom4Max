@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 1,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-27",
@@ -809,7 +810,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-176",
-					"items" : [ "rewire", ",", "live", ",", "link", ",", "internal" ],
+					"items" : [ "link", ",", "rewire", ",", "live", ",", "internal" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1004,7 +1005,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 142.020141999999851, 329.0, 146.0, 22.0 ],
 					"style" : "default",
-					"text" : "link.phasor~ @quantum 8"
+					"text" : "link.phasor~ @quantum 4"
 				}
 
 			}
@@ -1171,7 +1172,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 366.0, 298.449310000000025, 39.0, 22.0 ],
-					"text" : "/ 480."
+					"text" : "/ 240."
 				}
 
 			}
