@@ -1,6 +1,7 @@
 --Input--
 ModuleCore
 GeneralViewer
+MongoDB
 Sensor
 PositionVisualizer
 SelectSD_Config

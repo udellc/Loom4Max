@@ -26,6 +26,7 @@ function json(j)
 	}
 	
 	// Check device instance number
+	
 	if (menu_updated && device_changed() ) {
 		menu_updated = false
 		this.patcher.getnamed("gate_open").message("bang")
@@ -43,7 +44,7 @@ function json(j)
 		update_UI_module_menu()
 		update_UI_parameter_menu()
 		
-		if (data["ID"] && data["ID"]["instance"]) {
+		if (data["ID"] && (data["ID"]["instance"]!=null)) {
 			last_device_number = data["ID"]["instance"]
 			post("Instance", last_device_number)
 			post()
@@ -168,7 +169,7 @@ function reset_to_default()
 
 function device_changed()
 {
-	return !(data["ID"] && data["ID"]["instance"] && data["ID"]["instance"] == last_device_number )
+	return !(data["ID"] && (data["ID"]["instance"]!=null) && data["ID"]["instance"] == last_device_number )
 		
 }
 
