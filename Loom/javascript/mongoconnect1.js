@@ -45,6 +45,7 @@ async function run(mongoclient, Mongo_database, device) {
             var jsonObj = next.fullDocument;
             delete next.fullDocument._id;
             delete next.fullDocument.ts;
+			jsonObj["ID"] = {"instance":device};
             jsonStr = JSON.stringify(jsonObj);
             maxApi.outlet(jsonStr);
             console.log(jsonStr);
@@ -55,6 +56,7 @@ async function run(mongoclient, Mongo_database, device) {
         const cursor = collection.find({}, { projection: { _id:0, ts:0 }}).limit(1).sort({$natural:-1});
         cursor.forEach(function(myDoc) {
             
+			myDoc["ID"] = {"instance":device};
             data = JSON.stringify(myDoc);
             console.log(data);
             maxApi.post(data);
@@ -70,7 +72,8 @@ async function run(mongoclient, Mongo_database, device) {
         const cursor = collection.find({}, { projection: { _id:0, ts:0 }}).limit(1).sort({$natural:-1});
         cursor.forEach(function(myDoc) {
     
-            console.log(myDoc);
+            
+			myDoc["ID"] = {"instance":device};
             data = JSON.stringify(myDoc);
             maxApi.post(data);
             maxApi.outlet(data);

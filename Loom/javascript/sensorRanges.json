@@ -49,6 +49,45 @@
 		"Packet":{
 			"min":0,
 			"max":10000
+		},
+		"GS3_1":{
+			"conductivity":{
+					"min":0,
+					"max":200
+			},
+			"dielectric_perm":{
+					"min":0.0,
+					"max":80.0
+			},
+			"temperature":{
+					"min":-30.0,
+					"max":125.0
+			}
+		},
+
+		"SHT31D":{
+			"humid":{
+					"min":20,
+					"max":80
+			},
+			"temp":{
+					"min":-30.0,
+					"max":125.0
+			}
+		},
+		"TSL2591":{
+			"Full":{
+					"min":0,
+					"max":2000
+			},
+			"IR":{
+					"min":0,
+					"max":1000
+			},
+			"Vis":{
+					"min":0,
+					"max":1000
+			}
 		}
 	}
 }
