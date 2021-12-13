@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,7 +37,6 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
@@ -57,7 +56,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 86.166656000000003, 576.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.166656000000003, 61.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 90.166656000000003, 36.0, 50.0, 22.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "param_view"
 				}
@@ -788,8 +787,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Sensor.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
-				"patcherrelativepath" : "../../javascript",
+				"bootpath" : "~/Documents/Max 8/Library/Loom2",
+				"patcherrelativepath" : "../../../../Library/Loom2",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
