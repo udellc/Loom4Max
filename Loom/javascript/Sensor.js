@@ -11,7 +11,7 @@ var data = {};
 var last_device_number = -1
 var menu_updated = false	
 
-last_module = null
+var last_module = null
 
 // Upon new data
 function json(j)
@@ -20,7 +20,7 @@ function json(j)
 	
 	// Check if ranges should be updated
 	curr_module = this.patcher.getnamed("module_selection").getvalueof()
-	if(last_module != curr_module) {
+	if(last_module == null || last_module != curr_module) {
 		update_range()
 		last_module = curr_module
 	}
@@ -70,35 +70,38 @@ function parse_ranges() {
 			memstr+=f.readstring(maxchars);
 		}
 		f.close();
+		ranges = JSON.parse(memstr);
 	} else {
 		post("Error Reading Default Ranges\n");
 	}
-	ranges = JSON.parse(memstr);
+	
 }
 
 // Set the scroller min/max to different values based on menu. Either default range or range specified in sensorRanges.json
 function update_range() {
-	var scroller = this.patcher.getnamed("scroller");
-	var param_menu = this.patcher.getnamed("parameter_selection").getvalueof();
-	var module_menu = this.patcher.getnamed("module_selection").getvalueof();
-	//	Only changes the range if there is some scroller object
-	if(scroller) {
-		//	The default range for a sensor (it will be the range if the sensor is not in sensorRanges.json)
-		var min = -1000
-		var max = 1000
-		if(ranges["ranges"][module_menu]) {
-			//	Certain sensors require different ranges for different modules
-			if(ranges["ranges"][module_menu][param_menu]) {
-				min = ranges["ranges"][module_menu][param_menu]["min"]
-				max = ranges["ranges"][module_menu][param_menu]["max"]
-			//	Some sensors only require one range
-			} else {
-				min = ranges["ranges"][module_menu]["min"]
-				max = ranges["ranges"][module_menu]["max"]
+	if(ranges != null){
+		var scroller = this.patcher.getnamed("scroller");
+		var param_menu = this.patcher.getnamed("parameter_selection").getvalueof();
+		var module_menu = this.patcher.getnamed("module_selection").getvalueof();
+		//	Only changes the range if there is some scroller object
+		if(scroller) {
+			//	The default range for a sensor (it will be the range if the sensor is not in sensorRanges.json)
+			var min = -1000
+			var max = 1000
+			if(ranges["ranges"][module_menu]) {
+				//	Certain sensors require different ranges for different modules
+				if(ranges["ranges"][module_menu][param_menu]) {
+					min = ranges["ranges"][module_menu][param_menu]["min"]
+					max = ranges["ranges"][module_menu][param_menu]["max"]
+				//	Some sensors only require one range
+				} else {
+					min = ranges["ranges"][module_menu]["min"]
+					max = ranges["ranges"][module_menu]["max"]
+				}
 			}
+			scroller.setmin(min)
+			scroller.setmax(max)
 		}
-		scroller.setmin(min)
-		scroller.setmax(max)
 	}
 }
 
