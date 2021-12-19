@@ -59,12 +59,11 @@ async function run(mongoclient, Mongo_database, device) {
 			myDoc["ID"] = {"instance":device};
             data = JSON.stringify(myDoc);
             console.log(data);
-            maxApi.post(data);
             maxApi.outlet(data);
             
           });
 
-      // Pulls a specified number of packets in order from newest to oldest
+      // Pulls a specified number of packets in order from oldest to newest
       maxApi.addHandler("getLast", (packet_count) => {
         collection.countDocuments().then(num => {
           let cursor = collection.find().skip(num - packet_count)
@@ -73,7 +72,7 @@ async function run(mongoclient, Mongo_database, device) {
             delete myDoc.ts;
             myDoc["ID"] = {"instance":device};
             data = JSON.stringify(myDoc);
-			//maxApi.post(data);
+            maxApi.post(data);
             maxApi.outlet(data);
           });
         });
@@ -84,7 +83,7 @@ async function run(mongoclient, Mongo_database, device) {
         //mongoclient.startSession();
         
         maxApi.post("grabbing new");
-        const cursor = collection.find({}, { projection: { _id:0, ts:0 }}).limit(100).sort({$natural:-1});
+        const cursor = collection.find({}, { projection: { _id:0, ts:0 }}).limit(1).sort({$natural:-1});
 		
         cursor.forEach(function(myDoc) {
             myDoc["ID"] = {"instance":device};
