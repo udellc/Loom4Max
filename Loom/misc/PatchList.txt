@@ -20,13 +20,14 @@ pH
 RangeSetter
 RotaryDial
 ScaleCurve
-ScaleLinear
-Smooth
-Threshold
 ScaleDegree
+ScaleLinear
+SensorPlotter
 Sequencer
+Smooth
 Spring
 TapTempo
+Threshold
 --Output--
 3Dpan
 DMX
