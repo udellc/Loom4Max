@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 137.0, 181.0, 1021.0, 769.0 ],
+		"rect" : [ 144.0, 159.0, 1021.0, 769.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"annotation" : "## The VIZZIE video player/looper ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-16",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.playr.maxpat",
+					"numinlets" : 7,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture", "" ],
+					"patching_rect" : [ 1927.0, 804.0, 348.0, 158.0 ],
+					"prototypename" : "pixl",
+					"varname" : "playr",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "button",
@@ -930,7 +954,7 @@
 									"patching_rect" : [ 501.0, 1616.0, 62.0, 24.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 246.0, 346.0, 62.0, 24.0 ],
-									"text" : "500."
+									"text" : "400."
 								}
 
 							}
@@ -1027,7 +1051,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 9.166655999999989, 626.0, 50.0, 22.0 ],
-									"text" : "164",
+									"text" : "0",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "param_view"
 								}
@@ -8026,7 +8050,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 9.166655999999989, 626.0, 50.0, 22.0 ],
-									"text" : "164",
+									"text" : "58.54",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "param_view"
 								}
@@ -8364,7 +8388,7 @@
 									"patching_rect" : [ 1164.5, 1551.0, 59.0, 32.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 48.0, 349.0, 41.0, 24.0 ],
-									"text" : "25"
+									"text" : "18"
 								}
 
 							}
@@ -8652,7 +8676,7 @@
 									"patching_rect" : [ 200.0, 1125.5, 393.0, 193.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.166672000000005, 108.5, 434.0, 176.0 ],
-									"size" : 460.0
+									"size" : 485.0
 								}
 
 							}
@@ -8794,7 +8818,7 @@
 									"maxclass" : "plot~",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"numpoints" : 460,
+									"numpoints" : 485,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 1079.5, 393.0, 193.0 ],
 									"presentation" : 1,
@@ -8811,8 +8835,8 @@
 											"domain_style" : "linear",
 											"domain_markers" : [  ],
 											"domain_labels" : [  ],
-											"range_start" : 0.0,
-											"range_end" : 2237.550000000000182,
+											"range_start" : 36.346998404000004,
+											"range_end" : 74.654998393500009,
 											"range_style" : "linear",
 											"range_markers" : [  ],
 											"range_labels" : [  ],
@@ -9076,7 +9100,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 420.358275999999933, 470.0, 144.641724000000067, 22.0 ],
-									"text" : "TSL2591Full_Spectrum"
+									"text" : "SHT31Humidity"
 								}
 
 							}
@@ -9175,7 +9199,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 329.0, 361.0, 29.5, 22.0 ],
-									"text" : "3"
+									"text" : "2"
 								}
 
 							}
@@ -9187,7 +9211,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 541.0, 361.0, 29.5, 22.0 ],
-									"text" : "2"
+									"text" : "1"
 								}
 
 							}
@@ -9344,7 +9368,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : [ "Visible", ",", "Infrared", ",", "Full_Spectrum" ],
+									"items" : [ "Temperature", ",", "Humidity" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -14465,7 +14489,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 9.166655999999989, 626.0, 50.0, 22.0 ],
-									"text" : "21.52",
+									"text" : "17.87",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "param_view"
 								}
@@ -14830,7 +14854,7 @@
 									"patching_rect" : [ 1096.5, 1551.0, 59.0, 32.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 48.0, 321.0, 41.0, 24.0 ],
-									"text" : "-20"
+									"text" : "-18"
 								}
 
 							}
@@ -15091,7 +15115,7 @@
 									"patching_rect" : [ 200.0, 1125.5, 393.0, 193.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.166672000000005, 108.5, 434.0, 176.0 ],
-									"size" : 460.0
+									"size" : 485.0
 								}
 
 							}
@@ -15233,7 +15257,7 @@
 									"maxclass" : "plot~",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"numpoints" : 460,
+									"numpoints" : 485,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 1079.5, 393.0, 193.0 ],
 									"presentation" : 1,
@@ -18944,6 +18968,32 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-16::obj-10" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-16::obj-112::obj-119" : [ "Speed high", "Speed high", 0 ],
+			"obj-16::obj-112::obj-120" : [ "Rate range", "Rate range", 0 ],
+			"obj-16::obj-112::obj-121" : [ "Speed low", "Speed low", 0 ],
+			"obj-16::obj-112::obj-16" : [ "Playback range", "Playback range", 0 ],
+			"obj-16::obj-112::obj-40" : [ "Playback controls", "Playback controls", 0 ],
+			"obj-16::obj-112::obj-79" : [ "Playback position", "Playback position", 0 ],
+			"obj-16::obj-112::obj-89" : [ "Reset range", "Reset range", 0 ],
+			"obj-16::obj-112::obj-92" : [ "Reset speed", "Reset speed", 0 ],
+			"obj-16::obj-20" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-16::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
+			"obj-16::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
+			"obj-16::obj-51" : [ "moviepath", "moviepath", 0 ],
+			"obj-16::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
+			"obj-16::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
+			"obj-16::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
+			"obj-16::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
+			"obj-16::obj-89" : [ "moviename", "moviename", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "MongoDB_plot.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Loom/externals/DataProcessor",
@@ -18962,6 +19012,12 @@
 				"name" : "Sensor.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Loom/externals/DataProcessor",
 				"patcherrelativepath" : "../../../externals/DataProcessor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -18986,6 +19042,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "lo_hi_UI_control.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "mongoconnect1.js",
 				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
@@ -19006,6 +19068,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "playr_controls.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "resize_n4m_monitor_patcher.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
@@ -19023,6 +19091,42 @@
 				"bootpath" : "~/Documents/Max 8/Packages/Optron/externals/DataProcessor",
 				"patcherrelativepath" : "../../../../Optron/externals/DataProcessor",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-datatexconvert.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.playr.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-blackframe.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-pwindow.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
