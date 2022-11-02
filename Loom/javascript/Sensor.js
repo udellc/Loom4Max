@@ -96,12 +96,24 @@ function update_range() {
 			if(ranges["ranges"][module_menu]) {
 				//	Certain sensors require different ranges for different modules
 				if(ranges["ranges"][module_menu][param_menu]) {
-					min = ranges["ranges"][module_menu][param_menu]["min"]
-					max = ranges["ranges"][module_menu][param_menu]["max"]
+					sensmin = ranges["ranges"][module_menu][param_menu]["min"]
+					sensmax = ranges["ranges"][module_menu][param_menu]["max"]
+					if(typeof sensmax !== 'undefined'){
+						max = sensmax
+					}
+					if(typeof sensmin !== 'undefined'){
+						min = sensmin
+					}
 				//	Some sensors only require one range
 				} else {
-					min = ranges["ranges"][module_menu]["min"]
-					max = ranges["ranges"][module_menu]["max"]
+					sensmin = ranges["ranges"][module_menu]["min"]
+					sensmax = ranges["ranges"][module_menu]["max"]
+					if(typeof sensmax !== 'undefined'){
+						max = sensmax
+					}
+					if(typeof sensmin !== 'undefined'){
+						min = sensmin
+					}
 				}
 			}
 			scroller.setmin(min)

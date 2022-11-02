@@ -39,6 +39,14 @@
 			}
 		},
 		"Analog":{
+			"Vbat":{
+				"min":0.0,
+				"max":4.8
+			},
+			"Vbat_MV":{
+				"min":0,
+				"max":4800
+			},
 			"min":0,
 			"max":4095
 		},
@@ -64,29 +72,84 @@
 					"max":125.0
 			}
 		},
-
-		"SHT31D":{
-			"humid":{
+		"SHT31":{
+			"Humidity":{
 					"min":20,
 					"max":80
 			},
-			"temp":{
+			"Temperature":{
 					"min":-30.0,
 					"max":125.0
 			}
 		},
+		"MS5803":{
+			"Temperature":{
+					"min":0,
+					"max":125
+			},
+			"Pressure":{
+					"min":300.0,
+					"max":1200.0
+			}
+		},
+		"MS5803_119":{
+			"Temperature":{
+					"min":0,
+					"max":125
+			},
+			"Pressure":{
+					"min":300.0,
+					"max":1200.0
+			}
+		},
+		"MS5803_118":{
+			"Temperature":{
+					"min":0,
+					"max":125
+			},
+			"Pressure":{
+					"min":300.0,
+					"max":1200.0
+			}
+		},
+		"Water":{
+			"Height_(m)":{
+					"min":0.0,
+					"max":2.5
+			}
+		},
 		"TSL2591":{
-			"Full":{
+			"Full_Spectrum":{
 					"min":0,
-					"max":2000
+					"max":8000
 			},
-			"IR":{
+			"Infrared":{
 					"min":0,
-					"max":1000
+					"max":8000
 			},
-			"Vis":{
+			"Visible":{
 					"min":0,
-					"max":1000
+					"max":8000
+			}
+		},
+		"Teros10":{
+			"Millivolt_Reading":{
+					"min":0,
+					"max":4097
+			},
+			"Dielectric_Permittivity":{
+					"min":0,
+					"max":35
+			},
+			"Volumetric_Water_Content":{
+					"min":0,
+					"max":77
+			}
+		},
+		"LTE":{
+			"RSSI":{
+					"min":0,
+					"max":120
 			}
 		}
 	}

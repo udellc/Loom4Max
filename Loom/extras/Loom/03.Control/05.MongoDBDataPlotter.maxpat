@@ -40,30 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"annotation" : "## The VIZZIE video player/looper ##",
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-16",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "vz.playr.maxpat",
-					"numinlets" : 7,
-					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 1927.0, 804.0, 348.0, 158.0 ],
-					"prototypename" : "pixl",
-					"varname" : "playr",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -1051,7 +1027,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 9.166655999999989, 626.0, 50.0, 22.0 ],
-									"text" : "0",
+									"text" : "151",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "param_view"
 								}
@@ -1068,7 +1044,7 @@
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 34.858246000000008, 666.0, 232.0, 34.0 ],
-									"setminmax" : [ -1000.0, 1000.0 ],
+									"setminmax" : [ 0.0, 8000.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -1677,7 +1653,7 @@
 									"patching_rect" : [ 200.0, 1125.5, 393.0, 193.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.166672000000005, 108.5, 434.0, 176.0 ],
-									"size" : 460.0
+									"size" : 461.0
 								}
 
 							}
@@ -1819,7 +1795,7 @@
 									"maxclass" : "plot~",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"numpoints" : 460,
+									"numpoints" : 461,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 1079.5, 393.0, 193.0 ],
 									"presentation" : 1,
@@ -1836,8 +1812,8 @@
 											"domain_style" : "linear",
 											"domain_markers" : [  ],
 											"domain_labels" : [  ],
-											"range_start" : 0.0,
-											"range_end" : 2237.550000000000182,
+											"range_start" : 2.85,
+											"range_end" : 163.800000000000011,
 											"range_style" : "linear",
 											"range_markers" : [  ],
 											"range_labels" : [  ],
@@ -2405,7 +2381,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "Teros10", ",", "Timestamp" ],
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "WiFi", ",", "Teros10", ",", "Water", ",", "Timestamp" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -8050,7 +8026,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 9.166655999999989, 626.0, 50.0, 22.0 ],
-									"text" : "58.54",
+									"text" : "45.05",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "param_view"
 								}
@@ -8067,7 +8043,7 @@
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 34.858246000000008, 666.0, 232.0, 34.0 ],
-									"setminmax" : [ -1000.0, 1000.0 ],
+									"setminmax" : [ 20.0, 80.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -8676,7 +8652,7 @@
 									"patching_rect" : [ 200.0, 1125.5, 393.0, 193.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.166672000000005, 108.5, 434.0, 176.0 ],
-									"size" : 485.0
+									"size" : 461.0
 								}
 
 							}
@@ -8818,7 +8794,7 @@
 									"maxclass" : "plot~",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"numpoints" : 485,
+									"numpoints" : 461,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 1079.5, 393.0, 193.0 ],
 									"presentation" : 1,
@@ -8835,8 +8811,8 @@
 											"domain_style" : "linear",
 											"domain_markers" : [  ],
 											"domain_labels" : [  ],
-											"range_start" : 36.346998404000004,
-											"range_end" : 74.654998393500009,
+											"range_start" : 38.3230001425,
+											"range_end" : 47.218501281000002,
 											"range_style" : "linear",
 											"range_markers" : [  ],
 											"range_labels" : [  ],
@@ -9404,7 +9380,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "Teros10", ",", "Timestamp" ],
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "WiFi", ",", "Teros10", ",", "Water", ",", "Timestamp" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -14489,7 +14465,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 9.166655999999989, 626.0, 50.0, 22.0 ],
-									"text" : "17.87",
+									"text" : "23.11",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "param_view"
 								}
@@ -14506,7 +14482,7 @@
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 34.858246000000008, 666.0, 232.0, 34.0 ],
-									"setminmax" : [ -1000.0, 1000.0 ],
+									"setminmax" : [ -30.0, 125.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -15115,7 +15091,7 @@
 									"patching_rect" : [ 200.0, 1125.5, 393.0, 193.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.166672000000005, 108.5, 434.0, 176.0 ],
-									"size" : 485.0
+									"size" : 460.0
 								}
 
 							}
@@ -15257,7 +15233,7 @@
 									"maxclass" : "plot~",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"numpoints" : 485,
+									"numpoints" : 460,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 1079.5, 393.0, 193.0 ],
 									"presentation" : 1,
@@ -15274,8 +15250,8 @@
 											"domain_style" : "linear",
 											"domain_markers" : [  ],
 											"domain_labels" : [  ],
-											"range_start" : 11.647000218499999,
-											"range_end" : 25.662000556499997,
+											"range_start" : 21.982999420500001,
+											"range_end" : 26.638500881999999,
 											"range_style" : "linear",
 											"range_markers" : [  ],
 											"range_labels" : [  ],
@@ -15843,7 +15819,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "Teros10", ",", "Timestamp" ],
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "WiFi", ",", "Teros10", ",", "Water", ",", "Timestamp" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -18302,22 +18278,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"order" : 3,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"order" : 2,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-59", 0 ],
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -18325,8 +18285,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-35", 0 ],
+					"order" : 3,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
 					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -18969,24 +18945,6 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-16::obj-10" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
-			"obj-16::obj-112::obj-119" : [ "Speed high", "Speed high", 0 ],
-			"obj-16::obj-112::obj-120" : [ "Rate range", "Rate range", 0 ],
-			"obj-16::obj-112::obj-121" : [ "Speed low", "Speed low", 0 ],
-			"obj-16::obj-112::obj-16" : [ "Playback range", "Playback range", 0 ],
-			"obj-16::obj-112::obj-40" : [ "Playback controls", "Playback controls", 0 ],
-			"obj-16::obj-112::obj-79" : [ "Playback position", "Playback position", 0 ],
-			"obj-16::obj-112::obj-89" : [ "Reset range", "Reset range", 0 ],
-			"obj-16::obj-112::obj-92" : [ "Reset speed", "Reset speed", 0 ],
-			"obj-16::obj-20" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
-			"obj-16::obj-28" : [ "pictctrl[279]", "pictctrl[1]", 0 ],
-			"obj-16::obj-40" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
-			"obj-16::obj-51" : [ "moviepath", "moviepath", 0 ],
-			"obj-16::obj-60" : [ "pictctrl[282]", "pictctrl[1]", 0 ],
-			"obj-16::obj-64" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-16::obj-81" : [ "pictctrl[281]", "pictctrl[1]", 0 ],
-			"obj-16::obj-83" : [ "pictctrl[280]", "pictctrl[1]", 0 ],
-			"obj-16::obj-89" : [ "moviename", "moviename", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -19016,12 +18974,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
@@ -19039,12 +18991,6 @@
 				"bootpath" : "~/Documents/Max 8/Packages/Loom/media/img",
 				"patcherrelativepath" : "../../../media/img",
 				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "lo_hi_UI_control.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -19068,12 +19014,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "playr_controls.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "resize_n4m_monitor_patcher.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
@@ -19091,42 +19031,6 @@
 				"bootpath" : "~/Documents/Max 8/Packages/Optron/externals/DataProcessor",
 				"patcherrelativepath" : "../../../../Optron/externals/DataProcessor",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vizzie-datatexconvert.js",
-				"bootpath" : "C74:/packages/Vizzie/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/Vizzie/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vz.playr.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-blackframe.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-pwindow.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
-				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
