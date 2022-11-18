@@ -12,6 +12,7 @@ OptronMini
 OptronZX
 vocalInput
 --Process--
+BeatSeq
 ChordDegree
 Concatenate
 Harmonizer
