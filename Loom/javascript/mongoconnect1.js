@@ -3,7 +3,6 @@ const { MongoClient } = require('mongodb');
 
 function outletDocument(doc, device) {
   delete doc._id; // TODO: Why do we have to delete these?
-  delete doc.ts;
   doc.ID = { instance: device };
   const data = JSON.stringify(doc);
   maxApi.outlet(data);
