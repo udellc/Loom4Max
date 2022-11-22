@@ -1,3 +1,0 @@
-english, one;
-spanish, uno;
-german, eine;
