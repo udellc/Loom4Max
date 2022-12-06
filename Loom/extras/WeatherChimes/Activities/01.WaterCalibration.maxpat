@@ -40,6 +40,492 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-88",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 525.0, 3083.8125, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-89",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 525.0, 3058.8125, 129.0, 22.0 ],
+					"text" : "expr ($f1 - 32.) * 0.555"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-90",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 525.0, 3032.8125, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 14.0,
+					"id" : "obj-84",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 287.0, 3032.8125, 148.0, 22.0 ],
+					"text" : "Hand-held Therm ºF"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 20.0,
+					"id" : "obj-85",
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 287.0, 3056.8125, 90.0, 34.0 ],
+					"text" : "60.0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-81",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 803.0, 3183.0, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-82",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 803.0, 3158.0, 129.0, 22.0 ],
+					"text" : "expr ($f1 - 32.) * 0.555"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-83",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 803.0, 3132.0, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-75",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 666.0, 3181.0, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-77",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 666.0, 3156.0, 129.0, 22.0 ],
+					"text" : "expr ($f1 - 32.) * 0.555"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-79",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 666.0, 3130.0, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-58",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 525.0, 3181.0, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-57",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 525.0, 3156.0, 129.0, 22.0 ],
+					"text" : "expr ($f1 - 32.) * 0.555"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-54",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 525.0, 3130.0, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 20.0,
+					"id" : "obj-46",
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 287.0, 3244.8125, 90.0, 34.0 ],
+					"text" : "0.00"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 20.0,
+					"id" : "obj-48",
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 287.0, 3206.8125, 90.0, 34.0 ],
+					"text" : "0.00"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 14.0,
+					"id" : "obj-50",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 287.0, 3144.8125, 148.0, 22.0 ],
+					"text" : "Hand-held Therm ºF"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 20.0,
+					"id" : "obj-52",
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 287.0, 3168.8125, 90.0, 34.0 ],
+					"text" : "60.0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 11.0, 3284.0, 192.0, 33.0 ],
+					"text" : "To convert ºF to ºC: Formula\t\n(32°F − 32) × 5/9 = 0°C"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 759.5, 2201.0, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 709.5, 2133.1875, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-40",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 772.5, 2133.1875, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 759.5, 2175.1875, 29.5, 22.0 ],
+					"text" : "!- 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"hidden" : 1,
+					"id" : "obj-17",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 971.0, 2527.1875, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 903.0, 2548.0, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 853.0, 2480.1875, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 916.0, 2480.1875, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 903.0, 2522.1875, 29.5, 22.0 ],
+					"text" : "!- 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"hidden" : 1,
+					"id" : "obj-9",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 878.0, 2419.1875, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 810.0, 2440.0, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 760.0, 2372.1875, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 823.0, 2372.1875, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 810.0, 2414.1875, 29.5, 22.0 ],
+					"text" : "!- 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 739.0, 2325.0, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 689.0, 2257.1875, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 752.0, 2257.1875, 59.0, 22.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 739.0, 2299.1875, 29.5, 22.0 ],
+					"text" : "!- 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-218",
 					"linecount" : 2,
@@ -47,7 +533,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 381.75, 451.0, 38.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Calibrating and validating sensors in lab before the field is important to ensure functionality and accuracy of your data!"
 				}
 
@@ -74,7 +559,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 3250.8125, 163.0, 22.0 ],
+					"patching_rect" : [ 211.0, 3250.8125, 67.0, 22.0 ],
 					"text" : "@ 6min"
 				}
 
@@ -115,7 +600,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 3212.8125, 163.0, 22.0 ],
+					"patching_rect" : [ 211.0, 3212.8125, 67.0, 22.0 ],
 					"text" : "@ 4min"
 				}
 
@@ -157,7 +642,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 113.0, 3168.8125, 90.0, 34.0 ],
-					"text" : "0.00"
+					"text" : "15.54"
 				}
 
 			}
@@ -169,7 +654,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 3174.8125, 163.0, 22.0 ],
+					"patching_rect" : [ 211.0, 3174.8125, 67.0, 22.0 ],
 					"text" : "@ 2min"
 				}
 
@@ -210,7 +695,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 2983.5, 445.0, 38.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Use a hand-held thermometer and note the temperature value in the other text box below."
 				}
 
@@ -224,7 +708,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 113.0, 3032.8125, 148.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Hand-held Therm ºC"
 				}
 
@@ -252,7 +735,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 3098.5, 445.0, 38.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Drop Ice into the bucket. Note the temp of the MS5803_119 sensor and the hand held thermometer every 2 min."
 				}
 
@@ -265,7 +747,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 3062.8125, 163.0, 22.0 ],
+					"patching_rect" : [ 211.0, 3062.8125, 81.0, 22.0 ],
 					"text" : "Before Ice"
 				}
 
@@ -279,7 +761,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 2940.5, 445.0, 38.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Note the Temperature value of the MS5803_119 sensor and update the text box below."
 				}
 
@@ -827,7 +1308,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "WiFi", ",", "Teros10", ",", "Water" ],
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "WiFi", ",", "Teros10", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -886,7 +1367,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ -1000.0, 1000.0 ],
+									"setminmax" : [ 0.0, 125.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -1278,7 +1759,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 410.0, 350.0, 50.0, 22.0 ],
-									"text" : "8"
+									"text" : "9"
 								}
 
 							}
@@ -1695,7 +2176,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "WiFi", ",", "Teros10", ",", "Water" ],
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "WiFi", ",", "Teros10", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1754,7 +2235,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ -1000.0, 1000.0 ],
+									"setminmax" : [ 0.0, 2.5 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -2055,8 +2536,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2761.8125, 452.0, 38.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 11.0, 2761.8125, 456.0, 38.0 ],
 					"text" : "What could we do to our measurements to get the actual depth of water in the bucket?"
 				}
 
@@ -2070,7 +2550,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 2862.5, 452.0, 69.0 ],
-					"presentation_linecount" : 4,
 					"text" : "We will test our MS5803_119 temparature sensor by putting ice in the bucket and chilling the water to close to 0ºC. We can test our measurements with a hand-held thermometer to validate our sensor readings."
 				}
 
@@ -2099,7 +2578,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 2824.125, 464.0, 499.375 ],
+					"patching_rect" : [ 5.0, 2824.125, 464.0, 575.375 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 2781.125, 136.5, 276.0 ],
 					"proportion" : 0.5,
@@ -2116,7 +2595,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 2718.8125, 452.0, 38.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Note the difference of change in between each measurement. Do the differences equal roughly 5 cm each time?"
 				}
 
@@ -2129,8 +2607,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.0, 2536.5, 139.0, 22.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 282.0, 2680.5, 139.0, 22.0 ],
 					"text" : "Difference Change"
 				}
 
@@ -2144,8 +2621,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 280.0, 2678.5, 90.0, 34.0 ],
-					"text" : "0.00"
+					"patching_rect" : [ 282.0, 2641.5, 90.0, 34.0 ],
+					"text" : "0."
 				}
 
 			}
@@ -2158,8 +2635,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 280.0, 2641.5, 90.0, 34.0 ],
-					"text" : "0.00"
+					"patching_rect" : [ 282.0, 2604.5, 90.0, 34.0 ],
+					"text" : "0."
 				}
 
 			}
@@ -2172,8 +2649,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 280.0, 2603.5, 90.0, 34.0 ],
-					"text" : "0.00"
+					"patching_rect" : [ 282.0, 2566.5, 90.0, 34.0 ],
+					"text" : "0."
 				}
 
 			}
@@ -2186,8 +2663,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 280.0, 2565.5, 90.0, 34.0 ],
-					"text" : "0.00"
+					"patching_rect" : [ 282.0, 2528.5, 90.0, 34.0 ],
+					"text" : "0."
 				}
 
 			}
@@ -2214,7 +2691,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 11.0, 2652.5, 90.0, 34.0 ],
-					"text" : "0.00"
+					"text" : "0."
 				}
 
 			}
@@ -2241,7 +2718,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 11.0, 2616.5, 90.0, 34.0 ],
-					"text" : "0.00"
+					"text" : "0."
 				}
 
 			}
@@ -2268,7 +2745,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 11.0, 2580.5, 90.0, 34.0 ],
-					"text" : "0.00"
+					"text" : "0."
 				}
 
 			}
@@ -2321,7 +2798,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 11.0, 2544.5, 90.0, 34.0 ],
-					"text" : "0.00"
+					"text" : "0."
 				}
 
 			}
@@ -2346,7 +2823,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 2060.5, 163.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Height Reading Meters"
 				}
 
@@ -2361,7 +2837,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 11.0, 2084.5, 90.0, 34.0 ],
-					"text" : "0.00"
+					"text" : "0."
 				}
 
 			}
@@ -2374,7 +2850,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 2447.8125, 452.0, 69.0 ],
-					"presentation_linecount" : 4,
 					"text" : "Fill the bucket with 5 more centimeters of water using your ruler or markings to guide. Note the height. Do this again adding 5 more centimeters of water, noting measurements in between for 10, 15, 20, and 25cm,"
 				}
 
@@ -2388,7 +2863,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 2390.8125, 452.0, 53.0 ],
-					"presentation_linecount" : 3,
 					"text" : "By increasing the water height in known increments using our ruler, we can see of the pressure-height differences match the difference in water height."
 				}
 
@@ -2413,8 +2887,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2309.5, 448.0, 53.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 11.0, 2309.5, 452.0, 53.0 ],
 					"text" : "The Sensor in the bucket cannot lay all the way flat on the very bottom, so the pressure of the sensor, and initial height, will be less than the actual height of the water, "
 				}
 
@@ -2459,8 +2932,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2212.5, 448.0, 38.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 11.0, 2212.5, 451.0, 38.0 ],
 					"text" : "The current depth of the water should be 5 centimeters or 0.05 meters. But the height displayed is LESS than that. Why?"
 				}
 
@@ -2506,7 +2978,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 1990.5, 448.0, 38.0 ],
-					"presentation_linecount" : 2,
 					"text" : "The Sensor Modules on the right show the water pressure and air pressure. The calculated water height in meters is under the equation. "
 				}
 
@@ -2610,7 +3081,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 410.0, 350.0, 50.0, 22.0 ],
-									"text" : "8"
+									"text" : "9"
 								}
 
 							}
@@ -3027,7 +3498,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "WiFi", ",", "Teros10", ",", "Water" ],
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "WiFi", ",", "Teros10", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3086,7 +3557,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ -1000.0, 1000.0 ],
+									"setminmax" : [ 0.0, 2.5 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -3388,7 +3859,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 480.0, 1979.3125, 517.0, 20.0 ],
-					"presentation_linecount" : 5,
 					"text" : "((Water Pressure - Air Pressure) * 100 (conversion to pascals)) / (Water Density * Gravity)"
 				}
 
@@ -3935,7 +4405,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "WiFi", ",", "Teros10", ",", "Water" ],
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "WiFi", ",", "Teros10", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3994,7 +4464,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ -1000.0, 1000.0 ],
+									"setminmax" : [ 300.0, 1200.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -4296,7 +4766,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 795.5, 445.0, 179.0 ],
-					"presentation_linecount" : 11,
 					"text" : "Atmospheric pressure is commonly measured with a barometer. In a barometer, a column of mercury in a glass tube rises or falls as the weight of the atmosphere changes.\nAn atmosphere (atm) is a unit of measurement equal to the average air pressure at sea level at a temperature of 15 degrees Celsius (59 degrees Fahrenheit).\nOne atmosphere is 1,013 millibars.\nAtmospheric pressure drops as altitude increases. The atmospheric pressure on Denali, Alaska, is about half that of Honolulu, Hawai'i. Honolulu is a city at sea level. Denali, also known as Mount McKinley, is the highest peak in North America."
 				}
 
@@ -4342,7 +4811,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 1821.5, 448.0, 163.0 ],
-					"presentation_linecount" : 10,
 					"text" : "Like atmospheric pressure, water pressure is the force exerted on a surface by a combination of the water and the air above due to gravity. Because the weight of water at a given temperature is constant, if we factor the more rapidly changing air pressure from water pressure,we can calculate a measure of water depth with 1mm accuracy!\nWater height can be calculated by:\n((Water Pressure - Air Pressure) * 100 (conversion to pascals)) / (Water Density * Gravity)\n\n(Water Pressure - Air Pressure * 100) / 997.77 * 9.81"
 				}
 
@@ -4863,7 +5331,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "WiFi", ",", "Teros10", ",", "Water" ],
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "WiFi", ",", "Teros10", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -4922,7 +5390,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ -1000.0, 1000.0 ],
+									"setminmax" : [ 300.0, 1200.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -5268,7 +5736,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 5.0, 1698.5, 445.0, 38.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Watch the MS5803_119 Temperature value. Does the value increase, decrease, or stay the same?"
 				}
 
@@ -5321,7 +5788,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 141.0, 1638.5, 90.0, 34.0 ],
-					"text" : "24.41"
+					"text" : "16.07"
 				}
 
 			}
@@ -5334,7 +5801,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 1552.5, 445.0, 53.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Note the value of Pressure and update in the text box below. Then choose Temperature from the Sensor dropdown menu and write the value of Temperature in the other text box."
 				}
 
@@ -5362,7 +5828,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 11.0, 1638.5, 90.0, 34.0 ],
-					"text" : "1011.4"
+					"text" : "1004.4"
 				}
 
 			}
@@ -5882,7 +6348,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "WiFi", ",", "Teros10", ",", "Water" ],
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "WiFi", ",", "Teros10", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -5941,7 +6407,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ -1000.0, 1000.0 ],
+									"setminmax" : [ 300.0, 1200.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -6243,7 +6709,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 5.0, 1370.5, 445.0, 38.0 ],
-					"presentation_linecount" : 2,
 					"text" : "These values are our bassline for atmosphere before we submerge our sensor."
 				}
 
@@ -6284,7 +6749,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 141.0, 1334.5, 90.0, 34.0 ],
-					"text" : "24.41"
+					"text" : "15.46"
 				}
 
 			}
@@ -6297,7 +6762,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 1248.5, 445.0, 53.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Note the value of Pressure and update in the text box below. Then choose Temperature from the Sensor dropdown menu and write the value of Temperature in the other text box."
 				}
 
@@ -6325,7 +6789,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 11.0, 1334.5, 90.0, 34.0 ],
-					"text" : "1011.4"
+					"text" : "999.35"
 				}
 
 			}
@@ -6338,7 +6802,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 1467.5, 445.0, 53.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Place the MS5803_119 sensor into the bottom of the bucket of water. A weight may need to be attached to the sensor to keep it on the bottom of the bucket."
 				}
 
@@ -6384,7 +6847,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 245.75, 451.0, 132.0 ],
-					"presentation_linecount" : 8,
 					"text" : "   • WeatherChimes Kit connected to WiFi-Max or MongoDB\n   • Refresh rate of 20 seconds or faster is recommended\n   • 5 gallon bucket\n   • Water\n   • Ice\n   • Metric Ruler with cm and or mm clearly visible\n   • Analog thermometer\n   • Marker"
 				}
 
@@ -6398,7 +6860,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 216.75, 350.0, 27.0 ],
-					"presentation_linecount" : 3,
 					"text" : "You'll Need: (recommended 1 / WC kit)"
 				}
 
@@ -8123,8 +8584,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -11232,7 +11691,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 622.0, 350.0, 50.0, 22.0 ],
-									"text" : "0"
+									"text" : "1"
 								}
 
 							}
@@ -11637,7 +12096,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "WiFi", ",", "Teros10", ",", "Water" ],
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "LTE", ",", "WiFi", ",", "Teros10", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -11696,7 +12155,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ -1000.0, 1000.0 ],
+									"setminmax" : [ 300.0, 1200.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -12103,7 +12562,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 19.0, 127.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "3"
 								}
 
 							}
@@ -13483,7 +13942,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 467.75, 445.0, 116.0 ],
+					"patching_rect" : [ 11.0, 467.75, 446.0, 116.0 ],
 					"text" : "With a marker and ruler, place a notch in 5cm increments up the inside of the bucket starting from the bottom. You may stop marking at 50cm or go as far as you wish.\nPre-fill your 5 gallon bucket to 5cm.\nHave a jug or other easy source of water to pour into the bucket during the activity.\nHave a large cup or bucket of ice within reach."
 				}
 
@@ -14036,8 +14495,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-187", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-138", 0 ],
 					"source" : [ "obj-137", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -14050,8 +14525,112 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 1 ],
+					"hidden" : 1,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-154", 0 ],
 					"source" : [ "obj-153", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"hidden" : 1,
+					"order" : 1,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"hidden" : 1,
+					"order" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-171", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"hidden" : 1,
+					"order" : 0,
+					"source" : [ "obj-174", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"hidden" : 1,
+					"order" : 1,
+					"source" : [ "obj-174", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"hidden" : 1,
+					"order" : 0,
+					"source" : [ "obj-178", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"hidden" : 1,
+					"order" : 1,
+					"source" : [ "obj-178", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"hidden" : 1,
+					"order" : 1,
+					"source" : [ "obj-180", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"hidden" : 1,
+					"order" : 0,
+					"source" : [ "obj-180", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-182", 0 ]
 				}
 
 			}
@@ -14066,6 +14645,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-198", 0 ],
 					"source" : [ "obj-197", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -14109,8 +14696,226 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"hidden" : 1,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 1 ],
+					"hidden" : 1,
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"hidden" : 1,
+					"order" : 0,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"hidden" : 1,
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-185", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 1 ],
+					"hidden" : 1,
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-83", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-79", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-186", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-208", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-212", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-77", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-215", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-81", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-83", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-205", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-88", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-88", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-89", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-89", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-90", 0 ]
 				}
 
 			}
@@ -14138,8 +14943,8 @@
 			}
 , 			{
 				"name" : "airpressure.jpeg",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/media/img",
-				"patcherrelativepath" : "../../../media/img",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom/media/img/Workshops",
+				"patcherrelativepath" : "../../../media/img/Workshops",
 				"type" : "JPEG",
 				"implicit" : 1
 			}
