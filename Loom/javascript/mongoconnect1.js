@@ -22,7 +22,7 @@ async function run(mongoclient, mongoDatabase, device) {
     await mongoclient.connect();
     const database = mongoclient.db(mongoDatabase);
     const collection = database.collection(device);
-    updateData(collection, device);
+    updateData(collection, device, 1);
     maxApi.outlet('connected');
 
     // Process any change event
