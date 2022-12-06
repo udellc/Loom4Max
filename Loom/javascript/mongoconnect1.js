@@ -23,6 +23,7 @@ async function run(mongoclient, mongoDatabase, device) {
     const database = mongoclient.db(mongoDatabase);
     const collection = database.collection(device);
     updateData(collection, device);
+    maxApi.outlet('connected');
 
     // Process any change event
     const changeStream = collection.watch([{ $match: { operationType: 'insert' } }]);
