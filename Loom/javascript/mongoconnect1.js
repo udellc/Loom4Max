@@ -35,10 +35,15 @@ async function run(mongoclient, mongoDatabase, device) {
     maxApi.addHandler('getLast', (packetCount) => {
       updateData(collection, device, packetCount);
     });
-
+    // Get only most recent data package
     maxApi.addHandler('grab', () => {
+      updateData(collection, device, 1);
+    });
+	// Get all data for eternity of device history
+	maxApi.addHandler('getAll', () => {
       updateData(collection, device);
     });
+
     await new Promise(() => {
       setTimeout(async () => {
       }, 1000);
