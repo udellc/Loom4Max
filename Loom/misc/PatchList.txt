@@ -27,6 +27,7 @@ SensorPlotter
 Sequencer
 Smooth
 Spring
+Stochastic
 TapTempo
 Threshold
 --Output--

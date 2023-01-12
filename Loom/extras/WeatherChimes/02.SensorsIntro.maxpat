@@ -47,7 +47,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 2436.5, 445.0, 69.0 ],
-					"presentation_linecount" : 4,
 					"text" : "A Piezometer measures pressure of a liquid or gas. They are made of materials that can produce electric energy upon application of mechanical stress, like quartz. These are often placed in boreholes or well pipes to monitor the pressure or depth of groundwater."
 				}
 
@@ -15586,6 +15585,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -21366,7 +21367,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-4",
-									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
+									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "BeatSeq", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -21772,63 +21773,63 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Controller.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Convert_Incoming.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DPtoVWC.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/media/img/Workshops",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/media/img/Workshops",
 				"patcherrelativepath" : "../../media/img/Workshops",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Li-ionDischargeVoltageCurveTypical.jpeg",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/media",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/media",
 				"patcherrelativepath" : "../../media",
 				"type" : "JPEG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LoamDPVWC.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/media/img/Workshops",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/media/img/Workshops",
 				"patcherrelativepath" : "../../media/img/Workshops",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Sensor.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SolarRadiationWorldAtlas.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/media/img/Workshops",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/media/img/Workshops",
 				"patcherrelativepath" : "../../media/img/Workshops",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SpectrumDiagJohnson.jpeg",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/media/img/Workshops",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/media/img/Workshops",
 				"patcherrelativepath" : "../../media/img/Workshops",
 				"type" : "JPEG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "airpressure.jpeg",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/media/img/Workshops",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/media/img/Workshops",
 				"patcherrelativepath" : "../../media/img/Workshops",
 				"type" : "JPEG",
 				"implicit" : 1
@@ -21841,14 +21842,14 @@
 			}
 , 			{
 				"name" : "generator.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mongoconnect1.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -21871,7 +21872,7 @@
 			}
 , 			{
 				"name" : "runningAvg.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/externals/DataProcessor",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/externals/DataProcessor",
 				"patcherrelativepath" : "../../externals/DataProcessor",
 				"type" : "JSON",
 				"implicit" : 1
