@@ -8,16 +8,13 @@ function outletDocument(doc) {
   delete doc._id; // TODO: Why do we have to delete these?
   doc.ID = { instance: device };
   const data = JSON.stringify(doc);
-  maxApi.outlet('done');
   maxApi.outlet(data);
 }
 
 // Queries MongoDB and outlets all data, optional count param
 function updateData(count) {
-  maxApi.post('teras');
   if (!collection || !device) return;
   const cursor = collection.find().sort({ $natural: -1 });
-  maxApi.post(count);
   if (count !== undefined) cursor.limit(count);
   maxApi.post(cursor.length);
   cursor.forEach((doc) => {

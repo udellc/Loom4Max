@@ -20,7 +20,6 @@ function json(j)
 	if(j == "connected"){
 		return;
 	}
-	
 	data = JSON.parse(j); // js object
 	
 	// Check if ranges should be updated
@@ -51,8 +50,6 @@ function json(j)
 		
 		if (data["ID"] && (data["ID"]["instance"]!=null)) {
 			last_device_number = data["ID"]["instance"]
-			post("Instance", last_device_number)
-			post()
 		}
 		
 		menu_updated = true
