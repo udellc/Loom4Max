@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "mongodb": "^4.13.0"
+    "mongodb": "^4.14.0"
   },
   "devDependencies": {
     "eslint": "^8.27.0",
