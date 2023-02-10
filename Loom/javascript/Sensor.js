@@ -16,10 +16,6 @@ var last_module = null
 // Upon new data
 function json(j)
 {
-	// Check if the connected message is sent from the MongoDB connector if so don't attempt to parse it as JSON
-	if(j == "connected"){
-		return;
-	}
 	data = JSON.parse(j); // js object
 	
 	// Check if ranges should be updated
