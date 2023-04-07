@@ -40,6 +40,66 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-124",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 475.0, 653.0, 295.0, 89.0 ],
+					"text" : "Overview of sonification (for text description later):\n- humidity -> boiling sample (volume & speed)\n- luminosity -> windchime sample (volume)\n- soil temp -> lava sample (volume & speed)\n- packet received -> play piano note\n- humidity -> 'Space Echo' (feedback)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-121",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1208.0, 922.0, 58.0, 22.0 ],
+					"text" : "speed $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-122",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1208.0, 886.0, 114.0, 22.0 ],
+					"text" : "scale -40. 40. 1. 1.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-120",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 142.0, 947.0, 58.0, 22.0 ],
+					"text" : "speed $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-117",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 142.0, 911.0, 107.0, 22.0 ],
+					"text" : "scale -40. 40. 1. 2."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-114",
 					"linecount" : 13,
 					"maxclass" : "comment",
@@ -65,33 +125,6 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
-					"id" : "obj-106",
-					"maxclass" : "flonum",
-					"maximum" : 0.0,
-					"minimum" : -60.0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 777.0, 1299.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-107",
-					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 777.0, 1263.0, 110.0, 22.0 ],
-					"text" : "scale 0. 100. 0. 90."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-109",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -109,7 +142,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 777.0, 1336.0, 74.0, 22.0 ],
+					"patching_rect" : [ 777.0, 1263.0, 74.0, 22.0 ],
 					"text" : "feedback $1"
 				}
 
@@ -167,7 +200,7 @@
 									"WarbleSpeed" : 2.0,
 									"bpm" : 120.0,
 									"clipping" : 0.63,
-									"feedback" : 0.0,
+									"feedback" : 52.0,
 									"highpass" : 637.795275590556912,
 									"inertia" : 2.687,
 									"live.menu" : 13.0,
@@ -202,7 +235,7 @@
 												"WarbleSpeed" : 2.0,
 												"bpm" : 120.0,
 												"clipping" : 0.63,
-												"feedback" : 0.0,
+												"feedback" : 52.0,
 												"highpass" : 637.795275590556912,
 												"inertia" : 2.687,
 												"live.menu" : 13.0,
@@ -2677,7 +2710,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1322.5, 788.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1393.5, 789.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -2690,7 +2723,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1039.0, 886.0, 72.0, 21.0 ],
+					"patching_rect" : [ 1023.0, 891.0, 72.0, 21.0 ],
 					"text" : "Soil Temp"
 				}
 
@@ -2704,7 +2737,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1252.0, 743.0, 91.0, 35.0 ],
+					"patching_rect" : [ 1323.0, 744.0, 91.0, 35.0 ],
 					"text" : "Sample Handling"
 				}
 
@@ -2717,7 +2750,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1115.0, 757.0, 91.0, 21.0 ],
+					"patching_rect" : [ 1174.5, 749.0, 91.0, 21.0 ],
 					"text" : "Routing"
 				}
 
@@ -2729,7 +2762,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1252.0, 788.0, 60.0, 22.0 ],
+					"patching_rect" : [ 1323.0, 789.0, 60.0, 22.0 ],
 					"text" : "loadmess"
 				}
 
@@ -2743,7 +2776,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1464.5, 845.0, 44.0, 23.0 ],
+					"patching_rect" : [ 1535.5, 846.0, 44.0, 23.0 ],
 					"text" : "loop 1"
 				}
 
@@ -2757,7 +2790,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1314.0, 879.0, 147.0, 25.0 ],
+					"patching_rect" : [ 1385.0, 880.0, 147.0, 25.0 ],
 					"text" : "play/stop current file"
 				}
 
@@ -2770,7 +2803,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1287.0, 879.0, 24.0, 24.0 ]
+					"patching_rect" : [ 1358.0, 880.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2785,7 +2818,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1251.5, 987.0, 129.0, 39.0 ],
+					"patching_rect" : [ 1322.5, 988.0, 129.0, 39.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -70 ],
@@ -2814,7 +2847,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "bang" ],
-					"patching_rect" : [ 1252.0, 953.0, 238.0, 23.0 ],
+					"patching_rect" : [ 1323.0, 954.0, 238.0, 23.0 ],
 					"text" : "sfplay~ 2"
 				}
 
@@ -2828,7 +2861,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1252.0, 845.0, 153.0, 23.0 ],
+					"patching_rect" : [ 1323.0, 846.0, 153.0, 23.0 ],
 					"text" : "open ./Samples/lava.wav"
 				}
 
@@ -2844,7 +2877,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1115.0, 886.0, 50.0, 22.0 ]
+					"patching_rect" : [ 1099.0, 891.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -2855,7 +2888,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1115.0, 852.0, 118.0, 22.0 ],
+					"patching_rect" : [ 1099.0, 857.0, 118.0, 22.0 ],
 					"text" : "scale -40. 40. -45. 0."
 				}
 
@@ -2868,7 +2901,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1115.0, 816.0, 50.0, 22.0 ]
+					"patching_rect" : [ 1174.5, 808.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -2879,7 +2912,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1115.0, 786.0, 105.0, 22.0 ],
+					"patching_rect" : [ 1174.5, 778.0, 105.0, 22.0 ],
 					"text" : "r soil_temperature"
 				}
 
@@ -2937,7 +2970,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 317.0, 545.0, 341.0, 117.0 ],
+					"patching_rect" : [ 1345.0, 416.5, 341.0, 117.0 ],
 					"text" : "TODO (Sonification):\n- hard pan boiling/windchimes samples left/right (x)\n- play piano note every time packet is received (x)\n- run entire soundscape through granulator/delay linked to humidity mapped to dry/wet (x)\n- 'earthy' sound for soil temp (x)\n- change windchimes samples to look at luminosity (x)\n- change boiling sample to look at temperature (x)"
 				}
 
@@ -3236,20 +3269,6 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Bold",
-					"id" : "obj-36",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 920.0, 91.0, 35.0 ],
-					"text" : "Temperature Value"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Ableton Sans Bold",
 					"id" : "obj-23",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -3396,7 +3415,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 118.0, 927.0, 50.0, 22.0 ]
+					"patching_rect" : [ 17.0, 947.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -3407,7 +3426,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 118.0, 893.0, 118.0, 22.0 ],
+					"patching_rect" : [ 17.0, 913.0, 118.0, 22.0 ],
 					"text" : "scale -40. 40. -45. 0."
 				}
 
@@ -8796,20 +8815,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-98", 0 ],
-					"source" : [ "obj-106", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-106", 0 ],
-					"source" : [ "obj-107", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-111", 0 ],
 					"source" : [ "obj-109", 0 ]
 				}
@@ -8817,8 +8822,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-107", 0 ],
+					"destination" : [ "obj-98", 0 ],
 					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-120", 0 ],
+					"source" : [ "obj-117", 0 ]
 				}
 
 			}
@@ -8826,6 +8838,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-62", 0 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-100", 0 ],
+					"source" : [ "obj-120", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-121", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-121", 0 ],
+					"source" : [ "obj-122", 0 ]
 				}
 
 			}
@@ -9159,7 +9192,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"order" : 0,
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
+					"order" : 1,
 					"source" : [ "obj-55", 0 ]
 				}
 
@@ -9313,7 +9355,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-117", 0 ],
+					"order" : 0,
+					"source" : [ "obj-81", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
+					"order" : 1,
 					"source" : [ "obj-81", 0 ]
 				}
 
