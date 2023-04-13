@@ -33,14 +33,16 @@ async function run(
     const uri = `mongodb+srv://${mongoUsername}:${mongoPassword}@${mongoUniqueClusterVariable}.mongodb.net/${mongoDatabase}?retryWrites=true&w=majority`;
     const mongoclient = new MongoClient(uri);
     maxApi.post(`Connecting to MongoDB at ${uri}`);
+    maxApi.outlet('status', 'connecting');
     device = newDevice;
     await mongoclient.connect();
     const database = mongoclient.db(mongoDatabase);
     collection = database.collection(device);
-    maxApi.outlet('connected');
+    maxApi.outlet('status', 'connected');
   } catch (e) {
     maxApi.post(e.message);
     maxApi.post('Error with MongoClient');
+    maxApi.outlet('status', 'error')
   }
 }
 
