@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 84.0, 1468.0, 713.0 ],
+		"rect" : [ 803.0, 84.0, 699.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,16 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 380.5, 491.5, 150.0, 20.0 ]
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"linecount" : 2,
@@ -254,6 +244,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-30",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -262,13 +253,20 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 15.5, 136.5, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 58.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 1.0, 54.0, 50.0, 22.0 ],
+					"textcolor" : [ 0.384313725490196, 0.384313725490196, 0.384313725490196, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 1.0, 0.345098039215686, 0.298039215686275, 1.0 ],
+					"activefgdialcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
+					"activeneedlecolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"appearance" : 3,
+					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 0.0 ],
+					"dialcolor" : [ 0.929411764705882, 0.941176470588235, 0.956862745098039, 1.0 ],
+					"focusbordercolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 0.0 ],
 					"id" : "obj-28",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -277,8 +275,36 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 15.5, 62.0, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 8.5, 50.0, 63.0 ],
+					"presentation_rect" : [ -1.0, 3.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : "themecolor.live_active_automation"
+						}
+,
+						"activefgdialcolor" : 						{
+							"expression" : "themecolor.maxwindow_posttext"
+						}
+,
+						"activeneedlecolor" : 						{
+							"expression" : "themecolor.maxwindow_posttext"
+						}
+,
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"dialcolor" : 						{
+							"expression" : "themecolor.live_output_curve_outline_color"
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : "themecolor.maxwindow_posttext"
+						}
+,
 						"valueof" : 						{
 							"parameter_longname" : "live.dial",
 							"parameter_mmax" : 999.0,
@@ -289,6 +315,7 @@
 
 					}
 ,
+					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"varname" : "livedial"
 				}
 

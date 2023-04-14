@@ -8,16 +8,13 @@ function outletDocument(doc) {
   delete doc._id; // TODO: Why do we have to delete these?
   doc.ID = { instance: device };
   const data = JSON.stringify(doc);
-  maxApi.outlet('done');
   maxApi.outlet(data);
 }
 
 // Queries MongoDB and outlets all data, optional count param
 function updateData(count) {
-  maxApi.post('teras');
   if (!collection || !device) return;
   const cursor = collection.find().sort({ $natural: -1 });
-  maxApi.post(count);
   if (count !== undefined) cursor.limit(count);
   maxApi.post(cursor.length);
   cursor.forEach((doc) => {
@@ -36,14 +33,16 @@ async function run(
     const uri = `mongodb+srv://${mongoUsername}:${mongoPassword}@${mongoUniqueClusterVariable}.mongodb.net/${mongoDatabase}?retryWrites=true&w=majority`;
     const mongoclient = new MongoClient(uri);
     maxApi.post(`Connecting to MongoDB at ${uri}`);
+    maxApi.outlet('status', 'connecting');
     device = newDevice;
     await mongoclient.connect();
     const database = mongoclient.db(mongoDatabase);
     collection = database.collection(device);
-    maxApi.outlet('connected');
+    maxApi.outlet('status', 'connected');
   } catch (e) {
     maxApi.post(e.message);
     maxApi.post('Error with MongoClient');
+    maxApi.outlet('status', 'error')
   }
 }
 
