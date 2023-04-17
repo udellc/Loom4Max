@@ -21,7 +21,6 @@ function assembleTimeStamp(year,month,day,hour,min,sec)
 			.concat(":")
 			.concat(sec.toString());
 	t = fixTimeStamp(t);
-	post(t);
 	outlet(0,t)
 }
 
@@ -104,13 +103,13 @@ function numberOfTimestampsRequested(fromTimestamp, toTimestamp, period){
 	outlet(0, packets);
 	messnamed("requestedPackets", packets)
 }
-function splitTimestamp(timestamp){
-	var year = 	lastTimestamp.substr(0,4);
-	var month = lastTimestamp.substr(5,2);
-	var day =	lastTimestamp.substr(8,2);
-	var hour = 	lastTimestamp.substr(11, 2)
-	var min =	lastTimestamp.substr(14,2)
-	var sec =	lastTimestamp.substr(17,2)
+function splitTimestamp(t){
+	var year = 	t.substr(0,4);
+	var month = t.substr(5,2);
+	var day =	t.substr(8,2);
+	var hour = 	t.substr(11, 2)
+	var min =	t.substr(14,2)
+	var sec =	t.substr(17,2)
 	
 	outlet(0, year);
 	outlet(1, month);
@@ -119,44 +118,40 @@ function splitTimestamp(timestamp){
 	outlet(4, min);
 	outlet(5, sec);
 }
+function trimZeros(num){
+	
+	if(num.slice(0,1) == "0"){
+		if(num.slice(1,2) == "0"){
+			num = num.replace(/^0+/, '0');
+		} else {
+			num = num.replace(/^0+/, '');
+		}
+	}
+
+	return num;
+}
 function convertToDBTimestamp(from, to){
 	
 	var year = 	from.substr(0,4);
-	var month = from.substr(5,2).replace(/^0+/, '');
-	var day =	from.substr(8,2).replace(/^0+/, '');
-	var hour = 	from.substr(11, 2).replace(/^0+/, '');
-	var min =	from.substr(14,2).replace(/^0+/, '');
-	var sec =	from.substr(17,2).replace(/^0+/, '');
+	var month = trimZeros(from.substr(5,2));
+	var day = trimZeros(from.substr(8,2));
+	var hour = trimZeros(from.substr(11, 2));
+	var min = trimZeros(from.substr(14,2));
+	var sec = trimZeros(from.substr(17,2));
 	
-	from = year.concat("-")
-			.concat(month)
-			.concat("-")
-			.concat(day)
-			.concat("T")
-			.concat(hour)
-			.concat(":")
-			.concat(min)
-			.concat(":")
-			.concat(sec);
+	from = year.concat("-").concat(month).concat("-").concat(day).concat("T")
+			.concat(hour).concat(":").concat(min).concat(":").concat(sec);
 	outlet(0, from)
 	
 	var year = 	to.substr(0,4);
-	var month = to.substr(5,2).replace(/^0+/, '');
-	var day =	to.substr(8,2).replace(/^0+/, '');
-	var hour = 	to.substr(11, 2).replace(/^0+/, '');
-	var min =	to.substr(14,2).replace(/^0+/, '');
-	var sec =	to.substr(17,2).replace(/^0+/, '');
+	var month = trimZeros(to.substr(5,2));
+	var day =	trimZeros(to.substr(8,2));
+	var hour = 	trimZeros(to.substr(11, 2));
+	var min =	trimZeros(to.substr(14,2));
+	var sec =	trimZeros(to.substr(17,2));
 	
-	to = year.concat("-")
-			.concat(month)
-			.concat("-")
-			.concat(day)
-			.concat("T")
-			.concat(hour)
-			.concat(":")
-			.concat(min)
-			.concat(":")
-			.concat(sec);
+	to = year.concat("-").concat(month).concat("-").concat(day).concat("T")
+			.concat(hour).concat(":").concat(min).concat(":").concat(sec);
 	outlet(1, to)
 }
 	
