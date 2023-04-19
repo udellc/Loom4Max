@@ -47,7 +47,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1611.0, 214.5, 171.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "32 subdivisions over 2 rhythmic cycles"
 				}
 
@@ -61,7 +60,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1611.0, 176.0, 171.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Double click to see Link Phasor Transport"
 				}
 
@@ -84,7 +82,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1107.0, 108.0, 170.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Transport musit be turned on"
 				}
 
@@ -130,7 +127,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 933.0, 385.0, 110.0, 20.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Max Transport >>"
 				}
 
@@ -142,7 +138,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 968.0, 370.0, 68.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Manual >>"
 				}
 
@@ -181,7 +176,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 420.0, 507.0, 315.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "<< Click-hold-drag to turn up volume of sample playback"
 				}
 
@@ -242,7 +236,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1577.0, 99.5, 171.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Set number of beats that form a grouping (i.e. a bar) "
 				}
 
@@ -256,7 +249,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1553.0, 61.5, 184.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Set tempo for all participants in the Link timeline / session"
 				}
 
@@ -396,7 +388,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 475.5, 704.0, 150.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "<< Shift+Click preset boxes to save and recall rhythms"
 				}
 
@@ -877,7 +868,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1072.75, 20.0, 18.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "|\n|"
 				}
 
@@ -890,7 +880,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1003.75, 20.0, 18.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "|\n|"
 				}
 
@@ -979,7 +968,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 803.0, 74.0, 188.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "<< Calculated millisecond period"
 				}
 
@@ -2568,7 +2556,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 303.25, 200.0, 29.5, 22.0 ],
-									"text" : "50"
+									"text" : "33"
 								}
 
 							}
@@ -4019,7 +4007,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-4",
-									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "BeatSeq", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
+									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "BeatSeq", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "Stochastic", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -4508,8 +4496,8 @@
 			}
 , 			{
 				"name" : "bangconstrict.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/patchers/MPG",
-				"patcherrelativepath" : "../../../patchers/MPG",
+				"bootpath" : "~/Documents/Max 8/Library/MPG",
+				"patcherrelativepath" : "../../../../../../Library/MPG",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4546,8 +4534,8 @@
 			}
 , 			{
 				"name" : "urn+.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/patchers/MPG",
-				"patcherrelativepath" : "../../../patchers/MPG",
+				"bootpath" : "~/Documents/Max 8/Library/MPG",
+				"patcherrelativepath" : "../../../../../../Library/MPG",
 				"type" : "JSON",
 				"implicit" : 1
 			}
