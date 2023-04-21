@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 41.0, 84.0, 1468.0, 713.0 ],
+		"rect" : [ 41.0, 84.0, 1069.0, 699.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,43 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-122",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1237.0, 280.0, 54.0, 22.0 ],
+					"text" : "delay 10"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"linecount" : 4,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1361.0, 283.666666507720947, 193.0, 64.0 ],
+					"text" : "getLast 2 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 851.0, 283.666666507720947, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-56",
 					"maxclass" : "button",
@@ -156,7 +193,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 824.686293959617615, 83.0, 116.0, 21.0 ],
-					"text" : "2021-2-0T0:0:0"
+					"text" : "2023-4-17T0:0:0"
 				}
 
 			}
@@ -171,7 +208,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 966.333347678184509, 89.5, 116.0, 21.0 ],
-					"text" : "2023-4-17T15:39:35"
+					"text" : "2023-12-17T16:42:16"
 				}
 
 			}
@@ -194,7 +231,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 836.186293959617615, 254.666666507720947, 72.0, 22.0 ],
+					"patching_rect" : [ 806.186293959617615, 247.666666507720947, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -310,16 +347,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-328",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 922.333347678184509, 247.666666507720947, 204.0, 64.0 ],
+					"patching_rect" : [ 922.333347678184509, 247.666666507720947, 204.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 8,
-					"presentation_rect" : [ 394.030927777290344, 312.769597818131501, 126.441379308700562, 119.0 ],
-					"text" : "getByTime 2021-2-0T0:0:0 2023-4-17T15:39:35 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
+					"presentation_linecount" : 6,
+					"presentation_rect" : [ 394.030927777290344, 312.769597818131501, 127.0, 91.0 ],
+					"text" : "set getByTime s s ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 				}
 
 			}
@@ -389,7 +426,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 629.941379308700562, 2169.0, 127.0, 22.0 ],
-					"text" : "2023-4-17T15:39:35"
+					"text" : "2023-12-17T16:42:16"
 				}
 
 			}
@@ -413,7 +450,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 336.5, 2177.0, 127.0, 22.0 ],
-					"text" : "2021-2-0T0:0:0"
+					"text" : "2023-4-17T0:0:0"
 				}
 
 			}
@@ -455,7 +492,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 108.941379308700562, 2191.0, 139.0, 50.0 ],
-					"text" : "convertToDBTimestamp 2021-02-00T00:00:00 2023-04-17T15:39:35"
+					"text" : "convertToDBTimestamp 2023-04-17T00:00:00 2023-12-17T16:42:16"
 				}
 
 			}
@@ -575,7 +612,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 297.941379308700562, 1970.0, 125.0, 22.0 ],
-					"text" : "2023-04-17T15:39:35"
+					"text" : "2023-12-17T16:42:16"
 				}
 
 			}
@@ -599,7 +636,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.941379308700562, 1970.0, 125.0, 22.0 ],
-					"text" : "2021-02-00T00:00:00"
+					"text" : "2023-04-17T00:00:00"
 				}
 
 			}
@@ -647,7 +684,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 892.0, 1769.0, 127.0, 22.0 ],
-					"text" : "2021-02-00T00:00:00"
+					"text" : "2023-04-17T00:00:00"
 				}
 
 			}
@@ -700,7 +737,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 759.0, 1673.0, 127.0, 50.0 ],
-					"text" : "checkToIsAfterFrom 2021-02-00T00:00:00 2023-04-17T15:39:35"
+					"text" : "checkToIsAfterFrom 2023-04-17T00:00:00 2023-12-17T16:42:16"
 				}
 
 			}
@@ -832,7 +869,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 936.0, 1452.0, 125.0, 22.0 ],
-					"text" : "2021-02-00T00:00:00"
+					"text" : "2023-04-17T00:00:00"
 				}
 
 			}
@@ -868,7 +905,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 789.0, 1452.0, 125.0, 22.0 ],
-					"text" : "2023-04-17T15:39:35"
+					"text" : "2023-12-17T16:42:16"
 				}
 
 			}
@@ -945,7 +982,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 12.0, 1803.0, 127.0, 50.0 ],
-					"text" : "updateToTimeStamp 2023-04-17T15:39:35 s"
+					"text" : "updateToTimeStamp 2023-12-17T16:42:16 s"
 				}
 
 			}
@@ -1041,7 +1078,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 331.680493891239166, 1638.0, 149.0, 22.0 ],
-					"text" : "2023-04-17T15:39:35"
+					"text" : "2023-04-20T21:04:39"
 				}
 
 			}
@@ -1065,7 +1102,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 174.5, 1638.0, 125.595197319984436, 22.0 ],
-					"text" : "2023-04-17T15:39:35"
+					"text" : "2023-04-20T21:04:39"
 				}
 
 			}
@@ -1239,7 +1276,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 174.5, 1297.333346843719482, 50.0, 22.0 ],
-					"text" : "\"17\""
+					"text" : "\"20\""
 				}
 
 			}
@@ -1251,7 +1288,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 248.5, 1297.333346843719482, 50.0, 22.0 ],
-					"text" : "\"15\""
+					"text" : "\"21\""
 				}
 
 			}
@@ -1263,7 +1300,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 322.5, 1297.333346843719482, 50.0, 22.0 ],
-					"text" : "\"39\""
+					"text" : "\"04\""
 				}
 
 			}
@@ -1275,7 +1312,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 396.70000684261322, 1297.333346843719482, 50.0, 22.0 ],
-					"text" : "\"35\""
+					"text" : "\"39\""
 				}
 
 			}
@@ -1383,7 +1420,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.928543388843536, 1186.200017273426056, 344.400004386901855, 22.0 ],
-					"text" : "splitTimestamp 2023-04-17T15:39:35"
+					"text" : "splitTimestamp 2023-04-20T21:04:39"
 				}
 
 			}
@@ -1593,7 +1630,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 942.359008193016052, 1250.000032305717468, 342.307695269584656, 36.0 ],
-					"text" : "findSamplingPeriod \"2023-04-17 15:39:35\" \"2023-04-17 15:23:58\""
+					"text" : "findSamplingPeriod \"2023-04-20 21:4:39\" \"2023-04-20 21:4:39\""
 				}
 
 			}
@@ -1765,7 +1802,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1347.859200654029337, 1065.000030815601349, 135.470086336135864, 22.0 ],
-					"text" : "\"2023-04-17 15:39:35\""
+					"text" : "\"2023-04-20 21:4:39\""
 				}
 
 			}
@@ -1801,7 +1838,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 988.235308766365051, 1065.000030815601349, 155.880343556404114, 22.0 ],
-					"text" : "\"2023-04-17 15:23:58\""
+					"text" : "\"2023-04-20 21:4:39\""
 				}
 
 			}
@@ -1951,7 +1988,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 506.76189124584198, 1514.638718783855438, 137.179488062858582, 22.0 ],
-					"text" : "2023-04-17T15:39:35"
+					"text" : "2023-04-20T21:04:39"
 				}
 
 			}
@@ -2004,7 +2041,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.928543388843536, 1514.638718783855438, 315.811968505382538, 22.0 ],
-					"text" : "assembleTimeStamp 2023 4 17 15 39 35"
+					"text" : "assembleTimeStamp 2023 4 20 21 4 39"
 				}
 
 			}
@@ -2040,7 +2077,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 506.76189124584198, 1010.638711750507355, 137.179488062858582, 22.0 ],
-					"text" : "2021-02-00T00:00:00"
+					"text" : "2023-04-17T00:00:00"
 				}
 
 			}
@@ -2093,7 +2130,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.928543388843536, 1010.638711750507355, 315.811968505382538, 22.0 ],
-					"text" : "assembleTimeStamp 2021 2 0 0 0 0"
+					"text" : "assembleTimeStamp 2023 4 17 0 0 0"
 				}
 
 			}
@@ -3881,19 +3918,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-108",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1328.0, 283.666666507720947, 207.0, 50.0 ],
-					"text" : "getLast 2 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-89",
 					"maxclass" : "number",
@@ -3979,7 +4003,7 @@
 					"patching_rect" : [ 1485.0, 61.900069999999999, 55.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 329.456806659698486, 239.126553277308176, 41.62962931394577, 23.0 ],
-					"text" : "100",
+					"text" : "2",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
@@ -4036,7 +4060,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1237.0, 229.483883559703827, 127.0, 22.0 ],
-					"text" : "pak getLast 0 s s s s s"
+					"text" : "pak getLast 2 s s s s s"
 				}
 
 			}
@@ -4663,13 +4687,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-108", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-110", 0 ],
 					"source" : [ "obj-109", 0 ]
 				}
@@ -4707,7 +4724,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-328", 0 ],
+					"destination" : [ "obj-328", 1 ],
+					"order" : 0,
+					"source" : [ "obj-118", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"order" : 1,
 					"source" : [ "obj-118", 0 ]
 				}
 
@@ -4730,6 +4756,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-302", 2 ],
 					"source" : [ "obj-121", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"source" : [ "obj-122", 0 ]
 				}
 
 			}
@@ -6413,21 +6446,30 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-108", 1 ],
+					"destination" : [ "obj-328", 0 ],
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"order" : 1,
 					"source" : [ "obj-59", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-108", 0 ],
-					"source" : [ "obj-60", 1 ]
+					"destination" : [ "obj-80", 1 ],
+					"order" : 0,
+					"source" : [ "obj-59", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-108", 0 ],
+					"destination" : [ "obj-59", 1 ],
 					"order" : 0,
 					"source" : [ "obj-60", 0 ]
 				}
@@ -6435,16 +6477,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-59", 1 ],
-					"order" : 1,
-					"source" : [ "obj-60", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-68", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-60", 0 ]
 				}
 
@@ -6598,6 +6632,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-271", 1 ],
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-80", 0 ]
 				}
 
 			}
