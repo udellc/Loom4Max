@@ -79,7 +79,7 @@ function updateToTimeStamp(toTimestamp, lastPacket){
 }
 // Checks that the second timestamp does not occur before the first timestamp,
 // if it is, then it sets the first timestamp to be equal to the last.
-function checkToIsAfterFrom(fromTimestamp, toTimestamp){
+function checkToIsAfterFrom(toTimestamp, fromTimestamp){
 	var d1 = new Date(fromTimestamp).getTime()/1000;
 	var d2 = new Date(toTimestamp).getTime()/1000;
 	
