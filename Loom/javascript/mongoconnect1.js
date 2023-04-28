@@ -43,9 +43,17 @@ function updateTimeData(startTime, endTime) {
       }
     }
   ])
-  cursor.forEach((doc) => {                                                    //outlet the data the same way
-    outletDocument(doc, device);                                              //as the updateData function
-  });
+  var docs = cursor.toArray().then(docs => {
+    // TODO prescaler
+    let n = Math.max(1, Math.floor(docs.length / 500))
+    let count = 0
+    docs.forEach((doc) => {                                                    //outlet the data the same way
+      if (doc.Packet.Number % n == 0) {
+        outletDocument(doc, device)                                              //as the updateData function
+        count += 1
+      }
+    })
+  })
 }
 
 async function run(
