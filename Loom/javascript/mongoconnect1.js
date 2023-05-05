@@ -24,7 +24,7 @@ function updateData(count) {
   });
 }
 
-function updateTimeData(startTime, endTime) {
+function updateTimeData(startTime, endTime, prescaler) {
   if (!collection || !device) return;
   var cursor = collection.aggregate([
     {
@@ -44,13 +44,9 @@ function updateTimeData(startTime, endTime) {
     }
   ])
   var docs = cursor.toArray().then(docs => {
-    // TODO prescaler
-    let n = Math.max(1, Math.floor(docs.length / 500))
-    let count = 0
-    docs.forEach((doc) => {                                                    //outlet the data the same way
-      if (doc.Packet.Number % n == 0) {
-        outletDocument(doc, device)                                              //as the updateData function
-        count += 1
+    docs.forEach((doc) => {
+      if (doc.Packet.Number % prescaler == 0) {
+        outletDocument(doc, device)
       }
     })
   })
@@ -89,15 +85,15 @@ maxApi.addHandler('getLast', (packetCount, mongoUsername, mongoPassword, mongoUn
   }
 });
 //Pulls packets via a specified start and end time
-maxApi.addHandler('getByTime', (startTime, endTime, mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice) => {
+maxApi.addHandler('getByTime', (startTime, endTime, mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice, prescaler) => {
   startTime = startTime.replace("T"," ")
   endTime = endTime.replace("T"," ")
 
   if (!collection || !device) {
     run(mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice)
-      .then(() => updateTimeData(startTime, endTime));
+      .then(() => updateTimeData(startTime, endTime, prescaler));
   } else {
-    updateTimeData(startTime, endTime);
+    updateTimeData(startTime, endTime, prescaler);
   }
 });
 // Get only most recent data package
