@@ -17,13 +17,24 @@ function outletDocument(doc) {
 // Queries MongoDB and outlets all data, optional count param
 function updateData(count) {
   if (!collection || !device) return;
-  const cursor = collection.find().sort({ $natural: -1 });
+  const cursor = collection.find().sort({ $natural: 1 });
   if (count !== undefined) cursor.limit(count);
   cursor.forEach((doc) => {
     outletDocument(doc, device);
   });
 }
 
+async function updateDataReverse(count) {
+  if (!collection || !device) return;
+  const cursor = collection.find().sort({ $natural: -1 });
+  if (count !== undefined){cursor.limit(count)}
+  const allPackets = await cursor.toArray()
+  allPackets.reverse().forEach((doc) => {
+  	outletDocument(doc, device);
+  });
+}
+
+// Queries MongoDB and outlets all data between startTime and endTime
 function updateTimeData(startTime, endTime, prescaler) {
   if (!collection || !device) return;
   var cursor = collection.aggregate([
@@ -79,9 +90,27 @@ async function run(
 maxApi.addHandler('getLast', (packetCount, mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice) => {
   if (!collection || !device) {
     run(mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice)
-      .then(() => updateData(packetCount));
+      .then(() => updateDataReverse(packetCount));
   } else {
-    updateData(packetCount);
+    updateDataReverse(packetCount);
+  }
+});
+// Pulls the first packet
+maxApi.addHandler('getFirst', (mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice) => {
+  if (!collection || !device) {
+    run(mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice)
+      .then(() => updateData(1));
+  } else {
+    updateData(1);
+  }
+});
+// Pulls the two most recent packets 
+maxApi.addHandler('getLastTwo', (mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice) => {
+  if (!collection || !device) {
+    run(mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice)
+      .then(() => updateDataReverse(2));
+  } else {
+    updateDataReverse(2);
   }
 });
 //Pulls packets via a specified start and end time
