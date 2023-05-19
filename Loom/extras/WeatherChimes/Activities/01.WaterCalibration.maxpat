@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 3,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 972.0, 779.0 ],
+		"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -85,7 +85,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.0, 3032.8125, 148.0, 22.0 ],
+					"patching_rect" : [ 287.0, 3032.8125, 148.0, 23.0 ],
 					"text" : "Hand-held Therm ºF"
 				}
 
@@ -257,7 +257,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.0, 3144.8125, 148.0, 22.0 ],
+					"patching_rect" : [ 287.0, 3144.8125, 148.0, 23.0 ],
 					"text" : "Hand-held Therm ºF"
 				}
 
@@ -283,7 +283,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 3284.0, 192.0, 33.0 ],
+					"patching_rect" : [ 11.0, 3284.0, 644.0, 34.0 ],
 					"text" : "To convert ºF to ºC: Formula\t\n(32°F − 32) × 5/9 = 0°C"
 				}
 
@@ -532,7 +532,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 381.75, 451.0, 38.0 ],
+					"patching_rect" : [ 11.0, 381.75, 451.0, 39.0 ],
 					"text" : "Calibrating and validating sensors in lab before the field is important to ensure functionality and accuracy of your data!"
 				}
 
@@ -559,7 +559,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 3250.8125, 67.0, 22.0 ],
+					"patching_rect" : [ 211.0, 3250.8125, 67.0, 23.0 ],
 					"text" : "@ 6min"
 				}
 
@@ -600,7 +600,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 3212.8125, 67.0, 22.0 ],
+					"patching_rect" : [ 211.0, 3212.8125, 67.0, 23.0 ],
 					"text" : "@ 4min"
 				}
 
@@ -627,7 +627,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 113.0, 3144.8125, 148.0, 22.0 ],
+					"patching_rect" : [ 113.0, 3144.8125, 148.0, 23.0 ],
 					"text" : "Hand-held Therm ºC"
 				}
 
@@ -654,7 +654,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 3174.8125, 67.0, 22.0 ],
+					"patching_rect" : [ 211.0, 3174.8125, 67.0, 23.0 ],
 					"text" : "@ 2min"
 				}
 
@@ -667,7 +667,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 3144.8125, 90.0, 22.0 ],
+					"patching_rect" : [ 11.0, 3144.8125, 90.0, 23.0 ],
 					"text" : "MS5803 ºC"
 				}
 
@@ -694,7 +694,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2983.5, 445.0, 38.0 ],
+					"patching_rect" : [ 11.0, 2983.5, 445.0, 39.0 ],
 					"text" : "Use a hand-held thermometer and note the temperature value in the other text box below."
 				}
 
@@ -707,7 +707,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 113.0, 3032.8125, 148.0, 22.0 ],
+					"patching_rect" : [ 113.0, 3032.8125, 148.0, 23.0 ],
 					"text" : "Hand-held Therm ºC"
 				}
 
@@ -734,7 +734,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 3098.5, 445.0, 38.0 ],
+					"patching_rect" : [ 11.0, 3098.5, 445.0, 39.0 ],
 					"text" : "Drop Ice into the bucket. Note the temp of the MS5803_119 sensor and the hand held thermometer every 2 min."
 				}
 
@@ -747,7 +747,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 3062.8125, 81.0, 22.0 ],
+					"patching_rect" : [ 211.0, 3062.8125, 81.0, 23.0 ],
 					"text" : "Before Ice"
 				}
 
@@ -760,7 +760,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2940.5, 445.0, 38.0 ],
+					"patching_rect" : [ 11.0, 2940.5, 445.0, 39.0 ],
 					"text" : "Note the Temperature value of the MS5803_119 sensor and update the text box below."
 				}
 
@@ -773,7 +773,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 3032.8125, 90.0, 22.0 ],
+					"patching_rect" : [ 11.0, 3032.8125, 90.0, 23.0 ],
 					"text" : "MS5803 ºC"
 				}
 
@@ -825,8 +825,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1075,9 +1075,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.0, 22.5, 58.0, 24.0 ],
+									"patching_rect" : [ 39.0, 22.5, 58.0, 25.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 6.0, 6.0, 138.0, 24.0 ],
+									"presentation_rect" : [ 6.0, 6.0, 138.0, 25.0 ],
 									"text" : "Sensor",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -1182,7 +1182,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 33.0 ],
+									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 34.0 ],
 									"text" : "Outgoing data of current parameter"
 								}
 
@@ -1330,7 +1330,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 501.0, 50.5, 309.0, 89.0 ],
+									"patching_rect" : [ 501.0, 50.5, 309.0, 91.0 ],
 									"text" : "\"{ \\\"type\\\": \\\"data\\\", \\\"id\\\": { \\\"name\\\": \\\"Device\\\", \\\"instance\\\": 13}, \\\"contents\\\": [ { \\\"module\\\": \\\"Analog\\\", \\\"data\\\": { \\\"Vbat\\\": 4.25129, \\\"A0\\\": 166, \\\"A1\\\": 1636, \\\"A2\\\": 1122, \\\"A3\\\": 1454, \\\"A4\\\": 1649, \\\"A5\\\": 1626 } }, { \\\"module\\\": \\\"Digital\\\", \\\"data\\\": { \\\"5\\\": true, \\\"6\\\": true } } ] }\""
 								}
 
@@ -1693,8 +1693,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1943,9 +1943,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.0, 22.5, 58.0, 24.0 ],
+									"patching_rect" : [ 39.0, 22.5, 58.0, 25.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 6.0, 6.0, 138.0, 24.0 ],
+									"presentation_rect" : [ 6.0, 6.0, 138.0, 25.0 ],
 									"text" : "Sensor",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -2050,7 +2050,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 33.0 ],
+									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 34.0 ],
 									"text" : "Outgoing data of current parameter"
 								}
 
@@ -2198,7 +2198,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 501.0, 50.5, 309.0, 89.0 ],
+									"patching_rect" : [ 501.0, 50.5, 309.0, 91.0 ],
 									"text" : "\"{ \\\"type\\\": \\\"data\\\", \\\"id\\\": { \\\"name\\\": \\\"Device\\\", \\\"instance\\\": 13}, \\\"contents\\\": [ { \\\"module\\\": \\\"Analog\\\", \\\"data\\\": { \\\"Vbat\\\": 4.25129, \\\"A0\\\": 166, \\\"A1\\\": 1636, \\\"A2\\\": 1122, \\\"A3\\\": 1454, \\\"A4\\\": 1649, \\\"A5\\\": 1626 } }, { \\\"module\\\": \\\"Digital\\\", \\\"data\\\": { \\\"5\\\": true, \\\"6\\\": true } } ] }\""
 								}
 
@@ -2536,7 +2536,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2761.8125, 456.0, 38.0 ],
+					"patching_rect" : [ 11.0, 2761.8125, 456.0, 39.0 ],
 					"text" : "What could we do to our measurements to get the actual depth of water in the bucket?"
 				}
 
@@ -2549,7 +2549,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2862.5, 452.0, 69.0 ],
+					"patching_rect" : [ 11.0, 2862.5, 452.0, 71.0 ],
 					"text" : "We will test our MS5803_119 temparature sensor by putting ice in the bucket and chilling the water to close to 0ºC. We can test our measurements with a hand-held thermometer to validate our sensor readings."
 				}
 
@@ -2594,7 +2594,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2718.8125, 452.0, 38.0 ],
+					"patching_rect" : [ 11.0, 2718.8125, 452.0, 39.0 ],
 					"text" : "Note the difference of change in between each measurement. Do the differences equal roughly 5 cm each time?"
 				}
 
@@ -2607,7 +2607,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 282.0, 2680.5, 139.0, 22.0 ],
+					"patching_rect" : [ 282.0, 2680.5, 139.0, 23.0 ],
 					"text" : "Difference Change"
 				}
 
@@ -2676,7 +2676,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 106.0, 2658.5, 163.0, 22.0 ],
+					"patching_rect" : [ 106.0, 2658.5, 163.0, 23.0 ],
 					"text" : "@ 25cm bucket"
 				}
 
@@ -2703,7 +2703,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 106.0, 2622.5, 163.0, 22.0 ],
+					"patching_rect" : [ 106.0, 2622.5, 163.0, 23.0 ],
 					"text" : "@ 20cm bucket"
 				}
 
@@ -2730,7 +2730,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 106.0, 2586.5, 163.0, 22.0 ],
+					"patching_rect" : [ 106.0, 2586.5, 163.0, 23.0 ],
 					"text" : "@ 15cm bucket"
 				}
 
@@ -2757,7 +2757,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 106.0, 2550.5, 163.0, 22.0 ],
+					"patching_rect" : [ 106.0, 2550.5, 163.0, 23.0 ],
 					"text" : "@ 10cm bucket"
 				}
 
@@ -2770,7 +2770,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 106.0, 2090.5, 163.0, 22.0 ],
+					"patching_rect" : [ 106.0, 2090.5, 163.0, 23.0 ],
 					"text" : "@ 5cm bucket"
 				}
 
@@ -2783,7 +2783,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2520.5, 119.0, 22.0 ],
+					"patching_rect" : [ 11.0, 2520.5, 119.0, 23.0 ],
 					"text" : "Height Meters"
 				}
 
@@ -2809,7 +2809,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2034.5, 445.0, 22.0 ],
+					"patching_rect" : [ 11.0, 2034.5, 445.0, 23.0 ],
 					"text" : "Note the value of Water Height in the text box below."
 				}
 
@@ -2822,7 +2822,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2060.5, 163.0, 22.0 ],
+					"patching_rect" : [ 11.0, 2060.5, 163.0, 23.0 ],
 					"text" : "Height Reading Meters"
 				}
 
@@ -2849,7 +2849,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2447.8125, 452.0, 69.0 ],
+					"patching_rect" : [ 11.0, 2447.8125, 452.0, 71.0 ],
 					"text" : "Fill the bucket with 5 more centimeters of water using your ruler or markings to guide. Note the height. Do this again adding 5 more centimeters of water, noting measurements in between for 10, 15, 20, and 25cm,"
 				}
 
@@ -2862,7 +2862,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2390.8125, 452.0, 53.0 ],
+					"patching_rect" : [ 11.0, 2390.8125, 452.0, 55.0 ],
 					"text" : "By increasing the water height in known increments using our ruler, we can see of the pressure-height differences match the difference in water height."
 				}
 
@@ -2874,7 +2874,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2366.5, 452.0, 22.0 ],
+					"patching_rect" : [ 11.0, 2366.5, 452.0, 23.0 ],
 					"text" : "How can we test this sensor for accuracy?"
 				}
 
@@ -2887,7 +2887,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2309.5, 452.0, 53.0 ],
+					"patching_rect" : [ 11.0, 2309.5, 452.0, 55.0 ],
 					"text" : "The Sensor in the bucket cannot lay all the way flat on the very bottom, so the pressure of the sensor, and initial height, will be less than the actual height of the water, "
 				}
 
@@ -2932,7 +2932,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 2212.5, 451.0, 38.0 ],
+					"patching_rect" : [ 11.0, 2212.5, 451.0, 39.0 ],
 					"text" : "The current depth of the water should be 5 centimeters or 0.05 meters. But the height displayed is LESS than that. Why?"
 				}
 
@@ -2977,7 +2977,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 1990.5, 448.0, 38.0 ],
+					"patching_rect" : [ 11.0, 1990.5, 448.0, 39.0 ],
 					"text" : "The Sensor Modules on the right show the water pressure and air pressure. The calculated water height in meters is under the equation. "
 				}
 
@@ -3015,8 +3015,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3265,9 +3265,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.0, 22.5, 58.0, 24.0 ],
+									"patching_rect" : [ 39.0, 22.5, 58.0, 25.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 6.0, 6.0, 138.0, 24.0 ],
+									"presentation_rect" : [ 6.0, 6.0, 138.0, 25.0 ],
 									"text" : "Sensor",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -3372,7 +3372,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 33.0 ],
+									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 34.0 ],
 									"text" : "Outgoing data of current parameter"
 								}
 
@@ -3520,7 +3520,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 501.0, 50.5, 309.0, 89.0 ],
+									"patching_rect" : [ 501.0, 50.5, 309.0, 91.0 ],
 									"text" : "\"{ \\\"type\\\": \\\"data\\\", \\\"id\\\": { \\\"name\\\": \\\"Device\\\", \\\"instance\\\": 13}, \\\"contents\\\": [ { \\\"module\\\": \\\"Analog\\\", \\\"data\\\": { \\\"Vbat\\\": 4.25129, \\\"A0\\\": 166, \\\"A1\\\": 1636, \\\"A2\\\": 1122, \\\"A3\\\": 1454, \\\"A4\\\": 1649, \\\"A5\\\": 1626 } }, { \\\"module\\\": \\\"Digital\\\", \\\"data\\\": { \\\"5\\\": true, \\\"6\\\": true } } ] }\""
 								}
 
@@ -3922,8 +3922,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4172,9 +4172,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.0, 22.5, 58.0, 24.0 ],
+									"patching_rect" : [ 39.0, 22.5, 58.0, 25.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 6.0, 6.0, 138.0, 24.0 ],
+									"presentation_rect" : [ 6.0, 6.0, 138.0, 25.0 ],
 									"text" : "Sensor",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -4279,7 +4279,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 33.0 ],
+									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 34.0 ],
 									"text" : "Outgoing data of current parameter"
 								}
 
@@ -4427,7 +4427,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 501.0, 50.5, 309.0, 89.0 ],
+									"patching_rect" : [ 501.0, 50.5, 309.0, 91.0 ],
 									"text" : "\"{ \\\"type\\\": \\\"data\\\", \\\"id\\\": { \\\"name\\\": \\\"Device\\\", \\\"instance\\\": 13}, \\\"contents\\\": [ { \\\"module\\\": \\\"Analog\\\", \\\"data\\\": { \\\"Vbat\\\": 4.25129, \\\"A0\\\": 166, \\\"A1\\\": 1636, \\\"A2\\\": 1122, \\\"A3\\\": 1454, \\\"A4\\\": 1649, \\\"A5\\\": 1626 } }, { \\\"module\\\": \\\"Digital\\\", \\\"data\\\": { \\\"5\\\": true, \\\"6\\\": true } } ] }\""
 								}
 
@@ -4765,7 +4765,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 795.5, 445.0, 179.0 ],
+					"patching_rect" : [ 11.0, 795.5, 445.0, 184.0 ],
 					"text" : "Atmospheric pressure is commonly measured with a barometer. In a barometer, a column of mercury in a glass tube rises or falls as the weight of the atmosphere changes.\nAn atmosphere (atm) is a unit of measurement equal to the average air pressure at sea level at a temperature of 15 degrees Celsius (59 degrees Fahrenheit).\nOne atmosphere is 1,013 millibars.\nAtmospheric pressure drops as altitude increases. The atmospheric pressure on Denali, Alaska, is about half that of Honolulu, Hawai'i. Honolulu is a city at sea level. Denali, also known as Mount McKinley, is the highest peak in North America."
 				}
 
@@ -4810,7 +4810,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 1821.5, 448.0, 163.0 ],
+					"patching_rect" : [ 11.0, 1821.5, 448.0, 167.0 ],
 					"text" : "Like atmospheric pressure, water pressure is the force exerted on a surface by a combination of the water and the air above due to gravity. Because the weight of water at a given temperature is constant, if we factor the more rapidly changing air pressure from water pressure,we can calculate a measure of water depth with 1mm accuracy!\nWater height can be calculated by:\n((Water Pressure - Air Pressure) * 100 (conversion to pascals)) / (Water Density * Gravity)\n\n(Water Pressure - Air Pressure * 100) / 997.77 * 9.81"
 				}
 
@@ -4848,8 +4848,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5098,9 +5098,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.0, 22.5, 58.0, 24.0 ],
+									"patching_rect" : [ 39.0, 22.5, 58.0, 25.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 6.0, 6.0, 138.0, 24.0 ],
+									"presentation_rect" : [ 6.0, 6.0, 138.0, 25.0 ],
 									"text" : "Sensor",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -5205,7 +5205,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 33.0 ],
+									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 34.0 ],
 									"text" : "Outgoing data of current parameter"
 								}
 
@@ -5353,7 +5353,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 501.0, 50.5, 309.0, 89.0 ],
+									"patching_rect" : [ 501.0, 50.5, 309.0, 91.0 ],
 									"text" : "\"{ \\\"type\\\": \\\"data\\\", \\\"id\\\": { \\\"name\\\": \\\"Device\\\", \\\"instance\\\": 13}, \\\"contents\\\": [ { \\\"module\\\": \\\"Analog\\\", \\\"data\\\": { \\\"Vbat\\\": 4.25129, \\\"A0\\\": 166, \\\"A1\\\": 1636, \\\"A2\\\": 1122, \\\"A3\\\": 1454, \\\"A4\\\": 1649, \\\"A5\\\": 1626 } }, { \\\"module\\\": \\\"Digital\\\", \\\"data\\\": { \\\"5\\\": true, \\\"6\\\": true } } ] }\""
 								}
 
@@ -5722,7 +5722,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 1738.5, 445.0, 22.0 ],
+					"patching_rect" : [ 5.0, 1738.5, 445.0, 23.0 ],
 					"text" : "Did Temperature change faster, slower, or the same as the Pressure?"
 				}
 
@@ -5735,7 +5735,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 1698.5, 445.0, 38.0 ],
+					"patching_rect" : [ 5.0, 1698.5, 445.0, 39.0 ],
 					"text" : "Watch the MS5803_119 Temperature value. Does the value increase, decrease, or stay the same?"
 				}
 
@@ -5747,7 +5747,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 1674.5, 445.0, 22.0 ],
+					"patching_rect" : [ 5.0, 1674.5, 445.0, 23.0 ],
 					"text" : "Does the Pressure value increase, decrease, or stay the same?"
 				}
 
@@ -5760,7 +5760,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 1614.5, 119.0, 22.0 ],
+					"patching_rect" : [ 11.0, 1614.5, 119.0, 23.0 ],
 					"text" : "Pressure mbar"
 				}
 
@@ -5773,7 +5773,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 141.0, 1614.5, 117.0, 22.0 ],
+					"patching_rect" : [ 141.0, 1614.5, 117.0, 23.0 ],
 					"text" : "Temperature ºC"
 				}
 
@@ -5800,7 +5800,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 1552.5, 445.0, 53.0 ],
+					"patching_rect" : [ 11.0, 1552.5, 445.0, 55.0 ],
 					"text" : "Note the value of Pressure and update in the text box below. Then choose Temperature from the Sensor dropdown menu and write the value of Temperature in the other text box."
 				}
 
@@ -5865,8 +5865,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6115,9 +6115,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.0, 22.5, 58.0, 24.0 ],
+									"patching_rect" : [ 39.0, 22.5, 58.0, 25.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 6.0, 6.0, 138.0, 24.0 ],
+									"presentation_rect" : [ 6.0, 6.0, 138.0, 25.0 ],
 									"text" : "Sensor",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -6222,7 +6222,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 33.0 ],
+									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 34.0 ],
 									"text" : "Outgoing data of current parameter"
 								}
 
@@ -6370,7 +6370,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 501.0, 50.5, 309.0, 89.0 ],
+									"patching_rect" : [ 501.0, 50.5, 309.0, 91.0 ],
 									"text" : "\"{ \\\"type\\\": \\\"data\\\", \\\"id\\\": { \\\"name\\\": \\\"Device\\\", \\\"instance\\\": 13}, \\\"contents\\\": [ { \\\"module\\\": \\\"Analog\\\", \\\"data\\\": { \\\"Vbat\\\": 4.25129, \\\"A0\\\": 166, \\\"A1\\\": 1636, \\\"A2\\\": 1122, \\\"A3\\\": 1454, \\\"A4\\\": 1649, \\\"A5\\\": 1626 } }, { \\\"module\\\": \\\"Digital\\\", \\\"data\\\": { \\\"5\\\": true, \\\"6\\\": true } } ] }\""
 								}
 
@@ -6708,7 +6708,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 1370.5, 445.0, 38.0 ],
+					"patching_rect" : [ 5.0, 1370.5, 445.0, 39.0 ],
 					"text" : "These values are our bassline for atmosphere before we submerge our sensor."
 				}
 
@@ -6721,7 +6721,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 1310.5, 119.0, 22.0 ],
+					"patching_rect" : [ 11.0, 1310.5, 119.0, 23.0 ],
 					"text" : "Pressure mbar"
 				}
 
@@ -6734,7 +6734,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 141.0, 1310.5, 117.0, 22.0 ],
+					"patching_rect" : [ 141.0, 1310.5, 117.0, 23.0 ],
 					"text" : "Temperature ºC"
 				}
 
@@ -6761,7 +6761,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 1248.5, 445.0, 53.0 ],
+					"patching_rect" : [ 11.0, 1248.5, 445.0, 55.0 ],
 					"text" : "Note the value of Pressure and update in the text box below. Then choose Temperature from the Sensor dropdown menu and write the value of Temperature in the other text box."
 				}
 
@@ -6801,7 +6801,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 1467.5, 445.0, 53.0 ],
+					"patching_rect" : [ 11.0, 1467.5, 445.0, 55.0 ],
 					"text" : "Place the MS5803_119 sensor into the bottom of the bucket of water. A weight may need to be attached to the sensor to keep it on the bottom of the bucket."
 				}
 
@@ -6846,7 +6846,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 245.75, 451.0, 132.0 ],
+					"patching_rect" : [ 11.0, 245.75, 451.0, 135.0 ],
 					"text" : "   • WeatherChimes Kit connected to WiFi-Max or MongoDB\n   • Refresh rate of 20 seconds or faster is recommended\n   • 5 gallon bucket\n   • Water\n   • Ice\n   • Metric Ruler with cm and or mm clearly visible\n   • Analog thermometer\n   • Marker"
 				}
 
@@ -6908,7 +6908,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 825.0, 717.625, 219.0, 57.0 ],
+					"patching_rect" : [ 825.0, 717.625, 219.0, 58.0 ],
 					"text" : "References:\nhttps://education.nationalgeographic.org/resource/atmospheric-pressure\nhttps://www.brainkart.com/article/Atmospheric-pressure_39927/"
 				}
 
@@ -6933,7 +6933,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 1085.5, 445.0, 132.0 ],
+					"patching_rect" : [ 11.0, 1085.5, 445.0, 135.0 ],
 					"text" : "Use the drop down menus on the Sensor Module to the right to select the MS5803_119 sensor. Use the second menu to select Pressure. The MS5803_119 sensor is on the end of an 8ft length of cable on the WeatherChime unit. It detects:\n• Pressure (in millibars)\n• Temperature (in ºC)\nIt is inside a special enclosure that enables us to submerge it in water.\nIn the text box below."
 				}
 
@@ -6991,7 +6991,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 486.0, 440.5, 151.0, 93.0 ],
+					"patching_rect" : [ 486.0, 440.5, 151.0, 94.0 ],
 					"text" : "Send or S objects can be used to remotely send data to Receive or R objects of the same name without patch cords"
 				}
 
@@ -7039,8 +7039,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7717,7 +7717,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 800.000035285949707, 285.483883559703827, 51.0, 196.0 ],
+									"patching_rect" : [ 800.000035285949707, 285.483883559703827, 51.0, 202.0 ],
 									"text" : "getLast 0 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
@@ -7759,7 +7759,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 211.5, 376.0, 78.0, 49.0 ],
+									"patching_rect" : [ 211.5, 376.0, 78.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 169.5, 288.0, 153.0, 22.0 ],
 									"text" : "Request Last N Samples:",
@@ -7832,7 +7832,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 946.0, 142.0, 78.0, 35.0 ],
+									"patching_rect" : [ 946.0, 142.0, 78.0, 36.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 9.5, 288.0, 97.0, 22.0 ],
 									"text" : "Packet Counter",
@@ -7923,10 +7923,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 636.453605532646293, 174.0, 145.0, 33.0 ],
+									"patching_rect" : [ 636.453605532646293, 174.0, 145.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 11.561855554580688, 183.794126958836614, 129.0, 33.0 ],
+									"presentation_rect" : [ 11.561855554580688, 183.794126958836614, 129.0, 34.0 ],
 									"text" : "MongoDB Unique Cluster Variable",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
@@ -7970,7 +7970,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 485.000000000000114, 537.0, 204.0, 49.0 ],
+									"patching_rect" : [ 485.000000000000114, 537.0, 204.0, 50.0 ],
 									"text" : "grab ear2earth helloworld101 Chime0 WeatherChimes-Workshop Chime0"
 								}
 
@@ -8282,6 +8282,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -8355,7 +8357,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 614.0, 301.0, 41.0, 45.0 ],
+									"patching_rect" : [ 614.0, 301.0, 41.0, 46.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.561855554580688, 248.711338877677917, 129.0, 21.0 ],
 									"text" : "Device Name",
@@ -8392,7 +8394,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 275.833344000000011, 221.0, 150.0, 33.0 ],
+									"patching_rect" : [ 275.833344000000011, 221.0, 150.0, 34.0 ],
 									"text" : "Can also use \"\" to send empty password"
 								}
 
@@ -8440,7 +8442,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 244.833344000000011, 427.0, 204.0, 49.0 ],
+									"patching_rect" : [ 244.833344000000011, 427.0, 204.0, 50.0 ],
 									"text" : "connect ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
@@ -8501,8 +8503,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 3,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -8757,9 +8759,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 16.5, 12.833373999999999, 89.0, 55.0 ],
+									"patching_rect" : [ 16.5, 12.833373999999999, 89.0, 57.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 7.0, 4.0, 361.0, 24.0 ],
+									"presentation_rect" : [ 7.0, 4.0, 361.0, 25.0 ],
 									"text" : "MongoDB Connection Setup",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -8829,7 +8831,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 236.0, 250.0, 62.0, 45.0 ],
+									"patching_rect" : [ 236.0, 250.0, 62.0, 46.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.561855554580688, 133.011326877677902, 129.0, 21.0 ],
 									"text" : "MongodDB Username",
@@ -8859,7 +8861,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 364.833344000000011, 259.5, 51.0, 58.0 ],
+									"patching_rect" : [ 364.833344000000011, 259.5, 51.0, 59.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.561855554580688, 158.711338877677917, 129.0, 21.0 ],
 									"text" : "MongoDB Password",
@@ -9633,9 +9635,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
-									"fontname" : [ "Arial Bold" ],
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -9644,9 +9646,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
-									"fontname" : [ "Arial Bold" ],
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -9655,6 +9657,8 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontsize" : [ 11.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -9664,9 +9668,7 @@
 										"type" : "gradient"
 									}
 ,
-									"fontface" : [ 1 ],
-									"fontname" : [ "Arial" ],
-									"fontsize" : [ 11.0 ]
+									"fontface" : [ 1 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9693,7 +9695,11 @@
 								"name" : "Luca",
 								"default" : 								{
 									"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+									"fontname" : [ "Open Sans Semibold" ],
+									"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 									"bgcolor" : [ 0.904179, 0.895477, 0.842975, 0.56 ],
+									"selectioncolor" : [ 0.720698, 0.16723, 0.080014, 1.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"autogradient" : 0,
@@ -9704,11 +9710,7 @@
 										"type" : "gradient"
 									}
 ,
-									"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ],
-									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"fontname" : [ "Open Sans Semibold" ],
-									"selectioncolor" : [ 0.720698, 0.16723, 0.080014, 1.0 ],
-									"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
+									"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9717,9 +9719,9 @@
 , 							{
 								"name" : "M4L 10 Bold",
 								"default" : 								{
-									"fontface" : [ 1 ],
+									"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.25 ],
 									"fontsize" : [ 10.0 ],
-									"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.25 ]
+									"fontface" : [ 1 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9738,8 +9740,8 @@
 , 							{
 								"name" : "Matt",
 								"default" : 								{
-									"fontface" : [ 1 ],
-									"fontsize" : [ 10.0 ]
+									"fontsize" : [ 10.0 ],
+									"fontface" : [ 1 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10024,6 +10026,10 @@
 								"name" : "WTF",
 								"default" : 								{
 									"accentcolor" : [ 0.50764, 0.065317, 0.112129, 1.0 ],
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
+									"fontsize" : [ 18.0 ],
+									"elementcolor" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
+									"fontname" : [ "HydrogenType" ],
 									"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
@@ -10035,11 +10041,7 @@
 										"type" : "gradient"
 									}
 ,
-									"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ],
-									"elementcolor" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-									"fontname" : [ "HydrogenType" ],
-									"fontsize" : [ 18.0 ],
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+									"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10049,6 +10051,10 @@
 								"name" : "classic",
 								"default" : 								{
 									"accentcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+									"patchlinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontsize" : [ 9.0 ],
+									"fontname" : [ "Geneva" ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgcolor" : [ 0.83978, 0.839941, 0.839753, 1.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
@@ -10059,11 +10065,7 @@
 										"type" : "color"
 									}
 ,
-									"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-									"fontname" : [ "Geneva" ],
-									"fontsize" : [ 9.0 ],
-									"patchlinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10117,10 +10119,10 @@
 , 							{
 								"name" : "classicKslider",
 								"default" : 								{
-									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-									"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
+									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10129,8 +10131,8 @@
 , 							{
 								"name" : "classicLed",
 								"default" : 								{
-									"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.6, 0.0, 0.0, 1.0 ]
+									"elementcolor" : [ 0.6, 0.0, 0.0, 1.0 ],
+									"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10148,8 +10150,8 @@
 , 							{
 								"name" : "classicMeter~",
 								"default" : 								{
-									"bgcolor" : [ 0.380392, 0.380392, 0.380392, 1.0 ],
-									"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
+									"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+									"bgcolor" : [ 0.380392, 0.380392, 0.380392, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10158,9 +10160,9 @@
 , 							{
 								"name" : "classicNodes",
 								"default" : 								{
-									"color" : [ 0.839216, 0.839216, 0.839216, 1.0 ],
+									"fontsize" : [ 9.0 ],
 									"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-									"fontsize" : [ 9.0 ]
+									"color" : [ 0.839216, 0.839216, 0.839216, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10215,8 +10217,8 @@
 , 							{
 								"name" : "classicTab",
 								"default" : 								{
-									"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-									"elementcolor" : [ 0.839216, 0.839216, 0.839216, 1.0 ]
+									"elementcolor" : [ 0.839216, 0.839216, 0.839216, 1.0 ],
+									"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10235,8 +10237,8 @@
 , 							{
 								"name" : "classicToggle",
 								"default" : 								{
-									"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ],
-									"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.0 ]
+									"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+									"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10254,8 +10256,8 @@
 , 							{
 								"name" : "classicWaveform~",
 								"default" : 								{
-									"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ],
-									"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 0.5 ]
+									"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 0.5 ],
+									"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10265,6 +10267,7 @@
 								"name" : "dark-night-patch",
 								"default" : 								{
 									"accentcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+									"patchlinecolor" : [ 0.439216, 0.74902, 0.254902, 0.898039 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -10274,7 +10277,6 @@
 										"type" : "gradient"
 									}
 ,
-									"patchlinecolor" : [ 0.439216, 0.74902, 0.254902, 0.898039 ],
 									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 								}
 ,
@@ -10289,6 +10291,10 @@
 , 							{
 								"name" : "jpatcher002",
 								"default" : 								{
+									"patchlinecolor" : [ 0.65098, 0.65098, 0.65098, 0.0 ],
+									"fontsize" : [ 9.5 ],
+									"clearcolor" : [ 0.32549, 0.345098, 0.372549, 0.0 ],
+									"fontname" : [ "Ableton Sans Book" ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -10297,11 +10303,7 @@
 										"proportion" : 0.39,
 										"type" : "color"
 									}
-,
-									"clearcolor" : [ 0.32549, 0.345098, 0.372549, 0.0 ],
-									"fontname" : [ "Ableton Sans Book" ],
-									"fontsize" : [ 9.5 ],
-									"patchlinecolor" : [ 0.65098, 0.65098, 0.65098, 0.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -10311,7 +10313,11 @@
 								"name" : "jpink",
 								"default" : 								{
 									"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+									"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+									"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+									"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 									"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"autogradient" : 0,
@@ -10322,11 +10328,7 @@
 										"type" : "color"
 									}
 ,
-									"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 									"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-									"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-									"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-									"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 									"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 								}
 ,
@@ -10345,8 +10347,8 @@
 , 							{
 								"name" : "lightbutton",
 								"default" : 								{
-									"bgcolor" : [ 0.309495, 0.299387, 0.299789, 1.0 ],
-									"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+									"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+									"bgcolor" : [ 0.309495, 0.299387, 0.299789, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10519,8 +10521,8 @@
 , 							{
 								"name" : "purple",
 								"default" : 								{
-									"bgcolor" : [ 0.304029, 0.250694, 0.285628, 1.0 ],
-									"textcolor_inverse" : [ 0.701961, 0.415686, 0.886275, 1.0 ]
+									"textcolor_inverse" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
+									"bgcolor" : [ 0.304029, 0.250694, 0.285628, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10557,9 +10559,9 @@
 , 							{
 								"name" : "stb001",
 								"default" : 								{
-									"fontface" : [ 1 ],
+									"fontsize" : [ 10.0 ],
 									"fontname" : [ "Arial Bold" ],
-									"fontsize" : [ 10.0 ]
+									"fontface" : [ 1 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10587,9 +10589,9 @@
 , 							{
 								"name" : "tastefultoggle",
 								"default" : 								{
+									"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
 									"bgcolor" : [ 0.287863, 0.333333, 0.329398, 1.0 ],
-									"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
-									"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+									"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10598,8 +10600,8 @@
 , 							{
 								"name" : "test",
 								"default" : 								{
-									"fontface" : [ 1 ],
-									"fontsize" : [ 10.0 ]
+									"fontsize" : [ 10.0 ],
+									"fontface" : [ 1 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10608,11 +10610,11 @@
 , 							{
 								"name" : "whitey",
 								"default" : 								{
-									"fontname" : [ "Dirty Ego" ],
-									"fontsize" : [ 36.0 ],
 									"patchlinecolor" : [ 0.199068, 0.062496, 0.060031, 0.9 ],
-									"selectioncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
-									"textcolor_inverse" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"fontsize" : [ 36.0 ],
+									"fontname" : [ "Dirty Ego" ],
+									"textcolor_inverse" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"selectioncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10647,8 +10649,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -10897,9 +10899,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.0, 22.5, 58.0, 24.0 ],
+									"patching_rect" : [ 39.0, 22.5, 58.0, 25.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 6.0, 6.0, 138.0, 24.0 ],
+									"presentation_rect" : [ 6.0, 6.0, 138.0, 25.0 ],
 									"text" : "Sensor",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -11004,7 +11006,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 33.0 ],
+									"patching_rect" : [ 126.858245999999994, 662.886168999999995, 108.0, 34.0 ],
 									"text" : "Outgoing data of current parameter"
 								}
 
@@ -11152,7 +11154,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 501.0, 50.5, 309.0, 89.0 ],
+									"patching_rect" : [ 501.0, 50.5, 309.0, 91.0 ],
 									"text" : "\"{ \\\"type\\\": \\\"data\\\", \\\"id\\\": { \\\"name\\\": \\\"Device\\\", \\\"instance\\\": 13}, \\\"contents\\\": [ { \\\"module\\\": \\\"Analog\\\", \\\"data\\\": { \\\"Vbat\\\": 4.25129, \\\"A0\\\": 166, \\\"A1\\\": 1636, \\\"A2\\\": 1122, \\\"A3\\\": 1454, \\\"A4\\\": 1649, \\\"A5\\\": 1626 } }, { \\\"module\\\": \\\"Digital\\\", \\\"data\\\": { \\\"5\\\": true, \\\"6\\\": true } } ] }\""
 								}
 
@@ -11503,8 +11505,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -11773,8 +11775,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 3,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -11943,7 +11945,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 359.0, 383.0, 129.0, 74.0 ],
+									"patching_rect" : [ 359.0, 383.0, 129.0, 75.0 ],
 									"text" : "Dict version of last incoming data\nController.js keeps its own Js object copy of the data"
 								}
 
@@ -12159,8 +12161,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 3,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -12623,7 +12625,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 947.0, 34.666663999999997, 94.0, 33.0 ],
+									"patching_rect" : [ 947.0, 34.666663999999997, 94.0, 34.0 ],
 									"text" : "Display to Console Toggle"
 								}
 
@@ -12974,7 +12976,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 467.75, 450.0, 116.0 ],
+					"patching_rect" : [ 11.0, 467.75, 450.0, 119.0 ],
 					"text" : "With a marker and ruler, place a notch in 5cm increments up the inside of the bucket starting from the bottom. You may stop marking at 50cm or go as far as you wish.\nPre-fill your 5 gallon bucket to 5cm.\nHave a jug or other easy source of water to pour into the bucket during the activity.\nHave a large cup or bucket of ice within reach."
 				}
 
@@ -13020,7 +13022,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 693.0, 445.0, 38.0 ],
+					"patching_rect" : [ 11.0, 693.0, 445.0, 39.0 ],
 					"text" : "Using the previous tutorials, connect your device either over WiFi or MongoDB."
 				}
 
@@ -13033,7 +13035,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 635.0, 445.0, 53.0 ],
+					"patching_rect" : [ 11.0, 635.0, 445.0, 55.0 ],
 					"text" : "Before your begin - be sure your WeatherChimes hardware is powered on. The Green WiFi light, Green TSL2591 light, and 2 red Power LEDs should be visible from the case."
 				}
 
@@ -13078,7 +13080,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 174.75, 451.0, 38.0 ],
+					"patching_rect" : [ 11.0, 174.75, 451.0, 39.0 ],
 					"text" : "Learn to calibrate the MS5803 water sensor to prove temperature and water height are correct before installing in the field."
 				}
 
@@ -13124,8 +13126,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 407.0, 70.0, 661.0, 35.0 ],
-					"text" : ";\rmax launchbrowser https://docs.google.com/document/d/1RMLkrDFkleh6Cv4XUuLDACu8Wq8YEPOVRYzMEzwh5K0/edit"
+					"patching_rect" : [ 407.0, 70.0, 661.0, 36.0 ],
+					"text" : ";\r\nmax launchbrowser https://docs.google.com/document/d/1RMLkrDFkleh6Cv4XUuLDACu8Wq8YEPOVRYzMEzwh5K0/edit"
 				}
 
 			}
@@ -13171,7 +13173,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 15.0, 555.0, 47.0 ],
+					"patching_rect" : [ 5.0, 15.0, 555.0, 48.0 ],
 					"text" : "WC Activiy 1: Water Calibration"
 				}
 
@@ -13197,8 +13199,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -13300,9 +13302,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 8.0, 8.197998, 119.0, 24.0 ],
+									"patching_rect" : [ 8.0, 8.197998, 119.0, 25.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 7.0, 7.0, 181.0, 24.0 ],
+									"presentation_rect" : [ 7.0, 7.0, 181.0, 25.0 ],
 									"text" : "Patch Generator",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
@@ -13357,7 +13359,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-4",
-									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "BeatSeq", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "Stochastic", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -13951,37 +13953,50 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "Controller.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
+				"name" : "generator.js",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Convert_Incoming.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Controller.js",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Sensor.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "airpressure.jpeg",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/media/img/Workshops",
-				"patcherrelativepath" : "../../../media/img/Workshops",
-				"type" : "JPEG",
+				"name" : "runningAvg.maxpat",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/externals/DataProcessor",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "auto_install.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
+				"name" : "mongoconnect1.js",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "n4m.monitor.maxpat",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resize_n4m_monitor_patcher.js",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -13992,48 +14007,26 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "generator.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mongoconnect1.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mxj.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "n4m.monitor.maxpat",
-				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "parse.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "resize_n4m_monitor_patcher.js",
-				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"name" : "auto_install.js",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "runningAvg.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/externals/DataProcessor",
-				"patcherrelativepath" : "../../../externals/DataProcessor",
-				"type" : "JSON",
+				"name" : "airpressure.jpeg",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/media/img/Workshops",
+				"type" : "JPEG",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "mxj.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0,
@@ -14075,9 +14068,9 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
-					"fontname" : [ "Arial Bold" ],
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 11.0 ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -14086,9 +14079,9 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
-					"fontname" : [ "Arial Bold" ],
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 10.0 ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -14097,6 +14090,8 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
+					"fontsize" : [ 11.0 ],
+					"fontname" : [ "Arial" ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -14106,9 +14101,7 @@
 						"type" : "gradient"
 					}
 ,
-					"fontface" : [ 1 ],
-					"fontname" : [ "Arial" ],
-					"fontsize" : [ 11.0 ]
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14135,7 +14128,11 @@
 				"name" : "Luca",
 				"default" : 				{
 					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+					"fontname" : [ "Open Sans Semibold" ],
+					"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"bgcolor" : [ 0.904179, 0.895477, 0.842975, 0.56 ],
+					"selectioncolor" : [ 0.720698, 0.16723, 0.080014, 1.0 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"autogradient" : 0,
@@ -14146,11 +14143,7 @@
 						"type" : "gradient"
 					}
 ,
-					"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ],
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"fontname" : [ "Open Sans Semibold" ],
-					"selectioncolor" : [ 0.720698, 0.16723, 0.080014, 1.0 ],
-					"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
+					"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14159,9 +14152,9 @@
 , 			{
 				"name" : "M4L 10 Bold",
 				"default" : 				{
-					"fontface" : [ 1 ],
+					"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.25 ],
 					"fontsize" : [ 10.0 ],
-					"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.25 ]
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14180,8 +14173,8 @@
 , 			{
 				"name" : "Matt",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 10.0 ]
+					"fontsize" : [ 10.0 ],
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14466,6 +14459,10 @@
 				"name" : "WTF",
 				"default" : 				{
 					"accentcolor" : [ 0.50764, 0.065317, 0.112129, 1.0 ],
+					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
+					"fontsize" : [ 18.0 ],
+					"elementcolor" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
+					"fontname" : [ "HydrogenType" ],
 					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
@@ -14477,11 +14474,7 @@
 						"type" : "gradient"
 					}
 ,
-					"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ],
-					"elementcolor" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-					"fontname" : [ "HydrogenType" ],
-					"fontsize" : [ 18.0 ],
-					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+					"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14491,6 +14484,10 @@
 				"name" : "classic",
 				"default" : 				{
 					"accentcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+					"patchlinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 9.0 ],
+					"fontname" : [ "Geneva" ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgcolor" : [ 0.83978, 0.839941, 0.839753, 1.0 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
@@ -14501,11 +14498,7 @@
 						"type" : "color"
 					}
 ,
-					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"fontname" : [ "Geneva" ],
-					"fontsize" : [ 9.0 ],
-					"patchlinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14559,10 +14552,10 @@
 , 			{
 				"name" : "classicKslider",
 				"default" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
+					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14571,8 +14564,8 @@
 , 			{
 				"name" : "classicLed",
 				"default" : 				{
-					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.6, 0.0, 0.0, 1.0 ]
+					"elementcolor" : [ 0.6, 0.0, 0.0, 1.0 ],
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14590,8 +14583,8 @@
 , 			{
 				"name" : "classicMeter~",
 				"default" : 				{
-					"bgcolor" : [ 0.380392, 0.380392, 0.380392, 1.0 ],
-					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
+					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+					"bgcolor" : [ 0.380392, 0.380392, 0.380392, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14600,9 +14593,9 @@
 , 			{
 				"name" : "classicNodes",
 				"default" : 				{
-					"color" : [ 0.839216, 0.839216, 0.839216, 1.0 ],
+					"fontsize" : [ 9.0 ],
 					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"fontsize" : [ 9.0 ]
+					"color" : [ 0.839216, 0.839216, 0.839216, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14657,8 +14650,8 @@
 , 			{
 				"name" : "classicTab",
 				"default" : 				{
-					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"elementcolor" : [ 0.839216, 0.839216, 0.839216, 1.0 ]
+					"elementcolor" : [ 0.839216, 0.839216, 0.839216, 1.0 ],
+					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14677,8 +14670,8 @@
 , 			{
 				"name" : "classicToggle",
 				"default" : 				{
-					"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ],
-					"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.0 ]
+					"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14696,8 +14689,8 @@
 , 			{
 				"name" : "classicWaveform~",
 				"default" : 				{
-					"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ],
-					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 0.5 ]
+					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 0.5 ],
+					"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14707,6 +14700,7 @@
 				"name" : "dark-night-patch",
 				"default" : 				{
 					"accentcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"patchlinecolor" : [ 0.439216, 0.74902, 0.254902, 0.898039 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -14716,7 +14710,6 @@
 						"type" : "gradient"
 					}
 ,
-					"patchlinecolor" : [ 0.439216, 0.74902, 0.254902, 0.898039 ],
 					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 				}
 ,
@@ -14731,6 +14724,10 @@
 , 			{
 				"name" : "jpatcher002",
 				"default" : 				{
+					"patchlinecolor" : [ 0.65098, 0.65098, 0.65098, 0.0 ],
+					"fontsize" : [ 9.5 ],
+					"clearcolor" : [ 0.32549, 0.345098, 0.372549, 0.0 ],
+					"fontname" : [ "Ableton Sans Book" ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -14739,11 +14736,7 @@
 						"proportion" : 0.39,
 						"type" : "color"
 					}
-,
-					"clearcolor" : [ 0.32549, 0.345098, 0.372549, 0.0 ],
-					"fontname" : [ "Ableton Sans Book" ],
-					"fontsize" : [ 9.5 ],
-					"patchlinecolor" : [ 0.65098, 0.65098, 0.65098, 0.0 ]
+
 				}
 ,
 				"parentstyle" : "",
@@ -14753,7 +14746,11 @@
 				"name" : "jpink",
 				"default" : 				{
 					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"autogradient" : 0,
@@ -14764,11 +14761,7 @@
 						"type" : "color"
 					}
 ,
-					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
@@ -14787,8 +14780,8 @@
 , 			{
 				"name" : "lightbutton",
 				"default" : 				{
-					"bgcolor" : [ 0.309495, 0.299387, 0.299789, 1.0 ],
-					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+					"bgcolor" : [ 0.309495, 0.299387, 0.299789, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14934,8 +14927,8 @@
 , 			{
 				"name" : "purple",
 				"default" : 				{
-					"bgcolor" : [ 0.304029, 0.250694, 0.285628, 1.0 ],
-					"textcolor_inverse" : [ 0.701961, 0.415686, 0.886275, 1.0 ]
+					"textcolor_inverse" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
+					"bgcolor" : [ 0.304029, 0.250694, 0.285628, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14972,9 +14965,9 @@
 , 			{
 				"name" : "stb001",
 				"default" : 				{
-					"fontface" : [ 1 ],
+					"fontsize" : [ 10.0 ],
 					"fontname" : [ "Arial Bold" ],
-					"fontsize" : [ 10.0 ]
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -15002,9 +14995,9 @@
 , 			{
 				"name" : "tastefultoggle",
 				"default" : 				{
+					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
 					"bgcolor" : [ 0.287863, 0.333333, 0.329398, 1.0 ],
-					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
-					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -15013,8 +15006,8 @@
 , 			{
 				"name" : "test",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 10.0 ]
+					"fontsize" : [ 10.0 ],
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -15023,11 +15016,11 @@
 , 			{
 				"name" : "whitey",
 				"default" : 				{
-					"fontname" : [ "Dirty Ego" ],
-					"fontsize" : [ 36.0 ],
 					"patchlinecolor" : [ 0.199068, 0.062496, 0.060031, 0.9 ],
-					"selectioncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
-					"textcolor_inverse" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"fontsize" : [ 36.0 ],
+					"fontname" : [ "Dirty Ego" ],
+					"textcolor_inverse" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"selectioncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
