@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1578.0, -438.0, 1453.0, 929.0 ],
+		"rect" : [ 34.0, 87.0, 812.0, 679.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,23 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 845.686293959617615, 731.0, 144.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll Tip_BucketTip_Count"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bgoncolor" : [ 0.0, 0.850980392156863, 0.27843137254902, 1.0 ],
@@ -107,7 +124,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1323.0, 143.0, 79.0, 36.0 ],
+					"patching_rect" : [ 1323.0, 143.0, 79.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 135.118888445198536, 375.87510158645, 85.0, 22.0 ],
 					"text" : "Set Prescaler",
@@ -189,7 +206,7 @@
 					"patching_rect" : [ 913.56863796710968, 105.0, 58.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 225.615807436406612, 374.87510158645, 48.0, 23.0 ],
-					"text" : "1000",
+					"text" : "4",
 					"textjustification" : 1
 				}
 
@@ -285,7 +302,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1158.746508479118347, 292.0, 291.0, 36.0 ],
+					"patching_rect" : [ 1158.746508479118347, 292.0, 291.0, 35.0 ],
 					"text" : "getLast 0 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 				}
 
@@ -399,25 +416,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-125",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 641.0, 813.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-120",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 663.0, 865.0, 54.0, 22.0 ],
-					"text" : "delay 10"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 663.0, 865.0, 83.0, 22.0 ],
+					"text" : "r isConnected"
 				}
 
 			}
@@ -429,7 +434,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 663.0, 901.0, 193.0, 64.0 ],
+					"patching_rect" : [ 663.0, 901.0, 193.0, 62.0 ],
 					"text" : "getFirst ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 				}
 
@@ -549,25 +554,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 586.0, 761.179296731948853, 71.0, 22.0 ],
-					"text" : "r lastPacket"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-84",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1497.75, 101.0, 50.0, 22.0 ],
-					"text" : "bang"
+					"text" : "0"
 				}
 
 			}
@@ -597,25 +590,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-122",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1394.75, 320.0, 54.0, 22.0 ],
-					"text" : "delay 10"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-80",
 					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1394.75, 356.0, 193.0, 64.0 ],
+					"patching_rect" : [ 1394.75, 356.0, 193.0, 62.0 ],
 					"text" : "getLastTwo ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 				}
 
@@ -651,7 +632,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1167.0, 1530.0, 150.0, 48.0 ],
+					"patching_rect" : [ 1167.0, 1530.0, 150.0, 47.0 ],
 					"text" : "Add documentation on everything added here handling timestamps"
 				}
 
@@ -663,7 +644,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 711.0, 1049.0, 152.0, 89.0 ],
+					"patching_rect" : [ 711.0, 1049.0, 152.0, 87.0 ],
 					"text" : "Something to add: Using the sampling period, when requesting by timestamp, show the number of packets the user is requesting"
 				}
 
@@ -700,8 +681,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 901.333347678184509, 299.0, 204.0, 77.0 ],
-					"text" : "getByTime 2022-11-1T12:30:14 2023-5-9T21:43:6 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0 1000"
+					"patching_rect" : [ 901.333347678184509, 299.0, 204.0, 76.0 ],
+					"text" : "getByTime 2021-1-1T0:0:0 2023-4-21T11:1:55 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0 4"
 				}
 
 			}
@@ -771,7 +752,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 629.941379308700562, 2169.0, 127.0, 22.0 ],
-					"text" : "2023-5-9T21:43:6"
+					"text" : "2023-4-21T11:1:55"
 				}
 
 			}
@@ -795,7 +776,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 336.5, 2177.0, 127.0, 22.0 ],
-					"text" : "2022-11-1T12:30:14"
+					"text" : "2021-1-1T0:0:0"
 				}
 
 			}
@@ -836,8 +817,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 108.941379308700562, 2191.0, 139.0, 50.0 ],
-					"text" : "convertToDBTimestamp 2022-11-01T12:30:14 2023-05-09T21:43:06"
+					"patching_rect" : [ 108.941379308700562, 2191.0, 139.0, 49.0 ],
+					"text" : "convertToDBTimestamp 2021-01-01T00:00:00 2023-04-21T11:01:55Z"
 				}
 
 			}
@@ -952,12 +933,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-272",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 297.941379308700562, 1970.0, 125.0, 22.0 ],
-					"text" : "2023-05-09T21:43:06"
+					"patching_rect" : [ 297.941379308700562, 1970.0, 125.0, 35.0 ],
+					"text" : "2023-04-21T11:01:55Z"
 				}
 
 			}
@@ -981,7 +963,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.941379308700562, 1970.0, 125.0, 22.0 ],
-					"text" : "2022-11-01T12:30:14"
+					"text" : "2021-01-01T00:00:00"
 				}
 
 			}
@@ -1080,7 +1062,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 711.0, 1143.333364486694336, 150.0, 158.0 ],
+					"patching_rect" : [ 711.0, 1143.333364486694336, 150.0, 154.0 ],
 					"text" : "Something to add: A get first packet function that grabs the very first packet and sets it as the default \"from\" timestamp and checks all user inputted \"fromTime\" against it, an easy work around is having a file with the db & chime name and first timestamp hard coded"
 				}
 
@@ -1403,7 +1385,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1123.75, 381.333344697952271, 150.0, 34.0 ],
+					"patching_rect" : [ 1123.75, 381.333344697952271, 150.0, 33.0 ],
 					"text" : "All coll objects created by parse.js"
 				}
 
@@ -1415,7 +1397,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1414.433353126049042, 771.399999976158142, 150.0, 117.0 ],
+					"patching_rect" : [ 1414.433353126049042, 771.399999976158142, 150.0, 114.0 ],
 					"text" : "Gets last two packet local time timestamps and calles findSamplingPeriod to find the number of seconds in the sampling period, as well as returning the last packet's formatted timestamp"
 				}
 
@@ -1428,8 +1410,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 942.359008193016052, 1250.000032305717468, 342.307695269584656, 36.0 ],
-					"text" : "findSamplingPeriod \"2023-05-09 21:43:6\" \"2023-05-09 21:27:29\""
+					"patching_rect" : [ 942.359008193016052, 1250.000032305717468, 342.307695269584656, 35.0 ],
+					"text" : "findSamplingPeriod 2023-05-14T16:32:36Z 2023-04-21T11:1:55Z"
 				}
 
 			}
@@ -1554,7 +1536,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1347.859200654029337, 1065.000030815601349, 135.470086336135864, 22.0 ],
-					"text" : "\"2023-05-09 21:27:29\""
+					"text" : "2023-04-21T11:1:55Z"
 				}
 
 			}
@@ -1590,7 +1572,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 988.235308766365051, 1065.000030815601349, 155.880343556404114, 22.0 ],
-					"text" : "\"2023-05-09 21:43:6\""
+					"text" : "2023-05-14T16:32:36Z"
 				}
 
 			}
@@ -1625,7 +1607,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1453.25, 226.0, 83.0, 22.0 ],
+					"patching_rect" : [ 1394.75, 329.0, 83.0, 22.0 ],
 					"text" : "r isConnected"
 				}
 
@@ -1662,9 +1644,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 354.0, 826.679296731948853, 93.0, 57.0 ],
+					"patching_rect" : [ 354.0, 826.679296731948853, 93.0, 55.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 144.493652760982513, 247.943008782439279, 235.0, 25.0 ],
+					"presentation_rect" : [ 144.493652760982513, 247.943008782439279, 235.0, 24.0 ],
 					"text" : "Get Packets Between Timestamps",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -2375,7 +2357,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 346.833344000000011, 83.0, 70.0, 34.0 ],
+					"patching_rect" : [ 346.833344000000011, 83.0, 70.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 22.678957462310791, 45.011326877677902, 137.439930982887745, 21.0 ],
 					"text" : "MongodDB Username:",
@@ -2821,9 +2803,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 144.666655999999989, 624.0, 166.0, 36.0 ],
+					"patching_rect" : [ 144.666655999999989, 624.0, 166.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.678957462310791, 187.893979100788101, 178.353514976799488, 36.0 ],
+					"presentation_rect" : [ 22.678957462310791, 187.893979100788101, 178.353514976799488, 35.0 ],
 					"text" : "Connected",
 					"textjustification" : 1
 				}
@@ -2840,6 +2822,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -3500,10 +3484,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1308.0, 128.0, 73.0, 57.0 ],
+					"patching_rect" : [ 1308.0, 128.0, 73.0, 55.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 22.678957462310791, 247.943008782439279, 85.0, 57.0 ],
+					"presentation_rect" : [ 22.678957462310791, 247.943008782439279, 86.0, 55.0 ],
 					"text" : "Get Packets by Count",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -3548,6 +3532,7 @@
 					"patching_rect" : [ 1521.75, 12.217142749137878, 103.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.561855554580688, 314.126553277308176, 85.833334147930145, 41.0 ],
+					"text" : "0",
 					"textjustification" : 1
 				}
 
@@ -3573,7 +3558,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.666655999999989, 766.0, 78.0, 36.0 ],
+					"patching_rect" : [ 151.666655999999989, 766.0, 78.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 125.751540504395962, 431.126553277308176, 110.0, 22.0 ],
 					"text" : "Packets Returned",
@@ -3653,10 +3638,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 507.25, 71.0, 97.5, 46.0 ],
+					"patching_rect" : [ 507.25, 71.0, 97.5, 45.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 22.678957462310791, 95.794126958836614, 137.439930982887745, 34.0 ],
+					"presentation_rect" : [ 22.678957462310791, 95.794126958836614, 137.439930982887745, 33.0 ],
 					"text" : "MongoDB Unique Cluster Variable:",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -3698,8 +3683,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 519.000000000000114, 324.0, 204.0, 50.0 ],
-					"text" : "grab ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
+					"patching_rect" : [ 519.000000000000114, 324.0, 204.0, 49.0 ],
+					"text" : "grab ear2earth helloworld101 Chime0 WeatherChimes-Workshop Chime0"
 				}
 
 			}
@@ -3849,8 +3834,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -3937,7 +3920,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 648.953605532646179, 48.100043999999997, 150.0, 34.0 ],
+					"patching_rect" : [ 648.953605532646179, 48.100043999999997, 150.0, 33.0 ],
 					"text" : "Can also use \"\" to send empty password"
 				}
 
@@ -3962,7 +3945,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 125.666655999999989, 324.0, 204.0, 50.0 ],
+					"patching_rect" : [ 125.666655999999989, 324.0, 204.0, 49.0 ],
 					"text" : "connect ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 				}
 
@@ -4024,9 +4007,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.5, 14.100043999999997, 89.0, 57.0 ],
+					"patching_rect" : [ 17.5, 14.100043999999997, 89.0, 55.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 31.026105232536793, 9.666666626930237, 361.0, 25.0 ],
+					"presentation_rect" : [ 31.026105232536793, 9.666666626930237, 361.0, 24.0 ],
 					"text" : "MongoDB Connection Setup",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -4096,7 +4079,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 422.833344000000011, 83.0, 68.0, 34.0 ],
+					"patching_rect" : [ 422.833344000000011, 83.0, 68.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 22.678957462310791, 70.711338877677917, 137.439930982887745, 21.0 ],
 					"text" : "MongoDB Password:",
@@ -4382,31 +4365,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-80", 0 ],
-					"source" : [ "obj-122", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-120", 0 ],
-					"order" : 1,
-					"source" : [ "obj-123", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-121", 1 ],
-					"order" : 0,
 					"source" : [ "obj-123", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-123", 0 ],
-					"source" : [ "obj-125", 0 ]
 				}
 
 			}
@@ -4577,7 +4537,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-59", 0 ],
+					"destination" : [ "obj-80", 0 ],
 					"source" : [ "obj-147", 0 ]
 				}
 
@@ -4798,13 +4758,6 @@
 					"destination" : [ "obj-284", 0 ],
 					"order" : 1,
 					"source" : [ "obj-216", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-125", 0 ],
-					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -5746,16 +5699,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-122", 0 ],
-					"order" : 1,
-					"source" : [ "obj-59", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-80", 1 ],
-					"order" : 0,
 					"source" : [ "obj-59", 0 ]
 				}
 
@@ -6014,14 +5958,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Timestamp.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "auto_install.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -6034,7 +5978,7 @@
 			}
 , 			{
 				"name" : "mongoconnect1.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -6047,7 +5991,7 @@
 			}
 , 			{
 				"name" : "parse.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
