@@ -40,6 +40,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-64",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 845.686293959617615, 762.0, 179.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll Tip_BucketPrecipitation_(in)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2790,7 +2807,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 0.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0, 0.851, 0.28 ],
+					"bgfillcolor_color" : [ 0.52, 0.52, 0.52 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.0,
@@ -2806,7 +2823,7 @@
 					"patching_rect" : [ 144.666655999999989, 624.0, 166.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 22.678957462310791, 187.893979100788101, 178.353514976799488, 35.0 ],
-					"text" : "Connected",
+					"text" : "Disconnected",
 					"textjustification" : 1
 				}
 
@@ -2822,8 +2839,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -3684,7 +3699,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 519.000000000000114, 324.0, 204.0, 49.0 ],
-					"text" : "grab ear2earth helloworld101 Chime0 WeatherChimes-Workshop Chime0"
+					"text" : "grab ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 				}
 
 			}
@@ -3834,6 +3849,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
