@@ -31,6 +31,8 @@ function assembleTimeStamp(year,month,day,hour,min,sec)
 */
 function fixTimeStamp(t)
 {
+	if(t.substr(0,1) == "0"){t = t.slice(2)}
+
 	t = t.replace(" ","T").concat("Z");
 	
 	if(t.substr(6,1) == "-"){t = t.substr(0,5).concat("0").concat(t.substr(5))}
@@ -40,7 +42,8 @@ function fixTimeStamp(t)
 	if(t.substr(18,1) == "Z"){t = t.substr(0,17).concat("0").concat(t.substr(17))}
 	
 	t = t.slice(0, -1)
-		
+
+	outlet(0,t);
 	return t;
 }
 
