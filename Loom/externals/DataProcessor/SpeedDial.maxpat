@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 3,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 803.0, 84.0, 699.0, 705.0 ],
+		"rect" : [ 803.0, 85.0, 699.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -277,14 +277,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ -1.0, 3.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
-						"activedialcolor" : 						{
-							"expression" : "themecolor.live_active_automation"
-						}
-,
-						"activefgdialcolor" : 						{
-							"expression" : "themecolor.maxwindow_posttext"
-						}
-,
 						"activeneedlecolor" : 						{
 							"expression" : "themecolor.maxwindow_posttext"
 						}
@@ -293,12 +285,20 @@
 							"expression" : ""
 						}
 ,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"dialcolor" : 						{
 							"expression" : "themecolor.live_output_curve_outline_color"
 						}
 ,
-						"focusbordercolor" : 						{
-							"expression" : ""
+						"activedialcolor" : 						{
+							"expression" : "themecolor.live_active_automation"
+						}
+,
+						"activefgdialcolor" : 						{
+							"expression" : "themecolor.maxwindow_posttext"
 						}
 ,
 						"textcolor" : 						{
@@ -308,6 +308,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "live.dial",
 							"parameter_mmax" : 999.0,
+							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "Speed",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
@@ -428,11 +429,6 @@
 		"parameters" : 		{
 			"obj-28" : [ "live.dial", "Speed", 0 ],
 			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
 
 			}
 ,

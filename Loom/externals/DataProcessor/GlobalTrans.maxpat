@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 3,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 41.0, 84.0, 1069.0, 699.0 ],
+		"rect" : [ 34.0, 77.0, 1478.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,115 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 57.0, 345.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 91.0, 385.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 91.0, 415.0, 63.0, 22.0 ],
+					"text" : "metro 500"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"blinkcolor" : [ 0.0, 1.0, 0.227450980392157, 1.0 ],
+					"id" : "obj-13",
+					"ignoreclick" : 1,
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 91.0, 454.0, 102.0, 102.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 61.916664000000026, 17.416663999999983, 63.5, 63.5 ],
+					"style" : "chiba"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+					"bgcolor2" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "color",
+					"fontface" : 1,
+					"fontsize" : 14.0,
+					"gradient" : 1,
+					"id" : "obj-19",
+					"ignoreclick" : 1,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 142.0, 228.25, 51.0, 25.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 69.166664000000026, 3.666663999999997, 51.0, 25.0 ],
+					"text" : "Speed",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textjustification" : 1,
+					"varname" : "patch_title[4]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.964705882352941, 0.964705882352941, 0.964705882352941, 0.0 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-21",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "SpeedDial.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 1.0, -6.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 144.0, 269.0, 49.0, 74.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 69.166664000000026, 19.541663999999969, 49.0, 74.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 					"bgcolor2" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -114,7 +223,7 @@
 				"box" : 				{
 					"comment" : "Refresh Data",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -138,12 +247,12 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 128.666672000000062, 31.416663999999969, 56.0, 56.0 ],
 					"saved_attribute_attributes" : 					{
-						"blinkcolor" : 						{
-							"expression" : "themecolor.live_active_automation"
-						}
-,
 						"outlinecolor" : 						{
 							"expression" : "themecolor.maxwindow_posttext"
+						}
+,
+						"blinkcolor" : 						{
+							"expression" : "themecolor.live_active_automation"
 						}
 
 					}
@@ -212,36 +321,6 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 670.5, 64.0, 83.0, 22.0 ],
 					"text" : "metro 300000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-					"bgcolor2" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_proportion" : 0.39,
-					"bgfillcolor_type" : "color",
-					"fontface" : 1,
-					"fontsize" : 14.0,
-					"gradient" : 1,
-					"id" : "obj-16",
-					"ignoreclick" : 1,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 155.0, 18.0, 51.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 69.166664000000026, 3.666663999999997, 51.0, 25.0 ],
-					"text" : "Speed",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textjustification" : 1,
-					"varname" : "patch_title[1]"
 				}
 
 			}
@@ -316,11 +395,11 @@
 					"comment" : "Playback Speed",
 					"hint" : "Playback speed",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 155.0, 126.0, 30.0, 30.0 ]
+					"patching_rect" : [ 182.0, 396.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -330,7 +409,7 @@
 					"comment" : "Play/Pause Toggle",
 					"hint" : "Play/pause",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -382,30 +461,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "SpeedDial.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"offset" : [ 1.0, -6.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 155.0, 30.300026000000003, 49.0, 74.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 69.166664000000026, 19.541663999999969, 49.0, 74.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"angle" : 0.0,
 					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"border" : 2,
@@ -415,7 +470,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 278.029190000000028, 228.25, 429.941619999999944, 566.5 ],
+					"patching_rect" : [ 923.029189999999971, 175.5, 429.941619999999944, 566.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -0.166671999999949, -1.333336000000003, 268.499995461395372, 100.999999999999972 ],
 					"proportion" : 0.39,
@@ -425,13 +480,6 @@
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-12", 0 ]
@@ -461,8 +509,45 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 1 ],
+					"order" : 1,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -524,31 +609,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-1::obj-28" : [ "live.dial", "Speed", 0 ],
-			"obj-3" : [ "live.toggle", "live.toggle", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "SpeedDial.maxpat",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/externals/DataProcessor",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
