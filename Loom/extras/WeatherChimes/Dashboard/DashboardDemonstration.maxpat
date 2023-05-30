@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1570.0, -338.0, 1453.0, 929.0 ],
+		"rect" : [ 34.0, 87.0, 812.0, 679.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 240.333332419395447, 17.999999761581421, 186.0, 38.0 ],
+					"patching_rect" : [ 240.333332419395447, 17.999999761581421, 186.0, 37.0 ],
 					"text" : "Turn this trigger on or off to toggle live updates."
 				}
 
@@ -60,7 +60,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1059.0, 1901.5, 284.0, 176.0 ],
+					"patching_rect" : [ 1059.0, 1901.5, 284.0, 171.0 ],
 					"text" : "Recall from the \"Intro to Sensors\" lesson that Dew Point can be calculated from temperature and humidity. Let's look at how Dew Point changes in relation to temperature and humidity by using the 'pictslider' above - drag the knob around in the space above to change the displayed values of temperature and humidity and watch how the Dew Point reacts.  What causes Dew Point to increase? What causes it to decrease? You may want to go to the top of this lesson and disable live updating temporarily so the values do not get reset!"
 				}
 
@@ -139,7 +139,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "MongoDB_plot.maxpat",
+					"name" : "MongoDB.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -251,7 +251,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1958.0, 613.0, 275.0, 220.0 ],
+									"patching_rect" : [ 1958.0, 613.0, 245.0, 185.0 ],
 									"style" : "WTF",
 									"text" : "Automatically calls getFirst upon recieving the last packet (this is done in series to ensure the packets order in the coll object), use to get the first packet from the database"
 								}
@@ -267,7 +267,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1663.0, 607.0, 275.0, 171.0 ],
+									"patching_rect" : [ 1663.0, 607.0, 273.0, 145.0 ],
 									"style" : "WTF",
 									"text" : "Automatically calls getLastTwo upon connecting to get the last two packets, used to get the last packet and calculate sampling period"
 								}
@@ -283,7 +283,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1336.0, 598.558979272842407, 211.0, 162.0 ],
+									"patching_rect" : [ 1336.0, 598.558979272842407, 187.0, 137.0 ],
 									"style" : "WTF",
 									"text" : "Receives startTime and endTime from the timestamp selection and packs it with the MongoDB credentials and prescaler to get the proper number of packets between the timestamps"
 								}
@@ -334,7 +334,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 184.00000262260437, 113.0 ],
+									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 172.00000262260437, 94.0 ],
 									"style" : "WTF",
 									"text" : "Sampling Period is calculated by parsing the seconds return and dividing by 60 to get the # of minutes and then displaying the remaining seconds"
 								}
@@ -349,7 +349,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 483.250001907348633, 1221.733346223831177, 293.333339214324951, 69.0 ],
+									"patching_rect" : [ 483.250001907348633, 1221.733346223831177, 269.333339214324951, 58.0 ],
 									"style" : "WTF",
 									"text" : "Timestamp.js returns the lastPacket timestamp in the first outlet and the number of seconds between packets in the second outlet"
 								}
@@ -365,7 +365,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.666662037372589, 1082.666698932647705, 202.00000262260437, 83.0 ],
+									"patching_rect" : [ 25.666662037372589, 1082.666698932647705, 178.00000262260437, 70.0 ],
 									"style" : "WTF",
 									"text" : "Gets the last two timestamps from coll and sends into the findSampling Period function in Timestamp.js"
 								}
@@ -381,7 +381,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.249955654144287, 964.874078869819641, 195.000003695487976, 69.0 ],
+									"patching_rect" : [ 48.249955654144287, 964.874078869819641, 195.000003695487976, 58.0 ],
 									"style" : "WTF",
 									"text" : "Once connected, there is a half second delay to allow time for data to be parsed and saved into the coll"
 								}
@@ -397,7 +397,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1022.500001311302185, 598.558979272842407, 277.0, 98.0 ],
+									"patching_rect" : [ 1022.500001311302185, 598.558979272842407, 265.0, 85.0 ],
 									"style" : "WTF",
 									"text" : "Use this to return the last n packets in from the database"
 								}
@@ -413,7 +413,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 239.0, 166.0 ],
+									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 223.0, 138.0 ],
 									"style" : "WTF",
 									"text" : "3. After connecting, it will send a bang to isConnected which will be used to get the first and last two packets in the collection to initalize the timestamps and sampling period"
 								}
@@ -461,7 +461,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.333327651023865, 435.166681528091431, 271.0, 108.0 ],
+									"patching_rect" : [ 9.333327651023865, 435.166681528091431, 271.0, 90.0 ],
 									"style" : "WTF",
 									"text" : "2. Click Connect button to Connect to MongoDB Collection for the specified Chime"
 								}
@@ -477,7 +477,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.333327651023865, 117.666665196418762, 159.333332180976868, 83.0 ],
+									"patching_rect" : [ 9.333327651023865, 117.666665196418762, 159.333332180976868, 70.0 ],
 									"style" : "WTF",
 									"text" : "1. Set MongoDB credentials"
 								}
@@ -862,7 +862,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1578.23532247543335, 309.333348035812378, 63.0, 36.0 ],
+									"patching_rect" : [ 1578.23532247543335, 309.333348035812378, 63.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 135.118888445198536, 375.87510158645, 85.0, 22.0 ],
 									"text" : "Set Prescaler",
@@ -970,8 +970,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 979.833342432975769, 540.833342313766479, 351.0, 36.0 ],
-									"text" : "getLast 0 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
+									"patching_rect" : [ 979.833342432975769, 540.833342313766479, 351.0, 35.0 ],
+									"text" : "getLast 100 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
 							}
@@ -1114,7 +1114,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1979.019662022590637, 512.333326697349548, 193.0, 64.0 ],
+									"patching_rect" : [ 1979.019662022590637, 512.333326697349548, 193.0, 62.0 ],
 									"text" : "getFirst ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
@@ -1252,7 +1252,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1086.916675925254822, 401.399970305114721, 50.0, 22.0 ],
-									"text" : "bang"
+									"text" : "100"
 								}
 
 							}
@@ -1288,7 +1288,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1722.583341002464294, 505.833342313766479, 193.0, 64.0 ],
+									"patching_rect" : [ 1722.583341002464294, 505.833342313766479, 193.0, 62.0 ],
 									"text" : "getLastTwo ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
@@ -1344,13 +1344,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-328",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1391.333360314369202, 499.333342313766479, 204.0, 77.0 ],
-									"text" : "getByTime 2022-11-1T12:30:14 2023-5-21T12:50:42 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0 4"
+									"patching_rect" : [ 1391.333360314369202, 499.333342313766479, 204.0, 62.0 ],
+									"text" : "getByTime s s ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0 4"
 								}
 
 							}
@@ -1420,7 +1420,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 668.274713397026062, 2815.842193441063046, 127.0, 22.0 ],
-									"text" : "2023-5-21T12:50:42"
+									"text" : "2023-5-21T12:3:50"
 								}
 
 							}
@@ -1485,8 +1485,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 147.274713397026062, 2837.842193441063046, 139.0, 50.0 ],
-									"text" : "convertToDBTimestamp 2022-11-01T12:30:14 2023-05-21T12:50:42"
+									"patching_rect" : [ 147.274713397026062, 2837.842193441063046, 139.0, 49.0 ],
+									"text" : "convertToDBTimestamp 2022-11-01T12:30:14 2023-05-21T12:03:50"
 								}
 
 							}
@@ -1606,7 +1606,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 336.274713397026062, 2616.842193441063046, 125.0, 22.0 ],
-									"text" : "2023-05-21T12:50:42"
+									"text" : "2023-05-21T12:03:50"
 								}
 
 							}
@@ -1993,7 +1993,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1028.166675925254822, 797.666695237159729, 150.0, 34.0 ],
+									"patching_rect" : [ 1028.166675925254822, 797.666695237159729, 150.0, 33.0 ],
 									"text" : "All coll objects created by parse.js"
 								}
 
@@ -2006,8 +2006,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 161.249956846237183, 1287.574075102806091, 142.307695269584656, 50.0 ],
-									"text" : "findSamplingPeriod \"0 2023-05-21 12:50:42\" \"0 2023-05-21 12:35:4\""
+									"patching_rect" : [ 161.249956846237183, 1287.574075102806091, 142.307695269584656, 49.0 ],
+									"text" : "findSamplingPeriod \"0 2023-05-21 12:3:50\" \"0 2023-05-21 11:48:14\""
 								}
 
 							}
@@ -2096,9 +2096,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 251.446075081825256, 1859.046440958976746, 93.0, 57.0 ],
+									"patching_rect" : [ 251.446075081825256, 1859.046440958976746, 93.0, 55.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 144.493652760982513, 247.943008782439279, 235.0, 25.0 ],
+									"presentation_rect" : [ 144.493652760982513, 247.943008782439279, 235.0, 24.0 ],
 									"text" : "Get Packets Between Timestamps",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -2809,7 +2809,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 216.916685645616667, 129.666665196418762, 70.0, 34.0 ],
+									"patching_rect" : [ 216.916685645616667, 129.666665196418762, 70.0, 33.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 22.678957462310791, 45.011326877677902, 137.439930982887745, 21.0 ],
 									"text" : "MongodDB Username:",
@@ -3231,7 +3231,7 @@
 									"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_angle" : 0.0,
 									"bgfillcolor_autogradient" : 0.0,
-									"bgfillcolor_color" : [ 0, 0.851, 0.28 ],
+									"bgfillcolor_color" : [ 0.52, 0.52, 0.52 ],
 									"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_proportion" : 0.0,
@@ -3244,10 +3244,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 220.75002966580962, 881.000002861022949, 166.0, 36.0 ],
+									"patching_rect" : [ 220.75002966580962, 881.000002861022949, 166.0, 35.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 22.678957462310791, 187.893979100788101, 178.353514976799488, 36.0 ],
-									"text" : "Connected",
+									"presentation_rect" : [ 22.678957462310791, 187.893979100788101, 178.353514976799488, 35.0 ],
+									"text" : "Disconnected",
 									"textjustification" : 1
 								}
 
@@ -3907,10 +3907,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 971.83334219455719, 322.166681408882141, 103.666667580604553, 41.0 ],
+									"patching_rect" : [ 971.83334219455719, 322.166681408882141, 103.666667580604553, 40.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 3,
-									"presentation_rect" : [ 22.678957462310791, 247.943008782439279, 86.0, 57.0 ],
+									"presentation_rect" : [ 22.678957462310791, 247.943008782439279, 86.0, 55.0 ],
 									"text" : "Get Packets by Count",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -3955,6 +3955,7 @@
 									"patching_rect" : [ 1086.916675209999084, 322.166681408882141, 73.250019925254833, 39.833333373069763 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 24.561855554580688, 314.126553277308176, 85.833334147930145, 41.0 ],
+									"text" : "100",
 									"textjustification" : 1
 								}
 
@@ -3980,7 +3981,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 401.25, 883.592556595802307, 78.0, 36.0 ],
+									"patching_rect" : [ 401.25, 883.592556595802307, 78.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 13.530927658081055, 431.126553277308176, 110.0, 22.0 ],
 									"text" : "Packets Returned",
@@ -4060,10 +4061,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 417.583342807907229, 117.666665196418762, 97.5, 46.0 ],
+									"patching_rect" : [ 417.583342807907229, 117.666665196418762, 97.5, 45.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 22.678957462310791, 95.794126958836614, 137.439930982887745, 34.0 ],
+									"presentation_rect" : [ 22.678957462310791, 95.794126958836614, 137.439930982887745, 33.0 ],
 									"text" : "MongoDB Unique Cluster Variable:",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -4093,7 +4094,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 730.75000786781311, 512.833342313766479, 204.0, 50.0 ],
+									"patching_rect" : [ 730.75000786781311, 512.833342313766479, 204.0, 49.0 ],
 									"text" : "grab ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
@@ -4329,7 +4330,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 658.750007510185242, 79.766710388511655, 150.0, 34.0 ],
+									"patching_rect" : [ 658.750007510185242, 79.766710388511655, 150.0, 33.0 ],
 									"text" : "Can also use \"\" to send empty password"
 								}
 
@@ -4354,7 +4355,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 412.666672229766846, 519.833342313766479, 204.0, 50.0 ],
+									"patching_rect" : [ 412.666672229766846, 519.833342313766479, 204.0, 49.0 ],
 									"text" : "connect ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
@@ -4416,9 +4417,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 13.49999988079071, 9.700096000000002, 89.0, 57.0 ],
+									"patching_rect" : [ 13.49999988079071, 9.700096000000002, 89.0, 55.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 31.026105232536793, 9.666666626930237, 361.0, 25.0 ],
+									"presentation_rect" : [ 31.026105232536793, 9.666666626930237, 361.0, 24.0 ],
 									"text" : "MongoDB Connection Setup",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -4488,7 +4489,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 334.500020180977003, 129.666665196418762, 68.0, 34.0 ],
+									"patching_rect" : [ 334.500020180977003, 129.666665196418762, 68.0, 33.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 22.678957462310791, 70.711338877677917, 137.439930982887745, 21.0 ],
 									"text" : "MongoDB Password:",
@@ -7483,7 +7484,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 436.0, 161.0, 414.5, 482.0 ],
+					"patching_rect" : [ 436.0, 161.0, 420.5, 480.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -7520,7 +7521,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1316.0, 2315.5, 281.0, 273.0 ],
+					"patching_rect" : [ 1316.0, 2315.5, 281.0, 265.0 ],
 					"text" : "I've used the same technique here to map our 'temperature' data stream to the loudness of a windchime sample. Again, the [scale] object is being used to convert our range of temperatures (-40° C, 40° C) to a range of volumes (-60db, 0db). Here, the hotter it is, the louder our windchimes are.\n\nIf we were to use all of the data streams concurrently, we could have a whole soundscape of samples playing simultaneously, reacting in real-time to updates in our sensor data. This is a simplistic example, but using some of the techniques discussed in the sonification lesson, we can easily map each of our data streams to a host of parameters like tempo, panning, duration, filtering, etc. which opens up a world of possibilities for analyzing this data through sound."
 				}
 
@@ -7750,7 +7751,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 98.0, 2306.5, 289.0, 135.0 ],
+					"patching_rect" : [ 98.0, 2306.5, 289.0, 131.0 ],
 					"text" : "Here's an example using our humidity variable to do basic sonification using a preset sample. In this example, humidity is being received using our data stream and then the [scale] object is transforming our range from (0% RH, 100% RH) to (-30db, 0db). The decibel value is then routed to a fader which controls our sample loudness - so the more humid it is, the louder our \"bubbling\" sample plays."
 				}
 
@@ -8088,7 +8089,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1133.0, 1575.0, 281.0, 135.0 ],
+					"patching_rect" : [ 1133.0, 1575.0, 281.0, 131.0 ],
 					"text" : "For this example, we are going to plot both temperature and humidity in a 2-dimensional space. The 'pictslider' object takes in two numbers, the first representing the horizontal value and the second representing the vertical value. As with the slider, minimums and maximums can be set using the \"Value\" section in the object's inspector. I've pre-set the values to accommodate our data streams."
 				}
 
@@ -8178,7 +8179,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 61.0, 1543.5, 304.0, 286.0 ],
+					"patching_rect" : [ 61.0, 1543.5, 307.0, 279.0 ],
 					"text" : "This is a simple example demonstrating how we could visualize a data stream using the WeatherChimes dashboard. First, we grab our temperature using the 'temperature' variable that we assigned in Step 5. This value is re-displayed in the number box called \"VALUE\" and then routed to a slider.\n\nOur slider has a range of \"-40 125\" as specified in the Max Inspector, meaning that it will output values from -40° C to 125° C. The black bar on the slider represents our current position in this range. You can manipulate the \"VALUE\" number box by hand to verify that the slider is displaying the inputted number along this range.\n\nUsing this method, we can easily visualize data streams in one dimension. But what if we want to visually analyze multiple data streams at the same time?"
 				}
 
@@ -8399,7 +8400,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 978.0, 1338.5, 239.0, 107.0 ],
+					"patching_rect" : [ 978.0, 1338.5, 239.0, 104.0 ],
 					"text" : "For the rest of our data streams, I'm using the \"send\" object (shortened to just 's' here) to assign each stream to a variable named accordingly. The syntax for these objects is \"s [variable_name]\", and we will use these variables to work with our data."
 				}
 
@@ -8426,7 +8427,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 152.333332419395447, 1359.0, 280.0, 66.0 ],
+					"patching_rect" : [ 152.333332419395447, 1359.0, 280.0, 64.0 ],
 					"text" : "Here, for example, is our packet number. Using the dashboard outlet named \"Packet Number\", we can output it as a numerical value and work with it as we see fit."
 				}
 
@@ -8440,7 +8441,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 153.333332419395447, 1273.0, 279.0, 66.0 ],
+					"patching_rect" : [ 153.333332419395447, 1273.0, 279.0, 64.0 ],
 					"text" : "Each data stream is outputted as a number at the bottom of our Dashboard patch. We can use these streams to manipulate and interact with them within the Max environment."
 				}
 
@@ -8454,7 +8455,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 153.333332419395447, 833.0, 279.0, 93.0 ],
+					"patching_rect" : [ 153.333332419395447, 833.0, 279.0, 91.0 ],
 					"text" : "The WeatherChimes Dashboard displays and dynamically updates a host of data streams from MongoDB. It acts a centralized hub for all of our WeatherChimes data, so we can see the values of each variable in realtime as it is updated by our sensors."
 				}
 
@@ -8489,7 +8490,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 240.333332419395447, 186.999999761581421, 186.0, 52.0 ],
+					"patching_rect" : [ 240.333332419395447, 186.999999761581421, 186.0, 51.0 ],
 					"text" : "Connect to MongoDB using the \"Send\" button on the MongoDB Connection Setup"
 				}
 
@@ -8861,13 +8862,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-165", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -9211,21 +9205,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "DashboardMini.maxpat",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/extras/WeatherChimes/Dashboard",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/extras/WeatherChimes/Dashboard",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Timestamp.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "auto_install.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -9238,14 +9232,14 @@
 			}
 , 			{
 				"name" : "generator.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mongoconnect1.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -9258,7 +9252,7 @@
 			}
 , 			{
 				"name" : "parse.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1

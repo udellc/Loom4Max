@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1570.0, -338.0, 1453.0, 929.0 ],
+		"rect" : [ 34.0, 87.0, 812.0, 679.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -85,7 +85,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "MongoDB_plot.maxpat",
+					"name" : "MongoDB.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -197,7 +197,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1958.0, 613.0, 275.0, 220.0 ],
+									"patching_rect" : [ 1958.0, 613.0, 245.0, 185.0 ],
 									"style" : "WTF",
 									"text" : "Automatically calls getFirst upon recieving the last packet (this is done in series to ensure the packets order in the coll object), use to get the first packet from the database"
 								}
@@ -213,7 +213,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1663.0, 607.0, 275.0, 171.0 ],
+									"patching_rect" : [ 1663.0, 607.0, 273.0, 145.0 ],
 									"style" : "WTF",
 									"text" : "Automatically calls getLastTwo upon connecting to get the last two packets, used to get the last packet and calculate sampling period"
 								}
@@ -229,7 +229,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1336.0, 598.558979272842407, 211.0, 162.0 ],
+									"patching_rect" : [ 1336.0, 598.558979272842407, 187.0, 137.0 ],
 									"style" : "WTF",
 									"text" : "Receives startTime and endTime from the timestamp selection and packs it with the MongoDB credentials and prescaler to get the proper number of packets between the timestamps"
 								}
@@ -280,7 +280,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 184.00000262260437, 113.0 ],
+									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 172.00000262260437, 94.0 ],
 									"style" : "WTF",
 									"text" : "Sampling Period is calculated by parsing the seconds return and dividing by 60 to get the # of minutes and then displaying the remaining seconds"
 								}
@@ -295,7 +295,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 483.250001907348633, 1221.733346223831177, 293.333339214324951, 69.0 ],
+									"patching_rect" : [ 483.250001907348633, 1221.733346223831177, 269.333339214324951, 58.0 ],
 									"style" : "WTF",
 									"text" : "Timestamp.js returns the lastPacket timestamp in the first outlet and the number of seconds between packets in the second outlet"
 								}
@@ -311,7 +311,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.666662037372589, 1082.666698932647705, 202.00000262260437, 83.0 ],
+									"patching_rect" : [ 25.666662037372589, 1082.666698932647705, 178.00000262260437, 70.0 ],
 									"style" : "WTF",
 									"text" : "Gets the last two timestamps from coll and sends into the findSampling Period function in Timestamp.js"
 								}
@@ -327,7 +327,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.249955654144287, 964.874078869819641, 195.000003695487976, 69.0 ],
+									"patching_rect" : [ 48.249955654144287, 964.874078869819641, 195.000003695487976, 58.0 ],
 									"style" : "WTF",
 									"text" : "Once connected, there is a half second delay to allow time for data to be parsed and saved into the coll"
 								}
@@ -343,7 +343,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1022.500001311302185, 598.558979272842407, 277.0, 98.0 ],
+									"patching_rect" : [ 1022.500001311302185, 598.558979272842407, 265.0, 85.0 ],
 									"style" : "WTF",
 									"text" : "Use this to return the last n packets in from the database"
 								}
@@ -359,7 +359,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 239.0, 166.0 ],
+									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 223.0, 138.0 ],
 									"style" : "WTF",
 									"text" : "3. After connecting, it will send a bang to isConnected which will be used to get the first and last two packets in the collection to initalize the timestamps and sampling period"
 								}
@@ -407,7 +407,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.333327651023865, 435.166681528091431, 271.0, 108.0 ],
+									"patching_rect" : [ 9.333327651023865, 435.166681528091431, 271.0, 90.0 ],
 									"style" : "WTF",
 									"text" : "2. Click Connect button to Connect to MongoDB Collection for the specified Chime"
 								}
@@ -423,7 +423,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.333327651023865, 117.666665196418762, 159.333332180976868, 83.0 ],
+									"patching_rect" : [ 9.333327651023865, 117.666665196418762, 159.333332180976868, 70.0 ],
 									"style" : "WTF",
 									"text" : "1. Set MongoDB credentials"
 								}
@@ -808,7 +808,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1578.23532247543335, 309.333348035812378, 63.0, 36.0 ],
+									"patching_rect" : [ 1578.23532247543335, 309.333348035812378, 63.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 135.118888445198536, 375.87510158645, 85.0, 22.0 ],
 									"text" : "Set Prescaler",
@@ -916,8 +916,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 979.833342432975769, 540.833342313766479, 351.0, 36.0 ],
-									"text" : "getLast 1 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
+									"patching_rect" : [ 979.833342432975769, 540.833342313766479, 351.0, 35.0 ],
+									"text" : "getLast 100 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
 							}
@@ -1060,7 +1060,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1979.019662022590637, 512.333326697349548, 193.0, 64.0 ],
+									"patching_rect" : [ 1979.019662022590637, 512.333326697349548, 193.0, 62.0 ],
 									"text" : "getFirst ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
@@ -1198,7 +1198,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1086.916675925254822, 401.399970305114721, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "100"
 								}
 
 							}
@@ -1234,7 +1234,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1722.583341002464294, 505.833342313766479, 193.0, 64.0 ],
+									"patching_rect" : [ 1722.583341002464294, 505.833342313766479, 193.0, 62.0 ],
 									"text" : "getLastTwo ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
@@ -1290,13 +1290,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-328",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1391.333360314369202, 499.333342313766479, 204.0, 77.0 ],
-									"text" : "getByTime 2022-11-1T12:30:14 2023-5-21T12:35:4 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0 4"
+									"patching_rect" : [ 1391.333360314369202, 499.333342313766479, 204.0, 62.0 ],
+									"text" : "getByTime s s ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0 4"
 								}
 
 							}
@@ -1366,7 +1366,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 668.274713397026062, 2815.842193441063046, 127.0, 22.0 ],
-									"text" : "2023-5-21T12:35:4"
+									"text" : "2023-5-21T12:3:50"
 								}
 
 							}
@@ -1431,8 +1431,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 147.274713397026062, 2837.842193441063046, 139.0, 50.0 ],
-									"text" : "convertToDBTimestamp 2022-11-01T12:30:14 2023-05-21T12:35:04"
+									"patching_rect" : [ 147.274713397026062, 2837.842193441063046, 139.0, 49.0 ],
+									"text" : "convertToDBTimestamp 2022-11-01T12:30:14 2023-05-21T12:03:50"
 								}
 
 							}
@@ -1552,7 +1552,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 336.274713397026062, 2616.842193441063046, 125.0, 22.0 ],
-									"text" : "2023-05-21T12:35:04"
+									"text" : "2023-05-21T12:03:50"
 								}
 
 							}
@@ -1939,7 +1939,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1028.166675925254822, 797.666695237159729, 150.0, 34.0 ],
+									"patching_rect" : [ 1028.166675925254822, 797.666695237159729, 150.0, 33.0 ],
 									"text" : "All coll objects created by parse.js"
 								}
 
@@ -1952,8 +1952,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 161.249956846237183, 1287.574075102806091, 142.307695269584656, 50.0 ],
-									"text" : "findSamplingPeriod \"0 2023-05-21 12:35:4\" \"0 2023-05-21 12:19:27\""
+									"patching_rect" : [ 161.249956846237183, 1287.574075102806091, 142.307695269584656, 49.0 ],
+									"text" : "findSamplingPeriod \"0 2023-05-21 12:3:50\" \"0 2023-05-21 11:48:14\""
 								}
 
 							}
@@ -2042,9 +2042,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 251.446075081825256, 1859.046440958976746, 93.0, 57.0 ],
+									"patching_rect" : [ 251.446075081825256, 1859.046440958976746, 93.0, 55.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 144.493652760982513, 247.943008782439279, 235.0, 25.0 ],
+									"presentation_rect" : [ 144.493652760982513, 247.943008782439279, 235.0, 24.0 ],
 									"text" : "Get Packets Between Timestamps",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -2755,7 +2755,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 216.916685645616667, 129.666665196418762, 70.0, 34.0 ],
+									"patching_rect" : [ 216.916685645616667, 129.666665196418762, 70.0, 33.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 22.678957462310791, 45.011326877677902, 137.439930982887745, 21.0 ],
 									"text" : "MongodDB Username:",
@@ -3177,7 +3177,7 @@
 									"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_angle" : 0.0,
 									"bgfillcolor_autogradient" : 0.0,
-									"bgfillcolor_color" : [ 0, 0.851, 0.28 ],
+									"bgfillcolor_color" : [ 0.52, 0.52, 0.52 ],
 									"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_proportion" : 0.0,
@@ -3190,10 +3190,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 220.75002966580962, 881.000002861022949, 166.0, 36.0 ],
+									"patching_rect" : [ 220.75002966580962, 881.000002861022949, 166.0, 35.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 22.678957462310791, 187.893979100788101, 178.353514976799488, 36.0 ],
-									"text" : "Connected",
+									"presentation_rect" : [ 22.678957462310791, 187.893979100788101, 178.353514976799488, 35.0 ],
+									"text" : "Disconnected",
 									"textjustification" : 1
 								}
 
@@ -3209,6 +3209,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -3851,10 +3853,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 971.83334219455719, 322.166681408882141, 103.666667580604553, 41.0 ],
+									"patching_rect" : [ 971.83334219455719, 322.166681408882141, 103.666667580604553, 40.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 3,
-									"presentation_rect" : [ 22.678957462310791, 247.943008782439279, 86.0, 57.0 ],
+									"presentation_rect" : [ 22.678957462310791, 247.943008782439279, 86.0, 55.0 ],
 									"text" : "Get Packets by Count",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -3899,7 +3901,7 @@
 									"patching_rect" : [ 1086.916675209999084, 322.166681408882141, 73.250019925254833, 39.833333373069763 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 24.561855554580688, 314.126553277308176, 85.833334147930145, 41.0 ],
-									"text" : "1",
+									"text" : "100",
 									"textjustification" : 1
 								}
 
@@ -3925,7 +3927,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 401.25, 883.592556595802307, 78.0, 36.0 ],
+									"patching_rect" : [ 401.25, 883.592556595802307, 78.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 13.530927658081055, 431.126553277308176, 110.0, 22.0 ],
 									"text" : "Packets Returned",
@@ -4005,10 +4007,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 417.583342807907229, 117.666665196418762, 97.5, 46.0 ],
+									"patching_rect" : [ 417.583342807907229, 117.666665196418762, 97.5, 45.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 22.678957462310791, 95.794126958836614, 137.439930982887745, 34.0 ],
+									"presentation_rect" : [ 22.678957462310791, 95.794126958836614, 137.439930982887745, 33.0 ],
 									"text" : "MongoDB Unique Cluster Variable:",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -4038,8 +4040,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 730.75000786781311, 512.833342313766479, 204.0, 50.0 ],
-									"text" : "grab ear2earth helloworld101 Chime0 WeatherChimes-Workshop Chime0"
+									"patching_rect" : [ 730.75000786781311, 512.833342313766479, 204.0, 49.0 ],
+									"text" : "grab ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
 							}
@@ -4188,8 +4190,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -4276,7 +4276,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 658.750007510185242, 79.766710388511655, 150.0, 34.0 ],
+									"patching_rect" : [ 658.750007510185242, 79.766710388511655, 150.0, 33.0 ],
 									"text" : "Can also use \"\" to send empty password"
 								}
 
@@ -4301,7 +4301,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 412.666672229766846, 519.833342313766479, 204.0, 50.0 ],
+									"patching_rect" : [ 412.666672229766846, 519.833342313766479, 204.0, 49.0 ],
 									"text" : "connect ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
 								}
 
@@ -4363,9 +4363,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 13.49999988079071, 9.700096000000002, 89.0, 57.0 ],
+									"patching_rect" : [ 13.49999988079071, 9.700096000000002, 89.0, 55.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 31.026105232536793, 9.666666626930237, 361.0, 25.0 ],
+									"presentation_rect" : [ 31.026105232536793, 9.666666626930237, 361.0, 24.0 ],
 									"text" : "MongoDB Connection Setup",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -4435,7 +4435,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 334.500020180977003, 129.666665196418762, 68.0, 34.0 ],
+									"patching_rect" : [ 334.500020180977003, 129.666665196418762, 68.0, 33.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 22.678957462310791, 70.711338877677917, 137.439930982887745, 21.0 ],
 									"text" : "MongoDB Password:",
@@ -7574,7 +7574,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1338.999991655349731, 154.0, 207.0, 103.0 ],
+					"patching_rect" : [ 1338.999991655349731, 154.0, 207.0, 100.0 ],
 					"text" : "Checklist:\n- (x) Fix \"updated\" indicators\n- (x) Fix luminosity sig figs\n- (x) Port over latest MongoDB connection patch\n- (x) Add temperature in Fahrenheit\n- (x) Update luminosity max"
 				}
 
@@ -7598,7 +7598,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1036.0, 45.0, 253.0, 89.0 ],
+					"patching_rect" : [ 1036.0, 45.0, 253.0, 87.0 ],
 					"text" : "BUGS:\n- MongoDB Connection Setup patch does not output data unless bang is pressed within patching mode\n- \"Updated\" indicators not working on dashboard (potentially severed cords)"
 				}
 
@@ -7675,7 +7675,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 245.333332419395447, 149.999999761581421, 186.0, 52.0 ],
+					"patching_rect" : [ 245.333332419395447, 149.999999761581421, 186.0, 51.0 ],
 					"text" : "Connect to MongoDB using the \"Send\" button on the MongoDB Connection Setup"
 				}
 
@@ -9523,7 +9523,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 721.5, 250.0, 117.0 ],
+					"patching_rect" : [ 16.0, 721.5, 250.0, 114.0 ],
 					"text" : "Activity: Look at the example for the SHT30 Temperature sensor stream. This sets the display of the UI object, and also sends the data stream to a send object for transmitting to the receive object. This configuration is handy so you can either set the UI object manually OR MongoDB will auto update the value and send."
 				}
 
@@ -9535,7 +9535,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 820.5, 1110.5, 173.0, 62.0 ],
+					"patching_rect" : [ 820.5, 1110.5, 173.0, 60.0 ],
 					"text" : "You may drag this manually te set new values, or MongoDB connect will update it each time it refreshes"
 				}
 
@@ -9598,7 +9598,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 335.0, 250.0, 62.0 ],
+					"patching_rect" : [ 15.0, 335.0, 250.0, 60.0 ],
 					"text" : "Use the ranges from this table to set the min and max of your UI objects:\nhttps://github.com/OPEnSLab-OSU/OPEnS-Lab-Home/wiki/WeatherChimes"
 				}
 
@@ -9621,7 +9621,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 231.0, 296.0, 89.0 ],
+					"patching_rect" : [ 15.0, 231.0, 296.0, 87.0 ],
 					"text" : "This tutorial shows how to use dict objects to unpack the MongoDB data packets into individual sensor streams\nObjective: Make a UI Dashboard using the Max Interface Objects. \nUse send and receive objects to "
 				}
 
@@ -9633,7 +9633,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 842.0, 250.0, 48.0 ],
+					"patching_rect" : [ 16.0, 842.0, 250.0, 47.0 ],
 					"text" : "Activity: Use the comment object to make labels for each of the sensors. Place these labels next to your corresponding UI object"
 				}
 
@@ -9646,7 +9646,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 847.0, 959.0, 189.0, 52.0 ],
+					"patching_rect" : [ 847.0, 959.0, 189.0, 51.0 ],
 					"text" : "Send individual sensor streams to receive objects of same name in your patches"
 				}
 
@@ -10096,9 +10096,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 8.0, 8.197998, 119.0, 25.0 ],
+									"patching_rect" : [ 8.0, 8.197998, 119.0, 24.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 7.0, 7.0, 181.0, 25.0 ],
+									"presentation_rect" : [ 7.0, 7.0, 181.0, 24.0 ],
 									"text" : "Patch Generator",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
@@ -10155,7 +10155,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-4",
-									"items" : "<empty>",
+									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "BeatSeq", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "Stochastic", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10986,13 +10986,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-165", 1 ],
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-71", 0 ],
 					"source" : [ "obj-48", 0 ]
 				}
@@ -11241,14 +11234,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Timestamp.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "auto_install.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -11261,14 +11254,14 @@
 			}
 , 			{
 				"name" : "generator.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mongoconnect1.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -11281,7 +11274,7 @@
 			}
 , 			{
 				"name" : "parse.js",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
