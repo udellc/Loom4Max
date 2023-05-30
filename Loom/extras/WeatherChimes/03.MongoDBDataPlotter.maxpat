@@ -486,29 +486,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-77",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 642.33333432674408, 11.0, 266.0, 20.0 ],
-					"text" : "15min intervals give 96 samples / day"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 572.666667938232422, 11.0, 29.5, 22.0 ],
-					"text" : "180"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-154",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -6435,17 +6412,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 937.0, 45.0, 219.0, 24.0 ],
 					"text" : "Click to toggle playback on and off"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-42",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 301.0, 14.0, 226.0, 20.0 ],
-					"text" : "edit message to load last n samples >>"
 				}
 
 			}
@@ -15601,18 +15567,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 228.0, 14.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -19981,11 +19935,11 @@
 									"bubble" : 1,
 									"fontsize" : 12.0,
 									"id" : "obj-203",
-									"linecount" : 7,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 172.00000262260437, 94.0 ],
+									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 176.0, 82.0 ],
 									"style" : "WTF",
 									"text" : "Sampling Period is calculated by parsing the seconds return and dividing by 60 to get the # of minutes and then displaying the remaining seconds"
 								}
@@ -19996,11 +19950,11 @@
 									"bubble" : 1,
 									"fontsize" : 12.0,
 									"id" : "obj-202",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 483.250001907348633, 1221.733346223831177, 269.333339214324951, 58.0 ],
+									"patching_rect" : [ 483.250001907348633, 1221.733346223831177, 273.0, 46.0 ],
 									"style" : "WTF",
 									"text" : "Timestamp.js returns the lastPacket timestamp in the first outlet and the number of seconds between packets in the second outlet"
 								}
@@ -20060,11 +20014,11 @@
 									"bubbleside" : 3,
 									"fontsize" : 16.0,
 									"id" : "obj-188",
-									"linecount" : 8,
+									"linecount" : 7,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 223.0, 138.0 ],
+									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 227.0, 122.0 ],
 									"style" : "WTF",
 									"text" : "3. After connecting, it will send a bang to isConnected which will be used to get the first and last two packets in the collection to initalize the timestamps and sampling period"
 								}
@@ -22914,8 +22868,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -23895,6 +23847,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -27224,6 +27178,30 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 2,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-10", 0 ]
