@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 3,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 803.0, 85.0, 699.0, 705.0 ],
+		"rect" : [ 547.0, 87.0, 299.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.5, 17.0, 304.0, 34.0 ],
+					"patching_rect" : [ 18.5, 17.0, 304.0, 33.0 ],
 					"text" : "Recieves a value from the user representing beats per minute and converts to ms to be used in data playback"
 				}
 
@@ -57,7 +57,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 490.5, 131.5, 153.0, 62.0 ],
+					"patching_rect" : [ 490.5, 131.5, 153.0, 60.0 ],
 					"text" : "Metro generates a random number from 1-128 at whichever speed is specified by the user"
 				}
 
@@ -69,7 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 166.5, 267.5, 150.0, 89.0 ],
+					"patching_rect" : [ 166.5, 267.5, 150.0, 87.0 ],
 					"text" : "$f1 is 60,000 and $f2 is the speed entered by the user. The resulting float is sent to the outlet object (as well as speed for testing purposes)"
 				}
 
@@ -81,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 153.5, 142.5, 152.0, 62.0 ],
+					"patching_rect" : [ 153.5, 142.5, 152.0, 60.0 ],
 					"text" : "On change, a bang is sent to the button, propagating through 60,000 to execute expr."
 				}
 
@@ -93,7 +93,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 194.0, 69.5, 150.0, 62.0 ],
+					"patching_rect" : [ 194.0, 69.5, 150.0, 60.0 ],
 					"text" : "When either dial or number box are changed, the other is updated using the looping mechanism"
 				}
 
@@ -247,6 +247,8 @@
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-30",
 					"maxclass" : "number",
+					"maximum" : 1000,
+					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -277,6 +279,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ -1.0, 3.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : "themecolor.live_active_automation"
+						}
+,
+						"activefgdialcolor" : 						{
+							"expression" : "themecolor.maxwindow_posttext"
+						}
+,
 						"activeneedlecolor" : 						{
 							"expression" : "themecolor.maxwindow_posttext"
 						}
@@ -285,20 +295,12 @@
 							"expression" : ""
 						}
 ,
-						"focusbordercolor" : 						{
-							"expression" : ""
-						}
-,
 						"dialcolor" : 						{
 							"expression" : "themecolor.live_output_curve_outline_color"
 						}
 ,
-						"activedialcolor" : 						{
-							"expression" : "themecolor.live_active_automation"
-						}
-,
-						"activefgdialcolor" : 						{
-							"expression" : "themecolor.maxwindow_posttext"
+						"focusbordercolor" : 						{
+							"expression" : ""
 						}
 ,
 						"textcolor" : 						{

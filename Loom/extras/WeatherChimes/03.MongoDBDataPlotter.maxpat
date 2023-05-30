@@ -62,10 +62,11 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "./Dashboard/GlobalTrans2.maxpat",
+					"name" : "GlobalTrans.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 0,
+					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "", "bang" ],
 					"patching_rect" : [ 655.0, 45.0, 271.0, 107.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 697.66666579246521, 173.000003814697266, 271.0, 107.0 ],
@@ -1706,7 +1707,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 864.0, 157.0, 55.0, 22.0 ],
+					"patching_rect" : [ 864.0, 165.0, 55.0, 22.0 ],
 					"text" : "s refresh"
 				}
 
@@ -6433,7 +6434,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 755.0, 157.0, 85.0, 22.0 ],
+					"patching_rect" : [ 755.0, 165.0, 85.0, 22.0 ],
 					"text" : "s globalSpeed"
 				}
 
@@ -6444,7 +6445,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 651.0, 157.0, 73.0, 22.0 ],
+					"patching_rect" : [ 651.0, 165.0, 73.0, 22.0 ],
 					"text" : "s globalPlay"
 				}
 
@@ -19939,7 +19940,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 176.0, 82.0 ],
+									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 180.0, 82.0 ],
 									"style" : "WTF",
 									"text" : "Sampling Period is calculated by parsing the seconds return and dividing by 60 to get the # of minutes and then displaying the remaining seconds"
 								}
@@ -20018,7 +20019,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 227.0, 122.0 ],
+									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 230.0, 122.0 ],
 									"style" : "WTF",
 									"text" : "3. After connecting, it will send a bang to isConnected which will be used to get the first and last two packets in the collection to initalize the timestamps and sampling period"
 								}
@@ -27180,7 +27181,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -27188,7 +27189,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -27196,7 +27197,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"order" : 2,
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -28161,6 +28162,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-9", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"source" : [ "obj-9", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-89", 0 ],
 					"midpoints" : [ 560.00000011920929, 1504.333338022232056, 560.00000011920929, 1504.333338022232056 ],
 					"source" : [ "obj-90", 0 ]
@@ -28224,6 +28246,8 @@
 		"parameters" : 		{
 			"obj-105" : [ "vst~[1]", "vst~", 0 ],
 			"obj-98" : [ "vst~", "vst~", 0 ],
+			"obj-9::obj-21::obj-28" : [ "live.dial", "Speed", 0 ],
+			"obj-9::obj-3" : [ "live.toggle", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -28232,10 +28256,24 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "GlobalTrans.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/externals/DataProcessor",
+				"patcherrelativepath" : "../../externals/DataProcessor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Sensor.js",
 				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SpeedDial.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/externals/DataProcessor",
+				"patcherrelativepath" : "../../externals/DataProcessor",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
