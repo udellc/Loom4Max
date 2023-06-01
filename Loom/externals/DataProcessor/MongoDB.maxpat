@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 805.0, 679.0 ],
+		"rect" : [ 34.0, 87.0, 1212.0, 679.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 558.333320021629333, 609.999985456466675, 40.0, 22.0 ],
-					"text" : "split"
+					"id" : "obj-40",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 20.333348231929904, 280.616368114948273, 177.000003712791454, 60.0 ],
+					"text" : "Builds the url for the mongoconnect script and appends the device name and prescaler, saves it to pattr"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1370.249212741851807, 650.490808725357056, 270.0, 87.0 ],
+					"text" : "This bang must be triggered before all calls the mongoconnect script (which is why is it to the far right) and is responsible for updating the state with all of the mongo credentials, prescaler, etc. View the setState docs in mongoconnect.js for more info."
 				}
 
 			}
@@ -133,7 +145,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1022.58825409412384, 606.558979272842407, 24.0, 24.0 ]
+					"patching_rect" : [ 1447.217474937438965, 603.558979272842407, 24.0, 24.0 ]
 				}
 
 			}
@@ -144,7 +156,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 443.416666567325592, 613.558978915214539, 40.0, 22.0 ],
+					"patching_rect" : [ 447.416666567325592, 610.558978915214539, 40.0, 22.0 ],
 					"restore" : [ "setState", "mongodb+srv://ear2earth:helloworld101@remotetest.cls7o.mongodb.net/WeatherChimes-Workshop?retryWrites=true&w=majority", "Chime0", 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
@@ -237,7 +249,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1461.249212741851807, 371.449942886829376, 175.0, 123.0 ],
+					"patching_rect" : [ 1461.249212741851807, 371.449942886829376, 179.0, 123.0 ],
 					"style" : "WTF",
 					"text" : "Automatically calls getFirst upon recieving the last packet (this is done in series to ensure the packets order in the coll object), use to get the first packet from the database"
 				}
@@ -262,14 +274,14 @@
 , 			{
 				"box" : 				{
 					"bubble" : 1,
-					"bubbleside" : 0,
+					"bubbleside" : 2,
 					"fontsize" : 14.0,
 					"id" : "obj-148",
 					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1049.333324790000916, 613.449942886829376, 187.0, 137.0 ],
+					"patching_rect" : [ 1014.500001311302185, 304.266610574417086, 187.0, 137.0 ],
 					"style" : "WTF",
 					"text" : "Receives startTime and endTime from the timestamp selection and packs it with the MongoDB credentials and prescaler to get the proper number of packets between the timestamps"
 				}
@@ -296,18 +308,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 467.0, 1055.0, 35.0, 22.0 ],
 					"text" : "clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-43",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 199.333351944721358, 654.833342313766479, 63.0, 22.0 ],
-					"text" : "script stop"
 				}
 
 			}
@@ -383,7 +383,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 532.333338975906372, 280.66668176651001, 164.0, 90.0 ],
+					"patching_rect" : [ 532.333338975906372, 280.66668176651001, 170.0, 90.0 ],
 					"style" : "WTF",
 					"text" : "Use this to return the last n packets in from the database"
 				}
@@ -471,7 +471,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1453.565002918243408, 587.403517127037048, 109.0, 22.0 ],
+					"patching_rect" : [ 1511.565002918243408, 573.403517127037048, 109.0, 22.0 ],
 					"text" : "s getFirstComplete"
 				}
 
@@ -799,7 +799,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 981.626172304153442, 491.314654350280762, 58.0, 34.0 ],
+					"patching_rect" : [ 1022.423695087432861, 491.314654350280762, 58.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 287.259448945522308, 367.37510158645, 92.234203815460205, 39.0 ],
 					"rounded" : 20.0,
@@ -1237,7 +1237,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1055.457947432994843, 461.666680514812469, 65.0, 22.0 ],
+					"patching_rect" : [ 1055.457947432994843, 455.166680812835693, 65.0, 22.0 ],
 					"text" : "r startTime"
 				}
 
@@ -3127,8 +3127,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -4011,14 +4009,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 334.0, 662.592556476593018, 168.0, 22.0 ],
+					"patching_rect" : [ 334.0, 662.592556476593018, 161.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script mongoconnect1.js"
+					"text" : "node.script mongoconnect.js"
 				}
 
 			}
@@ -4115,7 +4115,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 199.333351944721358, 63.766710388511655, 58.0, 22.0 ],
+					"patching_rect" : [ 199.333351944721358, 79.766710388511655, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -4606,6 +4606,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"midpoints" : [ 1425.217474937438965, 588.787510931491852, 343.5, 588.787510931491852 ],
+					"order" : 2,
+					"source" : [ "obj-121", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"midpoints" : [ 1425.217474937438965, 586.612827360630035, 1456.717474937438965, 586.612827360630035 ],
 					"order" : 1,
 					"source" : [ "obj-121", 0 ]
 				}
@@ -4724,7 +4733,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"midpoints" : [ 760.166681230068207, 588.362827360630035, 1032.08825409412384, 588.362827360630035 ],
+					"midpoints" : [ 760.166681230068207, 588.362827360630035, 1456.717474937438965, 588.362827360630035 ],
 					"order" : 0,
 					"source" : [ "obj-140", 0 ]
 				}
@@ -4883,6 +4892,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
+					"midpoints" : [ 208.833351944721358, 361.087673515081406, 456.916666567325592, 361.087673515081406 ],
 					"source" : [ "obj-171", 0 ]
 				}
 
@@ -5518,6 +5528,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
+					"midpoints" : [ 1031.923695087432861, 586.862827360630035, 1456.717474937438965, 586.862827360630035 ],
 					"order" : 0,
 					"source" : [ "obj-328", 0 ]
 				}
@@ -5565,7 +5576,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"midpoints" : [ 642.916680693626404, 588.362827360630035, 1032.08825409412384, 588.362827360630035 ],
+					"midpoints" : [ 642.916680693626404, 588.362827360630035, 1456.717474937438965, 588.362827360630035 ],
 					"order" : 0,
 					"source" : [ "obj-35", 0 ]
 				}
@@ -5611,13 +5622,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-84", 0 ],
 					"source" : [ "obj-45", 0 ]
 				}
@@ -5633,7 +5637,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"midpoints" : [ 1032.08825409412384, 640.558979272842407, 742.502460330724716, 640.558979272842407, 742.502460330724716, 602.558978915214539, 452.916666567325592, 602.558978915214539 ],
+					"midpoints" : [ 1456.717474937438965, 630.0, 1023.0, 630.0, 1023.0, 585.0, 456.916666567325592, 585.0 ],
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -5679,7 +5683,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"midpoints" : [ 422.166672229766846, 587.981874942779541, 1032.08825409412384, 587.981874942779541 ],
+					"midpoints" : [ 422.166672229766846, 587.981874942779541, 1456.717474937438965, 587.981874942779541 ],
 					"order" : 0,
 					"source" : [ "obj-55", 0 ]
 				}
@@ -5688,7 +5692,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-68", 0 ],
-					"midpoints" : [ 422.166672229766846, 582.0, 506.833339691162109, 582.0 ],
+					"midpoints" : [ 422.166672229766846, 587.0, 506.833339691162109, 587.0 ],
 					"order" : 1,
 					"source" : [ "obj-55", 0 ]
 				}
@@ -5855,7 +5859,16 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"midpoints" : [ 1303.083343684673309, 588.0, 343.5, 588.0 ],
-					"order" : 1,
+					"order" : 2,
+					"source" : [ "obj-80", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"midpoints" : [ 1303.083343684673309, 586.862827360630035, 1456.717474937438965, 586.862827360630035 ],
+					"order" : 0,
 					"source" : [ "obj-80", 0 ]
 				}
 
@@ -5864,7 +5877,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-68", 0 ],
 					"midpoints" : [ 1303.083343684673309, 588.0, 506.833339691162109, 588.0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-80", 0 ]
 				}
 
@@ -5926,7 +5939,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mongoconnect1.js",
+				"name" : "mongoconnect.js",
 				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
