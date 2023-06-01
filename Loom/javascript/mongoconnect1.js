@@ -1,12 +1,16 @@
 const maxApi = require('max-api');
 const { MongoClient } = require('mongodb');
 
-inlets = 2;
-
+// Global state vars
 let collection = null;
+let connected = false;
+let url = null;
 let device = null;
+let prescaler = null;
 
+/** Outlets an individual document if it passes the prescaler **/
 function outletDocument(doc) {
+  if (doc.Packet.Number % prescaler !== 0) return;
   delete doc._id; // TODO: Why do we have to delete these?
   delete doc.date;
   doc.ID = { instance: device };
@@ -14,28 +18,24 @@ function outletDocument(doc) {
   maxApi.outlet(data);
 }
 
-// Queries MongoDB and outlets all data, optional count param
-function updateData(count) {
-  if (!collection || !device) return;
-  const cursor = collection.find().sort({ $natural: 1 });
-  if (count !== undefined) cursor.limit(count);
-  cursor.forEach((doc) => {
-    outletDocument(doc, device);
-  });
+/**
+ * Queries the collection and outlets documents
+ * @param {int} count - The maximum number of documents to fetch
+ * @param {bool} reverse - If the query should be reversed. Also outputs documents in reverse order
+ */
+function updateData(count=1, reverse=false) {
+  // Limits the number of packets returned and which "end" to start search from
+  const cursor = collection.find().sort({ $natural: reverse ? -1 : 1 }).limit(count);
+  cursor.toArray().then(packets => {  // To array is only necessary for reverse, could have performance penalty
+    if (reverse) packets.reverse();  // Need to reverse again because packets are still in order
+    packets.forEach((doc) => {
+      outletDocument(doc, device);
+    });
+  })
 }
 
-async function updateDataReverse(count) {
-  if (!collection || !device) return;
-  const cursor = collection.find().sort({ $natural: -1 });
-  if (count !== undefined){cursor.limit(count)}
-  const allPackets = await cursor.toArray()
-  allPackets.reverse().forEach((doc) => {
-  	outletDocument(doc, device);
-  });
-}
-
-// Queries MongoDB and outlets all data between startTime and endTime
-function updateTimeData(startTime, endTime, prescaler) {
+/** Queries MongoDB and outlets all data between startTime and endTime **/
+function updateTimeData(startTime, endTime) {
   if (!collection || !device) return;
   var cursor = collection.aggregate([
     {
@@ -53,89 +53,57 @@ function updateTimeData(startTime, endTime, prescaler) {
         }
       }
     }
-  ])
-  var docs = cursor.toArray().then(docs => {
+  ]);
+  cursor.toArray().then(docs => {
     docs.forEach((doc) => {
-      if (doc.Packet.Number % prescaler == 0) {
-        outletDocument(doc, device)
-      }
-    })
-  })
+      outletDocument(doc, device)
+    });
+  });
 }
 
-async function run(
-  mongoUsername,
-  mongoPassword,
-  mongoUniqueClusterVariable,
-  mongoDatabase,
-  newDevice,
-) {
+/** Connects to the MongoDB API and saves the collection **/
+async function connect() {
   try {
-    const uri = `mongodb+srv://${mongoUsername}:${mongoPassword}@${mongoUniqueClusterVariable}.mongodb.net/${mongoDatabase}?retryWrites=true&w=majority`;
-    const mongoclient = new MongoClient(uri);
-    maxApi.post(`Connecting to MongoDB at ${uri}`);
+    const mongoclient = new MongoClient(url);
     maxApi.outlet('status', 'connecting');
-    device = newDevice;
     await mongoclient.connect();
-    const database = mongoclient.db(mongoDatabase);
+    const database = mongoclient.db();
     collection = database.collection(device);
+    connected = true;
     maxApi.outlet('status', 'connected');
   } catch (e) {
-    maxApi.post(e.message);
     maxApi.post('Error with MongoClient');
+    maxApi.post(e.message);
   }
 }
 
-// Pulls a specified number of packets in order from oldest to newest
-maxApi.addHandler('getLast', (packetCount, mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice) => {
-  if (!collection || !device) {
-    run(mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice)
-      .then(() => updateDataReverse(packetCount));
-  } else {
-    updateDataReverse(packetCount);
-  }
+/**
+ * Sets the state/global variables of the script.
+ * This is a workaround for the issue where two patches using this script
+ * will cause the oldest one to restart and lose the connection to the DB.
+ * By setting the state before each query to the DB, we can check for a
+ * connection beforehand and reconnect using the state variables if needed.
+**/
+maxApi.addHandler('setState', (newUrl, newDevice, newPrescaler) => {
+  url = newUrl;
+  device = newDevice;
+  prescaler = parseInt(newPrescaler);
 });
-// Pulls the first packet
-maxApi.addHandler('getFirst', (mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice) => {
-  if (!collection || !device) {
-    run(mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice)
-      .then(() => updateData(1));
-  } else {
-    updateData(1);
-  }
+
+/** Pulls a specified number of packets in order from oldest to newest **/
+maxApi.addHandler('getLast', (packetCount, reverse) => {
+  if (!connected) connect();
+  updateData(packetCount, reverse === "true");
 });
-// Pulls the two most recent packets 
-maxApi.addHandler('getLastTwo', (mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice) => {
-  if (!collection || !device) {
-    run(mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice)
-      .then(() => updateDataReverse(2));
-  } else {
-    updateDataReverse(2);
-  }
-});
-//Pulls packets via a specified start and end time
-maxApi.addHandler('getByTime', (startTime, endTime, mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice, prescaler) => {
+
+/** Pulls packets via a specified start and end time **/
+maxApi.addHandler('getByTime', (startTime, endTime) => {
   startTime = startTime.replace("T"," ")
   endTime = endTime.replace("T"," ")
 
-  if (!collection || !device) {
-    run(mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice)
-      .then(() => updateTimeData(startTime, endTime, prescaler));
-  } else {
-    updateTimeData(startTime, endTime, prescaler);
-  }
-});
-// Get only most recent data package
-maxApi.addHandler('grab', () => {
-  if (!collection || !device) return;
-  updateData(1);
-});
-// Get all data for eternity of device history
-maxApi.addHandler('getAll', () => {
-  if (!collection || !device) return;
-  updateData();
+  if (!connected) connect();
+  updateTimeData(startTime, endTime);
 });
 
-maxApi.addHandler('connect', (mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice) => {
-  run(mongoUsername, mongoPassword, mongoUniqueClusterVariable, mongoDatabase, newDevice);
-});
+/** Connects to the database **/
+maxApi.addHandler('connect', () => { connect(); });
