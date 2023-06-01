@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 3,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 812.0, 679.0 ],
+		"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,478 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-263",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1552.5, 895.5, 69.0, 22.0 ],
+					"text" : "s soil_temp"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-262",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 1552.5, 854.634145498275757, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-261",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1552.5, 812.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-252",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1395.5, 812.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-253",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1273.5, 812.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-254",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 1395.5, 854.634145498275757, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-255",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1395.5, 895.5, 81.0, 22.0 ],
+					"text" : "s conductivity"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-256",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 1273.5, 854.634145498275757, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-257",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1273.5, 895.5, 99.0, 22.0 ],
+					"text" : "s dielectric_perm"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-258",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1299.0, 746.0, 188.0, 20.0 ],
+					"text" : "for \"WeatherChimes\" packets"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-259",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1273.5, 770.0, 298.0, 22.0 ],
+					"text" : "dict.unpack dielectric_perm: conductivity: temperature:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-251",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1163.5, 805.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-249",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1041.5, 805.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-247",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 768.0, 636.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-244",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 1163.5, 847.634145498275757, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-245",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1163.5, 888.5, 51.0, 22.0 ],
+					"text" : "s humid"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-212",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 1041.5, 847.634145498275757, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-215",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1041.5, 888.5, 45.0, 22.0 ],
+					"text" : "s temp"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-204",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 369.0, 815.0, 181.0, 20.0 ],
+					"text" : "for \"WeatherChimesV4\" packets"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-26",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1029.0, 1028.365854501724243, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-36",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 964.5, 1028.365854501724243, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-43",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 900.0, 1028.365854501724243, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1067.0, 739.0, 188.0, 20.0 ],
+					"text" : "for \"WeatherChimes\" packets"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1041.5, 763.0, 142.0, 22.0 ],
+					"text" : "dict.unpack temp: humid:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-190",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1311.0, 1028.365854501724243, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-191",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1246.5, 1028.365854501724243, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-192",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1182.0, 1028.365854501724243, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-189",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1185.0, 966.0, 150.0, 20.0 ],
+					"text" : "for \"WeatherChimes\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-169",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 1185.0, 1060.5, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-170",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 1243.5, 1060.5, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-171",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 1305.0, 1060.5, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-172",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1185.0, 1101.365854501724243, 34.0, 22.0 ],
+					"text" : "s Vis"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-173",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1243.5, 1101.365854501724243, 30.0, 22.0 ],
+					"text" : "s IR"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-188",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1305.0, 1101.365854501724243, 37.0, 22.0 ],
+					"text" : "s Full"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-168",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 1029.0, 1068.0, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-167",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 964.5, 1068.0, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-164",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 900.0, 1068.0, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1185.0, 996.865854501724243, 137.0, 22.0 ],
+					"text" : "dict.unpack Vis: IR: Full:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 929.0, 970.0, 150.0, 20.0 ],
+					"text" : "for \"WeatherChimesV4\""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 820.5, 935.5, 50.0, 22.0 ]
+					"patching_rect" : [ 710.0, 789.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -57,19 +522,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 855.0, 887.5, 143.0, 22.0 ],
+					"patching_rect" : [ 710.0, 754.0, 143.0, 22.0 ],
 					"text" : "dict.unpack Temperature:"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 482.0, 660.0, 32.0, 22.0 ],
-					"text" : "print"
 				}
 
 			}
@@ -94,8 +548,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -197,7 +651,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1958.0, 613.0, 245.0, 185.0 ],
+									"patching_rect" : [ 1958.0, 613.0, 263.0, 220.0 ],
 									"style" : "WTF",
 									"text" : "Automatically calls getFirst upon recieving the last packet (this is done in series to ensure the packets order in the coll object), use to get the first packet from the database"
 								}
@@ -213,7 +667,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1663.0, 607.0, 273.0, 145.0 ],
+									"patching_rect" : [ 1663.0, 607.0, 275.0, 171.0 ],
 									"style" : "WTF",
 									"text" : "Automatically calls getLastTwo upon connecting to get the last two packets, used to get the last packet and calculate sampling period"
 								}
@@ -229,7 +683,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1336.0, 598.558979272842407, 187.0, 137.0 ],
+									"patching_rect" : [ 1336.0, 598.558979272842407, 198.0, 162.0 ],
 									"style" : "WTF",
 									"text" : "Receives startTime and endTime from the timestamp selection and packs it with the MongoDB credentials and prescaler to get the proper number of packets between the timestamps"
 								}
@@ -280,7 +734,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 172.00000262260437, 94.0 ],
+									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 172.00000262260437, 113.0 ],
 									"style" : "WTF",
 									"text" : "Sampling Period is calculated by parsing the seconds return and dividing by 60 to get the # of minutes and then displaying the remaining seconds"
 								}
@@ -295,7 +749,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 483.250001907348633, 1221.733346223831177, 269.333339214324951, 58.0 ],
+									"patching_rect" : [ 483.250001907348633, 1221.733346223831177, 269.333339214324951, 69.0 ],
 									"style" : "WTF",
 									"text" : "Timestamp.js returns the lastPacket timestamp in the first outlet and the number of seconds between packets in the second outlet"
 								}
@@ -311,7 +765,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.666662037372589, 1082.666698932647705, 178.00000262260437, 70.0 ],
+									"patching_rect" : [ 25.666662037372589, 1082.666698932647705, 178.00000262260437, 83.0 ],
 									"style" : "WTF",
 									"text" : "Gets the last two timestamps from coll and sends into the findSampling Period function in Timestamp.js"
 								}
@@ -327,7 +781,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 48.249955654144287, 964.874078869819641, 195.000003695487976, 58.0 ],
+									"patching_rect" : [ 48.249955654144287, 964.874078869819641, 195.000003695487976, 69.0 ],
 									"style" : "WTF",
 									"text" : "Once connected, there is a half second delay to allow time for data to be parsed and saved into the coll"
 								}
@@ -343,7 +797,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1022.500001311302185, 598.558979272842407, 265.0, 85.0 ],
+									"patching_rect" : [ 1022.500001311302185, 598.558979272842407, 265.0, 98.0 ],
 									"style" : "WTF",
 									"text" : "Use this to return the last n packets in from the database"
 								}
@@ -359,7 +813,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 223.0, 138.0 ],
+									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 227.0, 166.0 ],
 									"style" : "WTF",
 									"text" : "3. After connecting, it will send a bang to isConnected which will be used to get the first and last two packets in the collection to initalize the timestamps and sampling period"
 								}
@@ -407,7 +861,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.333327651023865, 435.166681528091431, 271.0, 90.0 ],
+									"patching_rect" : [ 9.333327651023865, 435.166681528091431, 271.0, 108.0 ],
 									"style" : "WTF",
 									"text" : "2. Click Connect button to Connect to MongoDB Collection for the specified Chime"
 								}
@@ -423,7 +877,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.333327651023865, 117.666665196418762, 159.333332180976868, 70.0 ],
+									"patching_rect" : [ 9.333327651023865, 117.666665196418762, 159.333332180976868, 83.0 ],
 									"style" : "WTF",
 									"text" : "1. Set MongoDB credentials"
 								}
@@ -808,7 +1262,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1578.23532247543335, 309.333348035812378, 63.0, 35.0 ],
+									"patching_rect" : [ 1578.23532247543335, 309.333348035812378, 63.0, 36.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 135.118888445198536, 375.87510158645, 85.0, 22.0 ],
 									"text" : "Set Prescaler",
@@ -916,8 +1370,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 979.833342432975769, 540.833342313766479, 351.0, 35.0 ],
-									"text" : "getLast 100 ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
+									"patching_rect" : [ 979.833342432975769, 540.833342313766479, 351.0, 36.0 ],
+									"text" : "getLast 1 ear2earth helloworld101 remotetest.cls7o WeatherChimes Chime1"
 								}
 
 							}
@@ -1055,13 +1509,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-121",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1979.019662022590637, 512.333326697349548, 193.0, 62.0 ],
-									"text" : "getFirst ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
+									"patching_rect" : [ 1979.019662022590637, 512.333326697349548, 193.0, 50.0 ],
+									"text" : "getFirst ear2earth helloworld101 remotetest.cls7o WeatherChimes Chime1"
 								}
 
 							}
@@ -1198,7 +1652,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1086.916675925254822, 401.399970305114721, 50.0, 22.0 ],
-									"text" : "100"
+									"text" : "1"
 								}
 
 							}
@@ -1229,13 +1683,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-80",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1722.583341002464294, 505.833342313766479, 193.0, 62.0 ],
-									"text" : "getLastTwo ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
+									"patching_rect" : [ 1722.583341002464294, 505.833342313766479, 193.0, 50.0 ],
+									"text" : "getLastTwo ear2earth helloworld101 remotetest.cls7o WeatherChimes Chime1"
 								}
 
 							}
@@ -1295,8 +1749,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1391.333360314369202, 499.333342313766479, 204.0, 62.0 ],
-									"text" : "getByTime s s ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0 4"
+									"patching_rect" : [ 1391.333360314369202, 499.333342313766479, 204.0, 64.0 ],
+									"text" : "getByTime 2023-5-14T16:32:36 2023-5-14T16:32:36 ear2earth helloworld101 remotetest.cls7o WeatherChimes Chime1 4"
 								}
 
 							}
@@ -1366,7 +1820,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 668.274713397026062, 2815.842193441063046, 127.0, 22.0 ],
-									"text" : "2023-5-21T12:3:50"
+									"text" : "2023-5-14T16:32:36"
 								}
 
 							}
@@ -1390,7 +1844,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 374.8333340883255, 2823.842193441063046, 127.0, 22.0 ],
-									"text" : "2022-11-1T12:30:14"
+									"text" : "2023-5-14T16:32:36"
 								}
 
 							}
@@ -1431,8 +1885,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 147.274713397026062, 2837.842193441063046, 139.0, 49.0 ],
-									"text" : "convertToDBTimestamp 2022-11-01T12:30:14 2023-05-21T12:03:50"
+									"patching_rect" : [ 147.274713397026062, 2837.842193441063046, 139.0, 50.0 ],
+									"text" : "convertToDBTimestamp 2023-05-14T16:32:36Z 2023-05-14T16:32:36Z"
 								}
 
 							}
@@ -1547,12 +2001,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-272",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 336.274713397026062, 2616.842193441063046, 125.0, 22.0 ],
-									"text" : "2023-05-21T12:03:50"
+									"patching_rect" : [ 336.274713397026062, 2616.842193441063046, 125.0, 36.0 ],
+									"text" : "2023-05-14T16:32:36Z"
 								}
 
 							}
@@ -1571,12 +2026,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-274",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 189.274713397026062, 2616.842193441063046, 125.0, 22.0 ],
-									"text" : "2022-11-01T12:30:14"
+									"patching_rect" : [ 189.274713397026062, 2616.842193441063046, 125.0, 36.0 ],
+									"text" : "2023-05-14T16:32:36Z"
 								}
 
 							}
@@ -1939,7 +2395,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1028.166675925254822, 797.666695237159729, 150.0, 33.0 ],
+									"patching_rect" : [ 1028.166675925254822, 797.666695237159729, 150.0, 34.0 ],
 									"text" : "All coll objects created by parse.js"
 								}
 
@@ -1947,13 +2403,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-263",
-									"linecount" : 3,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 161.249956846237183, 1287.574075102806091, 142.307695269584656, 49.0 ],
-									"text" : "findSamplingPeriod \"0 2023-05-21 12:3:50\" \"0 2023-05-21 11:48:14\""
+									"patching_rect" : [ 161.249956846237183, 1287.574075102806091, 142.307695269584656, 64.0 ],
+									"text" : "findSamplingPeriod \"0 2023-05-14T16:32:36Z\" \"0 2023-05-14T16:16:57Z\""
 								}
 
 							}
@@ -2042,9 +2498,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 251.446075081825256, 1859.046440958976746, 93.0, 55.0 ],
+									"patching_rect" : [ 251.446075081825256, 1859.046440958976746, 93.0, 57.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 144.493652760982513, 247.943008782439279, 235.0, 24.0 ],
+									"presentation_rect" : [ 144.493652760982513, 247.943008782439279, 235.0, 25.0 ],
 									"text" : "Get Packets Between Timestamps",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -2755,7 +3211,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 216.916685645616667, 129.666665196418762, 70.0, 33.0 ],
+									"patching_rect" : [ 216.916685645616667, 129.666665196418762, 70.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 22.678957462310791, 45.011326877677902, 137.439930982887745, 21.0 ],
 									"text" : "MongodDB Username:",
@@ -2774,8 +3230,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 3,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3177,7 +3633,7 @@
 									"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_angle" : 0.0,
 									"bgfillcolor_autogradient" : 0.0,
-									"bgfillcolor_color" : [ 0.52, 0.52, 0.52 ],
+									"bgfillcolor_color" : [ 0, 0.851, 0.28 ],
 									"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_proportion" : 0.0,
@@ -3190,10 +3646,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 220.75002966580962, 881.000002861022949, 166.0, 35.0 ],
+									"patching_rect" : [ 220.75002966580962, 881.000002861022949, 166.0, 36.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 22.678957462310791, 187.893979100788101, 178.353514976799488, 35.0 ],
-									"text" : "Disconnected",
+									"presentation_rect" : [ 22.678957462310791, 187.893979100788101, 178.353514976799488, 36.0 ],
+									"text" : "Connected",
 									"textjustification" : 1
 								}
 
@@ -3209,8 +3665,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -3853,10 +4307,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 971.83334219455719, 322.166681408882141, 103.666667580604553, 40.0 ],
+									"patching_rect" : [ 971.83334219455719, 322.166681408882141, 103.666667580604553, 41.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 3,
-									"presentation_rect" : [ 22.678957462310791, 247.943008782439279, 86.0, 55.0 ],
+									"presentation_rect" : [ 22.678957462310791, 247.943008782439279, 86.0, 57.0 ],
 									"text" : "Get Packets by Count",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -3901,7 +4355,7 @@
 									"patching_rect" : [ 1086.916675209999084, 322.166681408882141, 73.250019925254833, 39.833333373069763 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 24.561855554580688, 314.126553277308176, 85.833334147930145, 41.0 ],
-									"text" : "100",
+									"text" : "1",
 									"textjustification" : 1
 								}
 
@@ -3927,7 +4381,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 401.25, 883.592556595802307, 78.0, 35.0 ],
+									"patching_rect" : [ 401.25, 883.592556595802307, 78.0, 36.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 13.530927658081055, 431.126553277308176, 110.0, 22.0 ],
 									"text" : "Packets Returned",
@@ -4007,10 +4461,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 417.583342807907229, 117.666665196418762, 97.5, 45.0 ],
+									"patching_rect" : [ 417.583342807907229, 117.666665196418762, 97.5, 46.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 22.678957462310791, 95.794126958836614, 137.439930982887745, 33.0 ],
+									"presentation_rect" : [ 22.678957462310791, 95.794126958836614, 137.439930982887745, 34.0 ],
 									"text" : "MongoDB Unique Cluster Variable:",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -4035,13 +4489,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-40",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 730.75000786781311, 512.833342313766479, 204.0, 49.0 ],
-									"text" : "grab ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
+									"patching_rect" : [ 730.75000786781311, 512.833342313766479, 204.0, 36.0 ],
+									"text" : "grab ear2earth helloworld101 Chime1 WeatherChimes Chime1"
 								}
 
 							}
@@ -4151,7 +4605,7 @@
 									"patching_rect" : [ 534.166686927116643, 163.666665196418762, 158.000002503395081, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 163.618888445198536, 135.011326877677902, 224.914998553693295, 20.434399837682633 ],
-									"text" : "WeatherChimes-Workshop"
+									"text" : "WeatherChimes"
 								}
 
 							}
@@ -4190,6 +4644,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -4209,7 +4665,7 @@
 									"patching_rect" : [ 699.833351390976077, 163.666665196418762, 74.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 163.618888445198536, 161.494138958836601, 224.914998553693295, 20.434399837682633 ],
-									"text" : "Chime0"
+									"text" : "Chime1"
 								}
 
 							}
@@ -4276,7 +4732,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 658.750007510185242, 79.766710388511655, 150.0, 33.0 ],
+									"patching_rect" : [ 658.750007510185242, 79.766710388511655, 150.0, 34.0 ],
 									"text" : "Can also use \"\" to send empty password"
 								}
 
@@ -4301,8 +4757,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 412.666672229766846, 519.833342313766479, 204.0, 49.0 ],
-									"text" : "connect ear2earth helloworld101 remotetest.cls7o WeatherChimes-Workshop Chime0"
+									"patching_rect" : [ 412.666672229766846, 519.833342313766479, 204.0, 50.0 ],
+									"text" : "connect ear2earth helloworld101 remotetest.cls7o WeatherChimes Chime1"
 								}
 
 							}
@@ -4363,9 +4819,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 13.49999988079071, 9.700096000000002, 89.0, 55.0 ],
+									"patching_rect" : [ 13.49999988079071, 9.700096000000002, 89.0, 57.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 31.026105232536793, 9.666666626930237, 361.0, 24.0 ],
+									"presentation_rect" : [ 31.026105232536793, 9.666666626930237, 361.0, 25.0 ],
 									"text" : "MongoDB Connection Setup",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -4435,7 +4891,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 334.500020180977003, 129.666665196418762, 68.0, 33.0 ],
+									"patching_rect" : [ 334.500020180977003, 129.666665196418762, 68.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 22.678957462310791, 70.711338877677917, 137.439930982887745, 21.0 ],
 									"text" : "MongoDB Password:",
@@ -6442,9 +6898,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
-									"fontname" : [ "Arial Bold" ],
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -6453,9 +6909,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
-									"fontname" : [ "Arial Bold" ],
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -6464,6 +6920,7 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontsize" : [ 11.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -6473,9 +6930,8 @@
 										"type" : "gradient"
 									}
 ,
-									"fontface" : [ 1 ],
 									"fontname" : [ "Arial" ],
-									"fontsize" : [ 11.0 ]
+									"fontface" : [ 1 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6501,8 +6957,7 @@
 , 							{
 								"name" : "Luca",
 								"default" : 								{
-									"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"bgcolor" : [ 0.904179, 0.895477, 0.842975, 0.56 ],
+									"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"autogradient" : 0,
@@ -6513,11 +6968,12 @@
 										"type" : "gradient"
 									}
 ,
-									"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ],
-									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-									"fontname" : [ "Open Sans Semibold" ],
 									"selectioncolor" : [ 0.720698, 0.16723, 0.080014, 1.0 ],
-									"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
+									"fontname" : [ "Open Sans Semibold" ],
+									"bgcolor" : [ 0.904179, 0.895477, 0.842975, 0.56 ],
+									"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+									"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ],
+									"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6526,9 +6982,9 @@
 , 							{
 								"name" : "M4L 10 Bold",
 								"default" : 								{
-									"fontface" : [ 1 ],
+									"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.25 ],
 									"fontsize" : [ 10.0 ],
-									"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.25 ]
+									"fontface" : [ 1 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6547,8 +7003,8 @@
 , 							{
 								"name" : "Matt",
 								"default" : 								{
-									"fontface" : [ 1 ],
-									"fontsize" : [ 10.0 ]
+									"fontsize" : [ 10.0 ],
+									"fontface" : [ 1 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6832,8 +7288,8 @@
 , 							{
 								"name" : "WTF",
 								"default" : 								{
-									"accentcolor" : [ 0.50764, 0.065317, 0.112129, 1.0 ],
-									"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
+									"fontsize" : [ 18.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"autogradient" : 0,
@@ -6844,11 +7300,11 @@
 										"type" : "gradient"
 									}
 ,
-									"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ],
-									"elementcolor" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
 									"fontname" : [ "HydrogenType" ],
-									"fontsize" : [ 18.0 ],
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+									"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+									"accentcolor" : [ 0.50764, 0.065317, 0.112129, 1.0 ],
+									"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ],
+									"elementcolor" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6857,8 +7313,9 @@
 , 							{
 								"name" : "classic",
 								"default" : 								{
-									"accentcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-									"bgcolor" : [ 0.83978, 0.839941, 0.839753, 1.0 ],
+									"patchlinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontsize" : [ 9.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"color" : [ 0.839216, 0.839216, 0.839216, 1.0 ],
@@ -6868,11 +7325,10 @@
 										"type" : "color"
 									}
 ,
-									"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 									"fontname" : [ "Geneva" ],
-									"fontsize" : [ 9.0 ],
-									"patchlinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"bgcolor" : [ 0.83978, 0.839941, 0.839753, 1.0 ],
+									"accentcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+									"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6926,10 +7382,10 @@
 , 							{
 								"name" : "classicKslider",
 								"default" : 								{
+									"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-									"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
+									"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6967,9 +7423,9 @@
 , 							{
 								"name" : "classicNodes",
 								"default" : 								{
+									"fontsize" : [ 9.0 ],
 									"color" : [ 0.839216, 0.839216, 0.839216, 1.0 ],
-									"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-									"fontsize" : [ 9.0 ]
+									"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7063,8 +7519,8 @@
 , 							{
 								"name" : "classicWaveform~",
 								"default" : 								{
-									"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ],
-									"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 0.5 ]
+									"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 0.5 ],
+									"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7073,7 +7529,8 @@
 , 							{
 								"name" : "dark-night-patch",
 								"default" : 								{
-									"accentcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"patchlinecolor" : [ 0.439216, 0.74902, 0.254902, 0.898039 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -7083,8 +7540,7 @@
 										"type" : "gradient"
 									}
 ,
-									"patchlinecolor" : [ 0.439216, 0.74902, 0.254902, 0.898039 ],
-									"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+									"accentcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7098,6 +7554,9 @@
 , 							{
 								"name" : "jpatcher002",
 								"default" : 								{
+									"patchlinecolor" : [ 0.65098, 0.65098, 0.65098, 0.0 ],
+									"clearcolor" : [ 0.32549, 0.345098, 0.372549, 0.0 ],
+									"fontsize" : [ 9.5 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -7107,10 +7566,7 @@
 										"type" : "color"
 									}
 ,
-									"clearcolor" : [ 0.32549, 0.345098, 0.372549, 0.0 ],
-									"fontname" : [ "Ableton Sans Book" ],
-									"fontsize" : [ 9.5 ],
-									"patchlinecolor" : [ 0.65098, 0.65098, 0.65098, 0.0 ]
+									"fontname" : [ "Ableton Sans Book" ]
 								}
 ,
 								"parentstyle" : "",
@@ -7119,8 +7575,9 @@
 , 							{
 								"name" : "jpink",
 								"default" : 								{
-									"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-									"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+									"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+									"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"autogradient" : 0,
@@ -7131,12 +7588,11 @@
 										"type" : "color"
 									}
 ,
-									"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
-									"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-									"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-									"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
 									"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-									"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+									"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+									"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+									"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+									"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7272,8 +7728,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7282,8 +7738,8 @@
 , 							{
 								"name" : "newobjYellow-2",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7328,8 +7784,8 @@
 , 							{
 								"name" : "purple",
 								"default" : 								{
-									"bgcolor" : [ 0.304029, 0.250694, 0.285628, 1.0 ],
-									"textcolor_inverse" : [ 0.701961, 0.415686, 0.886275, 1.0 ]
+									"textcolor_inverse" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
+									"bgcolor" : [ 0.304029, 0.250694, 0.285628, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7366,9 +7822,9 @@
 , 							{
 								"name" : "stb001",
 								"default" : 								{
-									"fontface" : [ 1 ],
+									"fontsize" : [ 10.0 ],
 									"fontname" : [ "Arial Bold" ],
-									"fontsize" : [ 10.0 ]
+									"fontface" : [ 1 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7407,8 +7863,8 @@
 , 							{
 								"name" : "test",
 								"default" : 								{
-									"fontface" : [ 1 ],
-									"fontsize" : [ 10.0 ]
+									"fontsize" : [ 10.0 ],
+									"fontface" : [ 1 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7417,11 +7873,11 @@
 , 							{
 								"name" : "whitey",
 								"default" : 								{
-									"fontname" : [ "Dirty Ego" ],
-									"fontsize" : [ 36.0 ],
 									"patchlinecolor" : [ 0.199068, 0.062496, 0.060031, 0.9 ],
+									"textcolor_inverse" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"fontsize" : [ 36.0 ],
 									"selectioncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
-									"textcolor_inverse" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"fontname" : [ "Dirty Ego" ]
 								}
 ,
 								"parentstyle" : "",
@@ -7569,18 +8025,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-26",
-					"linecount" : 7,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1338.999991655349731, 154.0, 207.0, 100.0 ],
-					"text" : "Checklist:\n- (x) Fix \"updated\" indicators\n- (x) Fix luminosity sig figs\n- (x) Port over latest MongoDB connection patch\n- (x) Add temperature in Fahrenheit\n- (x) Update luminosity max"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -7588,18 +8032,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2648.256121635437012, 625.0, 51.0, 22.0 ],
 					"text" : "r rainfall"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1036.0, 45.0, 253.0, 87.0 ],
-					"text" : "BUGS:\n- MongoDB Connection Setup patch does not output data unless bang is pressed within patching mode\n- \"Updated\" indicators not working on dashboard (potentially severed cords)"
 				}
 
 			}
@@ -7675,7 +8107,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 245.333332419395447, 149.999999761581421, 186.0, 51.0 ],
+					"patching_rect" : [ 245.333332419395447, 149.999999761581421, 186.0, 52.0 ],
 					"text" : "Connect to MongoDB using the \"Send\" button on the MongoDB Connection Setup"
 				}
 
@@ -7686,7 +8118,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1138.999991655349731, 202.5, 150.0, 20.0 ],
+					"patching_rect" : [ 865.999991655349731, 136.5, 150.0, 20.0 ],
 					"text" : "Example field input:"
 				}
 
@@ -7709,7 +8141,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1138.999991655349731, 221.0, 150.0, 20.0 ],
+					"patching_rect" : [ 865.999991655349731, 155.0, 150.0, 20.0 ],
 					"text" : "HC407"
 				}
 
@@ -7720,7 +8152,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1138.999991655349731, 246.0, 150.0, 20.0 ],
+					"patching_rect" : [ 865.999991655349731, 180.0, 150.0, 20.0 ],
 					"text" : "helloworld101"
 				}
 
@@ -7731,7 +8163,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1138.999991655349731, 318.0, 150.0, 20.0 ],
+					"patching_rect" : [ 865.999991655349731, 252.0, 150.0, 20.0 ],
 					"text" : "WeatherChimes"
 				}
 
@@ -7742,7 +8174,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1138.999991655349731, 288.0, 150.0, 20.0 ],
+					"patching_rect" : [ 865.999991655349731, 222.0, 150.0, 20.0 ],
 					"text" : "remotetest.cls7o"
 				}
 
@@ -7756,7 +8188,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 333.0, 699.5, 30.0, 30.0 ]
+					"patching_rect" : [ 340.0, 528.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -8256,30 +8688,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-210",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1707.0, 919.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-206",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 1707.0, 882.182927846908569, 48.0, 22.0 ],
-					"text" : "change"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-195",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -8296,7 +8704,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1066.0, 959.0, 53.0, 22.0 ],
+					"patching_rect" : [ 853.5, 888.5, 53.0, 22.0 ],
 					"text" : "s rainfall"
 				}
 
@@ -8311,7 +8719,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1066.0, 923.5, 50.0, 22.0 ]
+					"patching_rect" : [ 853.5, 853.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -8322,7 +8730,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1066.0, 893.5, 131.0, 22.0 ],
+					"patching_rect" : [ 853.5, 823.0, 131.0, 22.0 ],
 					"text" : "dict.unpack Tip_Count:"
 				}
 
@@ -8523,17 +8931,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 992.0, 35.365850925445557, 77.0, 22.0 ],
 					"text" : "r packetNum"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-163",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1369.599981725215912, 1088.887816905975342, 150.0, 20.0 ],
-					"text" : "OUTLETS"
 				}
 
 			}
@@ -9518,52 +9915,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-43",
-					"linecount" : 8,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 721.5, 250.0, 114.0 ],
-					"text" : "Activity: Look at the example for the SHT30 Temperature sensor stream. This sets the display of the UI object, and also sends the data stream to a send object for transmitting to the receive object. This configuration is handy so you can either set the UI object manually OR MongoDB will auto update the value and send."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-42",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 820.5, 1110.5, 173.0, 60.0 ],
-					"text" : "You may drag this manually te set new values, or MongoDB connect will update it each time it refreshes"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-41",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 855.0, 1061.5, 173.0, 20.0 ],
-					"text" : "<< set the value wihtout output"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 820.5, 1090.5, 150.0, 20.0 ],
-					"text" : "range is -10C to 50C"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -9593,72 +9944,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-25",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 335.0, 250.0, 60.0 ],
-					"text" : "Use the ranges from this table to set the min and max of your UI objects:\nhttps://github.com/OPEnSLab-OSU/OPEnS-Lab-Home/wiki/WeatherChimes"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 180.0, 150.0, 20.0 ],
-					"text" : "Chet Udell • 2022"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 231.0, 296.0, 87.0 ],
-					"text" : "This tutorial shows how to use dict objects to unpack the MongoDB data packets into individual sensor streams\nObjective: Make a UI Dashboard using the Max Interface Objects. \nUse send and receive objects to "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 842.0, 250.0, 47.0 ],
-					"text" : "Activity: Use the comment object to make labels for each of the sensors. Place these labels next to your corresponding UI object"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-101",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 847.0, 959.0, 189.0, 51.0 ],
-					"text" : "Send individual sensor streams to receive objects of same name in your patches"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-100",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 768.0, 832.5, 150.0, 24.0 ],
+					"patching_rect" : [ 552.0, 811.0, 150.0, 24.0 ],
 					"text" : "Route Sensor Streams"
 				}
 
@@ -9669,7 +9960,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1195.0, 1120.5, 34.0, 22.0 ],
+					"patching_rect" : [ 1029.0, 1108.865854501724243, 34.0, 22.0 ],
 					"text" : "s Vis"
 				}
 
@@ -9680,7 +9971,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1130.5, 1120.5, 30.0, 22.0 ],
+					"patching_rect" : [ 964.5, 1108.865854501724243, 30.0, 22.0 ],
 					"text" : "s IR"
 				}
 
@@ -9691,7 +9982,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1066.0, 1120.5, 37.0, 22.0 ],
+					"patching_rect" : [ 900.0, 1108.865854501724243, 37.0, 22.0 ],
 					"text" : "s Full"
 				}
 
@@ -9724,7 +10015,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 776.0, 973.5, 69.0, 22.0 ],
+					"patching_rect" : [ 710.0, 823.0, 69.0, 22.0 ],
 					"text" : "s soil_temp"
 				}
 
@@ -9771,7 +10062,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1195.0, 1091.0, 50.0, 22.0 ]
+					"patching_rect" : [ 1029.0, 1028.365854501724243, 50.0, 22.0 ]
 				}
 
 			}
@@ -9784,7 +10075,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1130.5, 1091.0, 50.0, 22.0 ]
+					"patching_rect" : [ 964.5, 1028.365854501724243, 50.0, 22.0 ]
 				}
 
 			}
@@ -9797,7 +10088,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1066.0, 1091.0, 50.0, 22.0 ]
+					"patching_rect" : [ 900.0, 1028.365854501724243, 50.0, 22.0 ]
 				}
 
 			}
@@ -9874,7 +10165,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1066.0, 1059.5, 258.0, 23.0 ],
+					"patching_rect" : [ 900.0, 996.865854501724243, 258.0, 23.0 ],
 					"text" : "dict.unpack Full_Spectrum: Infared: Visible:"
 				}
 
@@ -9930,7 +10221,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 340.0, 807.166666865348816, 94.0, 23.0 ],
+					"patching_rect" : [ 340.0, 643.166666865348816, 94.0, 23.0 ],
 					"text" : "dict.deserialize"
 				}
 
@@ -9942,10 +10233,10 @@
 					"id" : "obj-44",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 6,
-					"outlettype" : [ "", "", "", "", "", "" ],
-					"patching_rect" : [ 340.0, 842.0, 437.0, 23.0 ],
-					"text" : "dict.unpack Packet: Teros10: SHT31: TSL2591: MS5803_119: Tip_Bucket:"
+					"numoutlets" : 8,
+					"outlettype" : [ "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 340.0, 679.0, 542.0, 23.0 ],
+					"text" : "dict.unpack Packet: Teros10: SHT31: TSL2591: MS5803_119: Tip_Bucket: SHT31D: GS3_0:"
 				}
 
 			}
@@ -9956,7 +10247,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 340.0, 780.500000238418579, 73.0, 22.0 ],
+					"patching_rect" : [ 340.0, 616.500000238418579, 73.0, 22.0 ],
 					"text" : "speedlim 10"
 				}
 
@@ -9993,8 +10284,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -10096,9 +10387,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 8.0, 8.197998, 119.0, 24.0 ],
+									"patching_rect" : [ 8.0, 8.197998, 119.0, 25.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 7.0, 7.0, 181.0, 24.0 ],
+									"presentation_rect" : [ 7.0, 7.0, 181.0, 25.0 ],
 									"text" : "Patch Generator",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
@@ -10155,7 +10446,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-4",
-									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "BeatSeq", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "Stochastic", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10289,8 +10580,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10692,6 +10983,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-249", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-251", 0 ],
+					"source" : [ "obj-16", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-157", 0 ],
 					"source" : [ "obj-161", 0 ]
 				}
@@ -10699,17 +11004,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-164", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"order" : 1,
 					"source" : [ "obj-165", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"order" : 0,
-					"source" : [ "obj-165", 0 ]
+					"destination" : [ "obj-98", 0 ],
+					"source" : [ "obj-167", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-99", 0 ],
+					"source" : [ "obj-168", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-172", 0 ],
+					"source" : [ "obj-169", 0 ]
 				}
 
 			}
@@ -10717,6 +11041,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-173", 0 ],
+					"source" : [ "obj-170", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"source" : [ "obj-171", 0 ]
 				}
 
 			}
@@ -10785,6 +11123,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-171", 0 ],
+					"source" : [ "obj-190", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-170", 0 ],
+					"source" : [ "obj-191", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-169", 0 ],
+					"source" : [ "obj-192", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-194", 0 ],
 					"source" : [ "obj-193", 0 ]
 				}
@@ -10799,8 +11158,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-210", 0 ],
-					"source" : [ "obj-206", 0 ]
+					"destination" : [ "obj-215", 0 ],
+					"source" : [ "obj-212", 0 ]
 				}
 
 			}
@@ -10857,6 +11216,90 @@
 				"patchline" : 				{
 					"destination" : [ "obj-241", 0 ],
 					"source" : [ "obj-242", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 0 ],
+					"source" : [ "obj-244", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-212", 0 ],
+					"source" : [ "obj-249", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-244", 0 ],
+					"source" : [ "obj-251", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-254", 0 ],
+					"source" : [ "obj-252", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-256", 0 ],
+					"source" : [ "obj-253", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-255", 0 ],
+					"source" : [ "obj-254", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-257", 0 ],
+					"source" : [ "obj-256", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-252", 0 ],
+					"source" : [ "obj-259", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-253", 0 ],
+					"source" : [ "obj-259", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-261", 0 ],
+					"source" : [ "obj-259", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-262", 0 ],
+					"source" : [ "obj-261", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-263", 0 ],
+					"source" : [ "obj-262", 0 ]
 				}
 
 			}
@@ -10935,9 +11378,43 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-190", 0 ],
+					"source" : [ "obj-42", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-191", 0 ],
+					"source" : [ "obj-42", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-192", 0 ],
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"order" : 0,
 					"source" : [ "obj-44", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-44", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-259", 0 ],
+					"source" : [ "obj-44", 7 ]
 				}
 
 			}
@@ -10950,9 +11427,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"order" : 1,
-					"source" : [ "obj-44", 4 ]
+					"destination" : [ "obj-42", 0 ],
+					"order" : 0,
+					"source" : [ "obj-44", 3 ]
 				}
 
 			}
@@ -10980,6 +11457,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
+					"order" : 1,
 					"source" : [ "obj-44", 3 ]
 				}
 
@@ -11184,7 +11662,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-97", 0 ],
+					"destination" : [ "obj-164", 0 ],
 					"source" : [ "obj-80", 0 ]
 				}
 
@@ -11198,21 +11676,30 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-98", 0 ],
+					"destination" : [ "obj-167", 0 ],
 					"source" : [ "obj-82", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-99", 0 ],
+					"destination" : [ "obj-168", 0 ],
 					"source" : [ "obj-83", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-247", 0 ],
+					"order" : 0,
+					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
+					"order" : 1,
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -11233,36 +11720,14 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "Timestamp.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "auto_install.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fit_jweb_to_bounds.js",
-				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "generator.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mongoconnect1.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -11273,15 +11738,32 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "parse.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
+				"name" : "resize_n4m_monitor_patcher.js",
+				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "resize_n4m_monitor_patcher.js",
+				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "parse.js",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "auto_install.js",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Timestamp.js",
+				"bootpath" : "C74:/extras/Loom4Max/Loom/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -11325,9 +11807,9 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
-					"fontname" : [ "Arial Bold" ],
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 11.0 ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -11336,9 +11818,9 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
-					"fontname" : [ "Arial Bold" ],
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 10.0 ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -11347,6 +11829,7 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
+					"fontsize" : [ 11.0 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -11356,9 +11839,8 @@
 						"type" : "gradient"
 					}
 ,
-					"fontface" : [ 1 ],
 					"fontname" : [ "Arial" ],
-					"fontsize" : [ 11.0 ]
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -11384,8 +11866,7 @@
 , 			{
 				"name" : "Luca",
 				"default" : 				{
-					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"bgcolor" : [ 0.904179, 0.895477, 0.842975, 0.56 ],
+					"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"autogradient" : 0,
@@ -11396,11 +11877,12 @@
 						"type" : "gradient"
 					}
 ,
-					"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ],
-					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-					"fontname" : [ "Open Sans Semibold" ],
 					"selectioncolor" : [ 0.720698, 0.16723, 0.080014, 1.0 ],
-					"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
+					"fontname" : [ "Open Sans Semibold" ],
+					"bgcolor" : [ 0.904179, 0.895477, 0.842975, 0.56 ],
+					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ],
+					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -11409,9 +11891,9 @@
 , 			{
 				"name" : "M4L 10 Bold",
 				"default" : 				{
-					"fontface" : [ 1 ],
+					"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.25 ],
 					"fontsize" : [ 10.0 ],
-					"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.25 ]
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -11430,8 +11912,8 @@
 , 			{
 				"name" : "Matt",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 10.0 ]
+					"fontsize" : [ 10.0 ],
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -11715,8 +12197,8 @@
 , 			{
 				"name" : "WTF",
 				"default" : 				{
-					"accentcolor" : [ 0.50764, 0.065317, 0.112129, 1.0 ],
-					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
+					"fontsize" : [ 18.0 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"autogradient" : 0,
@@ -11727,11 +12209,11 @@
 						"type" : "gradient"
 					}
 ,
-					"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ],
-					"elementcolor" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
 					"fontname" : [ "HydrogenType" ],
-					"fontsize" : [ 18.0 ],
-					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+					"bgcolor" : [ 0.163647, 0.174699, 0.17409, 1.0 ],
+					"accentcolor" : [ 0.50764, 0.065317, 0.112129, 1.0 ],
+					"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ],
+					"elementcolor" : [ 0.461105, 0.492646, 0.591878, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -11740,8 +12222,9 @@
 , 			{
 				"name" : "classic",
 				"default" : 				{
-					"accentcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"bgcolor" : [ 0.83978, 0.839941, 0.839753, 1.0 ],
+					"patchlinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 9.0 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"color" : [ 0.839216, 0.839216, 0.839216, 1.0 ],
@@ -11751,11 +12234,10 @@
 						"type" : "color"
 					}
 ,
-					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 					"fontname" : [ "Geneva" ],
-					"fontsize" : [ 9.0 ],
-					"patchlinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"bgcolor" : [ 0.83978, 0.839941, 0.839753, 1.0 ],
+					"accentcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
+					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -11809,10 +12291,10 @@
 , 			{
 				"name" : "classicKslider",
 				"default" : 				{
+					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
+					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -11850,9 +12332,9 @@
 , 			{
 				"name" : "classicNodes",
 				"default" : 				{
+					"fontsize" : [ 9.0 ],
 					"color" : [ 0.839216, 0.839216, 0.839216, 1.0 ],
-					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"fontsize" : [ 9.0 ]
+					"elementcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -11946,8 +12428,8 @@
 , 			{
 				"name" : "classicWaveform~",
 				"default" : 				{
-					"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ],
-					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 0.5 ]
+					"selectioncolor" : [ 0.498039, 0.498039, 0.498039, 0.5 ],
+					"color" : [ 0.380392, 0.380392, 0.380392, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -11956,7 +12438,8 @@
 , 			{
 				"name" : "dark-night-patch",
 				"default" : 				{
-					"accentcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"patchlinecolor" : [ 0.439216, 0.74902, 0.254902, 0.898039 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -11966,8 +12449,7 @@
 						"type" : "gradient"
 					}
 ,
-					"patchlinecolor" : [ 0.439216, 0.74902, 0.254902, 0.898039 ],
-					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+					"accentcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -11981,6 +12463,9 @@
 , 			{
 				"name" : "jpatcher002",
 				"default" : 				{
+					"patchlinecolor" : [ 0.65098, 0.65098, 0.65098, 0.0 ],
+					"clearcolor" : [ 0.32549, 0.345098, 0.372549, 0.0 ],
+					"fontsize" : [ 9.5 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -11990,10 +12475,7 @@
 						"type" : "color"
 					}
 ,
-					"clearcolor" : [ 0.32549, 0.345098, 0.372549, 0.0 ],
-					"fontname" : [ "Ableton Sans Book" ],
-					"fontsize" : [ 9.5 ],
-					"patchlinecolor" : [ 0.65098, 0.65098, 0.65098, 0.0 ]
+					"fontname" : [ "Ableton Sans Book" ]
 				}
 ,
 				"parentstyle" : "",
@@ -12002,8 +12484,9 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"angle" : 270.0,
 						"autogradient" : 0,
@@ -12014,12 +12497,11 @@
 						"type" : "color"
 					}
 ,
-					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
 					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12155,8 +12637,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12165,8 +12647,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12211,8 +12693,8 @@
 , 			{
 				"name" : "purple",
 				"default" : 				{
-					"bgcolor" : [ 0.304029, 0.250694, 0.285628, 1.0 ],
-					"textcolor_inverse" : [ 0.701961, 0.415686, 0.886275, 1.0 ]
+					"textcolor_inverse" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
+					"bgcolor" : [ 0.304029, 0.250694, 0.285628, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12249,9 +12731,9 @@
 , 			{
 				"name" : "stb001",
 				"default" : 				{
-					"fontface" : [ 1 ],
+					"fontsize" : [ 10.0 ],
 					"fontname" : [ "Arial Bold" ],
-					"fontsize" : [ 10.0 ]
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12290,8 +12772,8 @@
 , 			{
 				"name" : "test",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 10.0 ]
+					"fontsize" : [ 10.0 ],
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12300,11 +12782,11 @@
 , 			{
 				"name" : "whitey",
 				"default" : 				{
-					"fontname" : [ "Dirty Ego" ],
-					"fontsize" : [ 36.0 ],
 					"patchlinecolor" : [ 0.199068, 0.062496, 0.060031, 0.9 ],
+					"textcolor_inverse" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"fontsize" : [ 36.0 ],
 					"selectioncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
-					"textcolor_inverse" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"fontname" : [ "Dirty Ego" ]
 				}
 ,
 				"parentstyle" : "",
