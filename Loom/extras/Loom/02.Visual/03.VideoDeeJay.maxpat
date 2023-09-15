@@ -5488,7 +5488,7 @@
 									"ignoreclick" : 1,
 									"interp" : 1,
 									"maxclass" : "jit.pwindow",
-									"name" : "grapher30",
+									"name" : "grapher52",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
@@ -8286,13 +8286,65 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-3",
+									"id" : "obj-11",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 282.0, 140.0, 51.0, 22.0 ],
+									"text" : "initialize"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 58.0, 214.0, 108.0, 22.0 ],
-									"text" : "loadmess initialize"
+									"patching_rect" : [ 193.0, 108.0, 112.0, 22.0 ],
+									"text" : "prepend setSystem"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 282.0, 72.093994000000009, 41.0, 22.0 ],
+									"text" : "del 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "int" ],
+									"patching_rect" : [ 193.0, 72.0, 67.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"selector" : "plat"
+									}
+,
+									"text" : "gestalt plat"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 193.0, 20.0, 58.0, 22.0 ],
+									"text" : "loadbang"
 								}
 
 							}
@@ -8303,7 +8355,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 518.0, 161.093994000000009, 69.0, 22.0 ],
+									"patching_rect" : [ 519.0, 222.093994000000009, 69.0, 22.0 ],
 									"text" : "delete_last"
 								}
 
@@ -8315,7 +8367,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 365.0, 161.093994000000009, 62.0, 22.0 ],
+									"patching_rect" : [ 366.0, 222.093994000000009, 62.0, 22.0 ],
 									"text" : "delete_all"
 								}
 
@@ -8327,7 +8379,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 206.75, 161.093994000000009, 105.0, 22.0 ],
+									"patching_rect" : [ 207.75, 222.093994000000009, 105.0, 22.0 ],
 									"text" : "prepend generate"
 								}
 
@@ -8372,7 +8424,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 365.0, 116.093993999999995, 118.0, 25.0 ],
+									"patching_rect" : [ 366.0, 177.093994000000009, 118.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.0, 97.0, 169.0, 24.0 ],
 									"rounded" : 15.0,
@@ -8395,7 +8447,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 518.0, 116.093993999999995, 118.0, 25.0 ],
+									"patching_rect" : [ 519.0, 177.093994000000009, 118.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.0, 69.0, 169.0, 24.0 ],
 									"rounded" : 15.0,
@@ -8417,7 +8469,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 154.0, 116.093993999999995, 124.5, 22.0 ],
+									"patching_rect" : [ 155.0, 177.093994000000009, 124.5, 22.0 ],
 									"prefix" : "Macintosh HD:/Applications/Max6.1/Cycling '74/DataProcessorPlugins/",
 									"prefix_mode" : 2,
 									"presentation" : 1,
@@ -8436,7 +8488,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 154.0, 279.0, 85.0, 22.0 ],
+									"patching_rect" : [ 155.0, 340.0, 85.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"filename" : "generator.js",
 										"parameter_enable" : 0
@@ -8474,6 +8526,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-14", 0 ]
 								}
@@ -8502,15 +8561,45 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-3", 0 ]
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-4", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"source" : [ "obj-4", 1 ]
+									"destination" : [ "obj-6", 0 ],
+									"order" : 1,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -9375,10 +9464,10 @@
 , 			{
 				"box" : 				{
 					"autofit" : 1,
-					"films" : [ "countdown15.mov", "dishes.mov", "dozer.mov", "garbage.mov" ],
+					"films" : [ "rain.mov", "countdown15.mov", "dishes.mov", "dozer.mov" ],
 					"id" : "obj-62",
 					"maxclass" : "imovie",
-					"name" : "rain.mov",
+					"name" : "garbage.mov",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],

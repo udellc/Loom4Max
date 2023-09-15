@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 3,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -422,8 +422,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -770,8 +770,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 3,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1376,8 +1376,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 3,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2962,8 +2962,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3563,8 +3563,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 3,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4508,8 +4508,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 3,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5198,8 +5198,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9581,7 +9581,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 449.0, 617.0, 105.0, 78.0 ],
+					"patching_rect" : [ 449.0, 617.0, 106.0, 78.0 ],
 					"text" : "Type how many samples you want to retrieve here and press Go"
 				}
 
@@ -9633,8 +9633,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9815,11 +9815,11 @@
 									"bubble" : 1,
 									"fontsize" : 12.0,
 									"id" : "obj-203",
-									"linecount" : 7,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 172.00000262260437, 94.0 ],
+									"patching_rect" : [ 597.333351135253906, 1359.540775060653687, 176.0, 82.0 ],
 									"style" : "WTF",
 									"text" : "Sampling Period is calculated by parsing the seconds return and dividing by 60 to get the # of minutes and then displaying the remaining seconds"
 								}
@@ -9830,11 +9830,11 @@
 									"bubble" : 1,
 									"fontsize" : 12.0,
 									"id" : "obj-202",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 483.250001907348633, 1221.733346223831177, 269.333339214324951, 58.0 ],
+									"patching_rect" : [ 483.250001907348633, 1221.733346223831177, 273.0, 46.0 ],
 									"style" : "WTF",
 									"text" : "Timestamp.js returns the lastPacket timestamp in the first outlet and the number of seconds between packets in the second outlet"
 								}
@@ -9894,11 +9894,11 @@
 									"bubbleside" : 3,
 									"fontsize" : 16.0,
 									"id" : "obj-188",
-									"linecount" : 8,
+									"linecount" : 7,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 223.0, 138.0 ],
+									"patching_rect" : [ 25.666662037372589, 688.000002861022949, 227.0, 122.0 ],
 									"style" : "WTF",
 									"text" : "3. After connecting, it will send a bang to isConnected which will be used to get the first and last two packets in the collection to initalize the timestamps and sampling period"
 								}
@@ -12313,8 +12313,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 3,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -12748,8 +12748,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -13726,12 +13724,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 334.0, 662.592556476593018, 168.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"autostart" : 0,
-										"defer" : 0,
-										"watch" : 0
-									}
-,
 									"text" : "node.script mongoconnect1.js"
 								}
 
@@ -17010,7 +17002,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 1002.5, 447.0, 85.0 ],
+					"patching_rect" : [ 11.0, 1002.5, 451.0, 85.0 ],
 					"text" : "When data is selected from the menu on the Sensor Plotter Module, a list of data values is output from the right-most outlet. We can output this stream into an itable, plot a probability curve, and output randomly generated numbers based on this probability curve. See Max Tutorial # 17 for more information."
 				}
 
@@ -17308,8 +17300,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -17345,13 +17337,65 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-3",
+									"id" : "obj-11",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 282.0, 140.0, 51.0, 22.0 ],
+									"text" : "initialize"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 58.0, 214.0, 108.0, 22.0 ],
-									"text" : "loadmess initialize"
+									"patching_rect" : [ 193.0, 108.0, 112.0, 22.0 ],
+									"text" : "prepend setSystem"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 282.0, 72.093994000000009, 41.0, 22.0 ],
+									"text" : "del 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "int" ],
+									"patching_rect" : [ 193.0, 72.0, 67.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"selector" : "plat"
+									}
+,
+									"text" : "gestalt plat"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 193.0, 20.0, 58.0, 22.0 ],
+									"text" : "loadbang"
 								}
 
 							}
@@ -17362,7 +17406,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 518.0, 161.093994000000009, 69.0, 22.0 ],
+									"patching_rect" : [ 519.0, 222.093994000000009, 69.0, 22.0 ],
 									"text" : "delete_last"
 								}
 
@@ -17374,7 +17418,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 365.0, 161.093994000000009, 62.0, 22.0 ],
+									"patching_rect" : [ 366.0, 222.093994000000009, 62.0, 22.0 ],
 									"text" : "delete_all"
 								}
 
@@ -17386,7 +17430,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 206.75, 161.093994000000009, 105.0, 22.0 ],
+									"patching_rect" : [ 207.75, 222.093994000000009, 105.0, 22.0 ],
 									"text" : "prepend generate"
 								}
 
@@ -17431,7 +17475,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 365.0, 116.093993999999995, 118.0, 25.0 ],
+									"patching_rect" : [ 366.0, 177.093994000000009, 118.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.0, 97.0, 169.0, 24.0 ],
 									"rounded" : 15.0,
@@ -17454,7 +17498,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 518.0, 116.093993999999995, 118.0, 25.0 ],
+									"patching_rect" : [ 519.0, 177.093994000000009, 118.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.0, 69.0, 169.0, 24.0 ],
 									"rounded" : 15.0,
@@ -17476,7 +17520,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 154.0, 116.093993999999995, 124.5, 22.0 ],
+									"patching_rect" : [ 155.0, 177.093994000000009, 124.5, 22.0 ],
 									"prefix" : "Macintosh HD:/Applications/Max6.1/Cycling '74/DataProcessorPlugins/",
 									"prefix_mode" : 2,
 									"presentation" : 1,
@@ -17495,7 +17539,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 154.0, 279.0, 85.0, 22.0 ],
+									"patching_rect" : [ 155.0, 340.0, 85.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"filename" : "generator.js",
 										"parameter_enable" : 0
@@ -17533,6 +17577,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-14", 0 ]
 								}
@@ -17561,15 +17612,45 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-3", 0 ]
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-4", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"source" : [ "obj-4", 1 ]
+									"destination" : [ "obj-6", 0 ],
+									"order" : 1,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -17578,13 +17659,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"angle" : 270.0,
-										"autogradient" : 0,
+										"type" : "color",
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
 										"proportion" : 0.39,
-										"type" : "color"
+										"autogradient" : 0
 									}
 
 								}
@@ -17851,13 +17932,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mongoconnect1.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
-				"patcherrelativepath" : "../../../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "n4m.monitor.maxpat",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "JSON",
@@ -17880,6 +17954,13 @@
 , 			{
 				"name" : "resize_n4m_monitor_patcher.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "scales.coll",
+				"bootpath" : "~/Documents/Max 8/Packages/Optron/externals/DataProcessor",
+				"patcherrelativepath" : "../../../../../Optron/externals/DataProcessor",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

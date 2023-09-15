@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 314.0, 108.0, 1309.0, 820.0 ],
+		"rect" : [ 314.0, 108.0, 903.0, 820.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -498,7 +498,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "Number",
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -546,7 +546,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "WiFi", ",", "MPU6050", ",", "Analog", ",", "Digital" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -980,7 +980,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1943.0, 884.0, 350.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Green is enabled: send relay state change messade automatically"
 				}
 
@@ -1257,7 +1256,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 259.0, 351.199981999999977, 160.0, 22.0 ],
-									"text" : "Relay s 1"
+									"text" : "Relay s 0"
 								}
 
 							}
@@ -1481,7 +1480,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1815.0, 1129.0, 148.0, 66.0 ],
-					"presentation_linecount" : 3,
 					"text" : "hint: try clicking this button if it has trouble connecting"
 				}
 
@@ -1495,7 +1493,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1839.0, 1278.0, 350.0, 64.0 ],
-					"presentation_linecount" : 4,
 					"text" : "Relay Status in hardware is reported back to Max using the connected sensor module; may come in handy or may not.\nSelect Relay in top menu. On in bottom menu reports 1 or 0 if on or off."
 				}
 
@@ -1510,7 +1507,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1707.0, 1028.0, 150.0, 79.0 ],
-					"presentation_linecount" : 4,
 					"text" : "The name of the device will appear here when connected and blue connection light will blink"
 				}
 
@@ -2103,7 +2099,7 @@
 									"patching_rect" : [ 620.25, 78.166663999999997, 81.5, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 86.266647000000006, 6.5, 73.46669, 22.0 ],
-									"text" : "Clickey",
+									"text" : "Device",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
 									"varname" : "device_name"
@@ -3435,7 +3431,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : [ "SSID", ",", "RSSI" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3483,7 +3479,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "WiFi", ",", "Relay10" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3845,7 +3841,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 557.0, 304.0, 216.0, 51.0 ],
-					"presentation_linecount" : 3,
 					"text" : "While not necessary, Orientation is a fun module to visualize your Wattson's MPU6050 sensor!"
 				}
 
@@ -3859,7 +3854,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1113.0, 490.0, 400.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "There are many different modules to transform your data into useful control streams!"
 				}
 
@@ -3898,7 +3892,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 603.0, 224.0, 162.0, 51.0 ],
-					"presentation_linecount" : 3,
 					"text" : "modules are connected by patch cords like other objects"
 				}
 
@@ -3913,7 +3906,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 796.0, 46.0, 150.0, 79.0 ],
-					"presentation_linecount" : 4,
 					"text" : "The name of the device will appear here when connected and blue connection light will blink"
 				}
 
@@ -3928,7 +3920,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 503.0, 109.5, 270.0, 51.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Set this to the Instance Number of the device you wish to connect. Click-hold-drag, or click then type the number then pres return"
 				}
 
@@ -10528,7 +10519,7 @@
 									"ignoreclick" : 1,
 									"interp" : 1,
 									"maxclass" : "jit.pwindow",
-									"name" : "grapher43",
+									"name" : "grapher84",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
@@ -11537,7 +11528,7 @@
 									"patching_rect" : [ 620.25, 78.166663999999997, 81.5, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 86.266647000000006, 6.5, 73.46669, 22.0 ],
-									"text" : "Wattson",
+									"text" : "Device",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
 									"varname" : "device_name"
@@ -12869,7 +12860,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : [ "ax", ",", "ay", ",", "az", ",", "gx", ",", "gy", ",", "gz", ",", "pitch", ",", "roll", ",", "yaw" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -12917,7 +12908,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "WiFi", ",", "MPU6050", ",", "Analog", ",", "Digital" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -13612,7 +13603,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 143.0, 377.0, 160.0, 22.0 ],
-									"text" : "Servo s 0 45"
+									"text" : "Servo s 0 0"
 								}
 
 							}
@@ -14056,7 +14047,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 146.0, 1082.0, 148.0, 66.0 ],
-					"presentation_linecount" : 3,
 					"text" : "hint: try clicking this button if it has trouble connecting"
 				}
 
@@ -14070,7 +14060,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 170.0, 1231.0, 350.0, 64.0 ],
-					"presentation_linecount" : 4,
 					"text" : "Servo Status in hardware is reported back to Max using the connected sensor module; may come in handy or may not.\nSelect Servo in top menu. On in bottom menu, select the target number servo you wish to monitor."
 				}
 
@@ -14085,7 +14074,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 52.0, 987.0, 150.0, 79.0 ],
-					"presentation_linecount" : 4,
 					"text" : "The name of the device will appear here when connected and blue connection light will blink"
 				}
 
@@ -16467,13 +16455,65 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-3",
+									"id" : "obj-11",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 282.0, 140.0, 51.0, 22.0 ],
+									"text" : "initialize"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 58.0, 214.0, 108.0, 22.0 ],
-									"text" : "loadmess initialize"
+									"patching_rect" : [ 193.0, 108.0, 112.0, 22.0 ],
+									"text" : "prepend setSystem"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 282.0, 72.093994000000009, 41.0, 22.0 ],
+									"text" : "del 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "int" ],
+									"patching_rect" : [ 193.0, 72.0, 67.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"selector" : "plat"
+									}
+,
+									"text" : "gestalt plat"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 193.0, 20.0, 58.0, 22.0 ],
+									"text" : "loadbang"
 								}
 
 							}
@@ -16484,7 +16524,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 518.0, 161.093994000000009, 69.0, 22.0 ],
+									"patching_rect" : [ 519.0, 222.093994000000009, 69.0, 22.0 ],
 									"text" : "delete_last"
 								}
 
@@ -16496,7 +16536,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 365.0, 161.093994000000009, 62.0, 22.0 ],
+									"patching_rect" : [ 366.0, 222.093994000000009, 62.0, 22.0 ],
 									"text" : "delete_all"
 								}
 
@@ -16508,7 +16548,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 206.75, 161.093994000000009, 105.0, 22.0 ],
+									"patching_rect" : [ 207.75, 222.093994000000009, 105.0, 22.0 ],
 									"text" : "prepend generate"
 								}
 
@@ -16553,7 +16593,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 365.0, 116.093993999999995, 118.0, 25.0 ],
+									"patching_rect" : [ 366.0, 177.093994000000009, 118.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.0, 97.0, 169.0, 24.0 ],
 									"rounded" : 15.0,
@@ -16576,7 +16616,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 518.0, 116.093993999999995, 118.0, 25.0 ],
+									"patching_rect" : [ 519.0, 177.093994000000009, 118.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.0, 69.0, 169.0, 24.0 ],
 									"rounded" : 15.0,
@@ -16592,13 +16632,13 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-4",
-									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "BeatSeq", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
+									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "BeatSeq", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "Stochastic", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 154.0, 116.093993999999995, 124.5, 22.0 ],
+									"patching_rect" : [ 155.0, 177.093994000000009, 124.5, 22.0 ],
 									"prefix" : "Macintosh HD:/Applications/Max6.1/Cycling '74/DataProcessorPlugins/",
 									"prefix_mode" : 2,
 									"presentation" : 1,
@@ -16617,7 +16657,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 154.0, 279.0, 85.0, 22.0 ],
+									"patching_rect" : [ 155.0, 340.0, 85.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"filename" : "generator.js",
 										"parameter_enable" : 0
@@ -16655,6 +16695,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-14", 0 ]
 								}
@@ -16683,15 +16730,45 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-3", 0 ]
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-4", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"source" : [ "obj-4", 1 ]
+									"destination" : [ "obj-6", 0 ],
+									"order" : 1,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -17769,7 +17846,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 678.0, 1055.0, 273.0, 66.0 ],
+					"patching_rect" : [ 678.0, 1055.0, 275.0, 66.0 ],
 					"text" : "First, connect your computer WiFi to Swervo#, where the # is the Instance Number label on your Loom Relay kit"
 				}
 
@@ -17782,7 +17859,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1433.0, 1101.0, 134.0, 78.0 ],
+					"patching_rect" : [ 1433.0, 1101.0, 138.0, 78.0 ],
 					"text" : "Click Client, Type in SSID (router name) and Password in the fields. Click the send button"
 				}
 
@@ -21192,7 +21269,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-59", 0 ]
 				}
 
@@ -21200,7 +21277,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-59", 0 ]
 				}
 

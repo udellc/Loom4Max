@@ -536,7 +536,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : [ "9", ",", "10" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -584,7 +584,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "WiFi", ",", "MPU6050", ",", "Analog", ",", "Digital", ",", "Neopixel0" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -6818,7 +6818,7 @@
 									"ignoreclick" : 1,
 									"interp" : 1,
 									"maxclass" : "jit.pwindow",
-									"name" : "grapher8",
+									"name" : "grapher60",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
@@ -7878,7 +7878,7 @@
 									"patching_rect" : [ 620.25, 78.166663999999997, 81.5, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 86.266647000000006, 6.5, 73.46669, 22.0 ],
-									"text" : "Wattson",
+									"text" : "Device",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
 									"varname" : "device_name"
@@ -9210,7 +9210,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : [ "A0", ",", "A0_MV", ",", "A1", ",", "A1_MV", ",", "Vbat", ",", "Vbat_MV" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -9258,7 +9258,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "WiFi", ",", "MPU6050", ",", "Analog", ",", "Digital", ",", "Neopixel0" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -9667,13 +9667,65 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-3",
+									"id" : "obj-11",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 282.0, 140.0, 51.0, 22.0 ],
+									"text" : "initialize"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 58.0, 214.0, 108.0, 22.0 ],
-									"text" : "loadmess initialize"
+									"patching_rect" : [ 193.0, 108.0, 112.0, 22.0 ],
+									"text" : "prepend setSystem"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 282.0, 72.093994000000009, 41.0, 22.0 ],
+									"text" : "del 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "int" ],
+									"patching_rect" : [ 193.0, 72.0, 67.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"selector" : "plat"
+									}
+,
+									"text" : "gestalt plat"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 193.0, 20.0, 58.0, 22.0 ],
+									"text" : "loadbang"
 								}
 
 							}
@@ -9684,7 +9736,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 518.0, 161.093994000000009, 69.0, 22.0 ],
+									"patching_rect" : [ 519.0, 222.093994000000009, 69.0, 22.0 ],
 									"text" : "delete_last"
 								}
 
@@ -9696,7 +9748,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 365.0, 161.093994000000009, 62.0, 22.0 ],
+									"patching_rect" : [ 366.0, 222.093994000000009, 62.0, 22.0 ],
 									"text" : "delete_all"
 								}
 
@@ -9708,7 +9760,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 206.75, 161.093994000000009, 105.0, 22.0 ],
+									"patching_rect" : [ 207.75, 222.093994000000009, 105.0, 22.0 ],
 									"text" : "prepend generate"
 								}
 
@@ -9753,7 +9805,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 365.0, 116.093993999999995, 118.0, 25.0 ],
+									"patching_rect" : [ 366.0, 177.093994000000009, 118.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.0, 97.0, 169.0, 24.0 ],
 									"rounded" : 15.0,
@@ -9776,7 +9828,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 518.0, 116.093993999999995, 118.0, 25.0 ],
+									"patching_rect" : [ 519.0, 177.093994000000009, 118.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 11.0, 69.0, 169.0, 24.0 ],
 									"rounded" : 15.0,
@@ -9792,13 +9844,13 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-4",
-									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
+									"items" : [ "--Input--", ",", "ModuleCore", ",", "GeneralViewer", ",", "MongoDB", ",", "Sensor", ",", "PositionVisualizer", ",", "SelectSD_Config", ",", "MidiIn", ",", "OSC_In", ",", "ArduinoIn", ",", "OptronMini", ",", "OptronZX", ",", "vocalInput", ",", "--Process--", ",", "BeatSeq", ",", "ChordDegree", ",", "Concatenate", ",", "Harmonizer", ",", "Movement", ",", "pH", ",", "RangeSetter", ",", "RotaryDial", ",", "ScaleCurve", ",", "ScaleDegree", ",", "ScaleLinear", ",", "SensorPlotter", ",", "Sequencer", ",", "Smooth", ",", "Spring", ",", "Stochastic", ",", "TapTempo", ",", "Threshold", ",", "--Output--", ",", "3Dpan", ",", "DMX", ",", "Draw", ",", "DrumKit", ",", "Lightsaber", ",", "MidiOut", ",", "Musicbox", ",", "OptronBOW", ",", "OptronCnfti", ",", "OptronFire", ",", "OptronGlitter", ",", "OptronHSV", ",", "OptronMouth", ",", "OptronPpit", ",", "OptronRGBSprite", ",", "OptronSpit", ",", "OSC_Out", ",", "SimpleSamp", ",", "Switchblade", ",", "--OutDevice--", ",", "Neopixel", ",", "Relay", ",", "Servo", ",", "Stepper", ",", "SetInterval", ",", "WifiSetup", ",", "wifiUpdate" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 154.0, 116.093993999999995, 124.5, 22.0 ],
+									"patching_rect" : [ 155.0, 177.093994000000009, 124.5, 22.0 ],
 									"prefix" : "Macintosh HD:/Applications/Max6.1/Cycling '74/DataProcessorPlugins/",
 									"prefix_mode" : 2,
 									"presentation" : 1,
@@ -9817,7 +9869,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 154.0, 279.0, 85.0, 22.0 ],
+									"patching_rect" : [ 155.0, 340.0, 85.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"filename" : "generator.js",
 										"parameter_enable" : 0
@@ -9855,6 +9907,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-14", 0 ]
 								}
@@ -9883,15 +9942,45 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-3", 0 ]
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-4", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"source" : [ "obj-4", 1 ]
+									"destination" : [ "obj-6", 0 ],
+									"order" : 1,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -10206,14 +10295,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"order" : 0,
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
 					"order" : 2,
 					"source" : [ "obj-8", 0 ]
 				}
@@ -10221,8 +10302,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-47", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -10230,28 +10319,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Controller.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Convert_Incoming.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Sensor.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "generator.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -10262,7 +10351,7 @@
 			}
 , 			{
 				"name" : "runningAvg.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Loom/externals/DataProcessor",
+				"bootpath" : "~/Documents/Max 8/Packages/Loom4Max/Loom/externals/DataProcessor",
 				"patcherrelativepath" : "../../../externals/DataProcessor",
 				"type" : "JSON",
 				"implicit" : 1

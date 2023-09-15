@@ -3929,7 +3929,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : [ "Visible", ",", "Infrared", ",", "Full_Spectrum" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3965,7 +3965,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "Teros10", ",", "Water", ",", "Timestamp" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10877,7 +10877,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : [ "Temperature", ",", "Humidity" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10913,7 +10913,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "Teros10", ",", "Water", ",", "Timestamp" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -17346,7 +17346,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : [ "Temperature", ",", "Humidity" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -17382,7 +17382,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "Teros10", ",", "Water", ",", "Timestamp" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -19999,7 +19999,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 447.416666567325592, 610.558978915214539, 40.0, 22.0 ],
-									"restore" : [ "setState", "mongodb+srv://ear2earth:helloworld101@remotetest.cls7o.mongodb.net/WeatherChimes-Workshop?retryWrites=true&w=majority", "Chime0", 8 ],
+									"restore" : [ "setState", "mongodb+srv://ear2earth:helloworld101@remotetest.cls7o.mongodb.net/WeatherChimes-Workshop?retryWrites=true&w=majority", "Chime0", 1 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -22938,7 +22938,7 @@
 									"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_angle" : 0.0,
 									"bgfillcolor_autogradient" : 0.0,
-									"bgfillcolor_color" : [ 0, 0.851, 0.28 ],
+									"bgfillcolor_color" : [ 0.52, 0.52, 0.52 ],
 									"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_proportion" : 0.0,
@@ -22954,7 +22954,7 @@
 									"patching_rect" : [ 220.75002966580962, 881.000002861022949, 166.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 22.678957462310791, 187.893979100788101, 178.353514976799488, 35.0 ],
-									"text" : "Connected",
+									"text" : "Disconnected",
 									"textjustification" : 1
 								}
 
@@ -22970,6 +22970,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -23854,8 +23856,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
