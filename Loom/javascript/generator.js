@@ -4,7 +4,7 @@ inlets = 1
 outlets = 0
 
 // Path to patch files
-path = '~/Documents/Max 8/Packages/Loom/misc' 
+//path = '~/Documents/Max 8/Packages/Loom/misc' 
 menu_list_file = path + "/PatchList.txt"
 
 
@@ -14,6 +14,15 @@ menu.clear()
 
 
 var patches = []
+
+// Set the path to the 'misc' folder when the patch is loaded
+function setSystem(platform){
+	if(platform === "windows")
+	menu_list_file = 'C:\\ProgramData\\Max 8\\Packages\\Loom\\misc\\PatchList.txt';
+	else
+	menu_list_file = '~/Documents/Max 8/Packages/Loom/misc/PatchList.txt';
+
+}
 
 // Get menu items from txt file
 function read_menu_items()
