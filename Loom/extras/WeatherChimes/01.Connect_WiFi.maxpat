@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 737.0, 97.0, 614.0, 781.0 ],
+		"rect" : [ 340.0, 79.0, 1034.0, 781.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1165,11 +1165,11 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-71",
-					"linecount" : 9,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 301.0, 447.0, 147.0 ],
+					"patching_rect" : [ 11.0, 301.0, 451.0, 132.0 ],
 					"text" : "Before your begin - be sure your WeatherChimes hardware is powered on. Do this by plugging in the battery (see figures on right), and/or plugging in a solar pannel or 5V wall wart into the 2.1mm barrel jack connector on the case.\nThe green TSL2591 light, and 2 red Power LEDs should be visible from the case.\nAfter about 60 seconds, the green WiFi LED will turn on, indicating your Chime is broadcasting its Access Point wireless network connection."
 				}
 

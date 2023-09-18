@@ -5574,7 +5574,7 @@
 									"ignoreclick" : 1,
 									"interp" : 1,
 									"maxclass" : "jit.pwindow",
-									"name" : "grapher55",
+									"name" : "grapher93",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],

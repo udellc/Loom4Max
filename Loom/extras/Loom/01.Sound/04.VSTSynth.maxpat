@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 195.0, 95.0, 882.0, 782.0 ],
+		"rect" : [ 194.0, 94.0, 882.0, 782.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -3129,7 +3129,7 @@
 									"ignoreclick" : 1,
 									"interp" : 1,
 									"maxclass" : "jit.pwindow",
-									"name" : "grapher3",
+									"name" : "grapher89",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],

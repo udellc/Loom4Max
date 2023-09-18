@@ -5488,7 +5488,7 @@
 									"ignoreclick" : 1,
 									"interp" : 1,
 									"maxclass" : "jit.pwindow",
-									"name" : "grapher52",
+									"name" : "grapher6",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
@@ -9464,10 +9464,10 @@
 , 			{
 				"box" : 				{
 					"autofit" : 1,
-					"films" : [ "rain.mov", "countdown15.mov", "dishes.mov", "dozer.mov" ],
+					"films" : [ "garbage.mov", "rain.mov", "countdown15.mov", "dishes.mov" ],
 					"id" : "obj-62",
 					"maxclass" : "imovie",
-					"name" : "garbage.mov",
+					"name" : "dozer.mov",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],

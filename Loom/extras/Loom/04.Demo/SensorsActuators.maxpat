@@ -10519,7 +10519,7 @@
 									"ignoreclick" : 1,
 									"interp" : 1,
 									"maxclass" : "jit.pwindow",
-									"name" : "grapher84",
+									"name" : "grapher81",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
@@ -17859,7 +17859,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1433.0, 1101.0, 138.0, 78.0 ],
+					"patching_rect" : [ 1433.0, 1101.0, 139.0, 78.0 ],
 					"text" : "Click Client, Type in SSID (router name) and Password in the fields. Click the send button"
 				}
 

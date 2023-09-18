@@ -4,8 +4,9 @@ inlets = 1
 outlets = 0
 
 // Path to patch files
-//path = '~/Documents/Max 8/Packages/Loom/misc' 
-menu_list_file = path + "/PatchList.txt"
+ 
+menu_list_file = '';
+system = "";
 
 
 // Run immediately
@@ -17,10 +18,10 @@ var patches = []
 
 // Set the path to the 'misc' folder when the patch is loaded
 function setSystem(platform){
-	if(platform === "windows")
-	menu_list_file = 'C:\\ProgramData\\Max 8\\Packages\\Loom\\misc\\PatchList.txt';
-	else
-	menu_list_file = '~/Documents/Max 8/Packages/Loom/misc/PatchList.txt';
+if(platform === "windows")
+menu_list_file = 'C:\\ProgramData\\Max 8\\Packages\\Loom\\misc\\PatchList.txt';
+else
+menu_list_file = '~/Documents/Max 8/Packages/Loom/misc/PatchList.txt';
 
 }
 

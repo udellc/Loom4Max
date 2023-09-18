@@ -6927,7 +6927,7 @@
 									"ignoreclick" : 1,
 									"interp" : 1,
 									"maxclass" : "jit.pwindow",
-									"name" : "grapher80",
+									"name" : "grapher41",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
@@ -8434,7 +8434,7 @@
 									"presentation_rect" : [ 68.666663999999997, 6.5, 11.0, 23.0 ],
 									"setminmax" : [ 3.200000047683716, 4.199999809265137 ],
 									"setstyle" : 1,
-									"slidercolor" : [ 0.439, 0.749, 0.255, 1.0 ],
+									"slidercolor" : [ 1.0, 0.189, 0.119, 1.0 ],
 									"varname" : "battery_indicator"
 								}
 
@@ -8911,7 +8911,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 410.0, 350.0, 50.0, 22.0 ],
-									"text" : "3"
+									"text" : "2"
 								}
 
 							}
@@ -9387,7 +9387,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ -1.200000047683716, 1.200000047683716 ],
+									"setminmax" : [ 0.0, 4095.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
