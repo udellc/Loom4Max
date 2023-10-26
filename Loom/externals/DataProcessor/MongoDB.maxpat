@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 3,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,57 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 1452.726890444755554, 1172.816351444721249, 207.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll TippingBucketHourly_Rainfall(in)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 1452.726890444755554, 1142.816351444721249, 169.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll TippingBucketHourly_Tips"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 1216.313729643821716, 1172.816351444721249, 195.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll TippingBucketTotal_Rainfall(in)"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-40",
 					"linecount" : 4,
@@ -157,7 +208,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 447.416666567325592, 610.558978915214539, 40.0, 22.0 ],
-					"restore" : [ "setState", "mongodb+srv://ear2earth:helloworld101@remotetest.cls7o.mongodb.net/WeatherChimes-Workshop?retryWrites=true&w=majority", "Chime0", 1 ],
+					"restore" : [ "setState", "mongodb+srv://ear2earth:helloworld101@remotetest.cls7o.mongodb.net/WhaleFest23?retryWrites=true&w=majority", "KhutiChime1", 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -195,35 +246,18 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1452.58825409412384, 820.0, 179.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"precision" : 6
-					}
-,
-					"text" : "coll Tip_BucketPrecipitation_(in)"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1216.313729643821716, 820.0, 144.0, 22.0 ],
+					"patching_rect" : [ 1216.313729643821716, 1142.816351444721249, 127.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
 					}
 ,
-					"text" : "coll Tip_BucketTip_Count"
+					"text" : "coll TippingBucketTips"
 				}
 
 			}
@@ -249,7 +283,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1461.249212741851807, 371.449942886829376, 179.0, 123.0 ],
+					"patching_rect" : [ 1461.249212741851807, 371.449942886829376, 180.0, 123.0 ],
 					"style" : "WTF",
 					"text" : "Automatically calls getFirst upon recieving the last packet (this is done in series to ensure the packets order in the coll object), use to get the first packet from the database"
 				}
@@ -416,7 +450,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1014.500001311302185, 791.334880113601685, 640.166684746742249, 362.998468637466431 ],
+					"patching_rect" : [ 1014.500001311302185, 791.334880113601685, 640.166684746742249, 470.998468637466431 ],
 					"proportion" : 0.39
 				}
 
@@ -531,7 +565,7 @@
 					}
 ,
 					"text" : ":",
-					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"textcolor" : [ 0.129412, 0.129412, 0.129412, 1.0 ],
 					"textjustification" : 1,
 					"varname" : "patch_title[19]"
 				}
@@ -2692,8 +2726,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3921,8 +3955,7 @@
 					"patching_rect" : [ 412.166686807907354, 163.666665196418762, 116.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 163.618888445198536, 95.794126958836614, 224.914998553693295, 37.999999999999972 ],
-					"text" : "remotetest.cls7o",
-					"valuemode" : 1
+					"text" : "remotetest.cls7o"
 				}
 
 			}
@@ -3997,8 +4030,7 @@
 					"patching_rect" : [ 534.166686927116643, 163.666665196418762, 158.000002503395081, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 163.618888445198536, 135.011326877677902, 224.914998553693295, 20.434399837682633 ],
-					"text" : "WeatherChimes-Workshop",
-					"valuemode" : 1
+					"text" : "WhaleFest23"
 				}
 
 			}
@@ -4026,6 +4058,7 @@
 				"box" : 				{
 					"id" : "obj-10",
 					"keymode" : 1,
+					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -4035,8 +4068,7 @@
 					"patching_rect" : [ 699.833351390976077, 163.666665196418762, 74.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 163.618888445198536, 161.494138958836601, 224.914998553693295, 20.434399837682633 ],
-					"text" : "Chime0",
-					"valuemode" : 1
+					"text" : "KhutiChime1"
 				}
 
 			}
@@ -4201,8 +4233,7 @@
 					"patching_rect" : [ 334.500020180977003, 163.666665196418762, 74.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 163.618888445198536, 70.711338877677917, 224.914998553693295, 20.434399837682633 ],
-					"text" : "helloworld101",
-					"valuemode" : 1
+					"text" : "helloworld101"
 				}
 
 			}
@@ -4248,8 +4279,7 @@
 					"patching_rect" : [ 199.333351944721358, 163.666665196418762, 129.833296460491169, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 163.618888445198536, 45.794126958836586, 224.914998553693295, 20.434399837682633 ],
-					"text" : "ear2earth",
-					"valuemode" : 1
+					"text" : "ear2earth"
 				}
 
 			}
