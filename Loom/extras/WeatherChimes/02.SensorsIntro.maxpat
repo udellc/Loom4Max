@@ -273,7 +273,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 410.0, 350.0, 50.0, 22.0 ],
-									"text" : "7"
+									"text" : "6"
 								}
 
 							}
@@ -285,7 +285,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 622.0, 350.0, 50.0, 22.0 ],
-									"text" : "2"
+									"text" : "3"
 								}
 
 							}
@@ -642,7 +642,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Tips", ",", "Total_Rainfall(in)", ",", "Hourly_Tips", ",", "Hourly_Rainfall(in)" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -690,7 +690,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -749,7 +749,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ 0.0, 77.0 ],
+									"setminmax" : [ -1000.0, 1000.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -1129,7 +1129,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 410.0, 350.0, 50.0, 22.0 ],
-									"text" : "7"
+									"text" : "6"
 								}
 
 							}
@@ -1498,7 +1498,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Tips", ",", "Total_Rainfall(in)", ",", "Hourly_Tips", ",", "Hourly_Rainfall(in)" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1546,7 +1546,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1605,7 +1605,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ 0.0, 35.0 ],
+									"setminmax" : [ -1000.0, 1000.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -2023,7 +2023,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 410.0, 350.0, 50.0, 22.0 ],
-									"text" : "7"
+									"text" : "6"
 								}
 
 							}
@@ -2392,7 +2392,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Tips", ",", "Total_Rainfall(in)", ",", "Hourly_Tips", ",", "Hourly_Rainfall(in)" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2440,7 +2440,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2499,7 +2499,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ 0.0, 4097.0 ],
+									"setminmax" : [ -1000.0, 1000.0 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -3481,7 +3481,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Millivolt_Reading", ",", "Dielectric_Permittivity", ",", "Volumetric_Water_Content" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3529,7 +3529,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -4337,7 +4337,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Millivolt_Reading", ",", "Dielectric_Permittivity", ",", "Volumetric_Water_Content" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -4385,7 +4385,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -5250,7 +5250,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Millivolt_Reading", ",", "Dielectric_Permittivity", ",", "Volumetric_Water_Content" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -5298,7 +5298,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -5749,7 +5749,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 410.0, 350.0, 50.0, 22.0 ],
-									"text" : "8"
+									"text" : "9"
 								}
 
 							}
@@ -6118,7 +6118,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : "Height_(m)",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -6166,7 +6166,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -6225,7 +6225,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ 0.0, 120.0 ],
+									"setminmax" : [ 0.0, 2.5 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -6986,7 +6986,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Temperature", ",", "Pressure" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -7034,7 +7034,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -7867,7 +7867,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Temperature", ",", "Pressure" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -7915,7 +7915,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -8761,7 +8761,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Temperature", ",", "Pressure" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -8809,7 +8809,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -9681,7 +9681,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Temperature", ",", "Pressure" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -9729,7 +9729,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10762,7 +10762,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Visible", ",", "Infrared", ",", "Full_Spectrum" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10810,7 +10810,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -11618,7 +11618,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Visible", ",", "Infrared", ",", "Full_Spectrum" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -11666,7 +11666,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -12486,7 +12486,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Visible", ",", "Infrared", ",", "Full_Spectrum" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -12534,7 +12534,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -13437,7 +13437,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Temperature", ",", "Humidity" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -13485,7 +13485,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -14305,7 +14305,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Temperature", ",", "Humidity" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -14353,7 +14353,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -15161,7 +15161,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Temperature", ",", "Humidity" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -15209,7 +15209,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -16041,7 +16041,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Temperature", ",", "Humidity" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -16089,7 +16089,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -19908,8 +19908,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -20794,6 +20792,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -24183,7 +24183,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"items" : "<empty>",
+									"items" : [ "Vbat", ",", "Vbat_MV" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -24231,7 +24231,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"items" : "<empty>",
+									"items" : [ "Packet", ",", "Analog", ",", "SHT31", ",", "TSL2591", ",", "MS5803_119", ",", "MS5803_118", ",", "TippingBucket", ",", "Teros10", ",", "WiFi", ",", "Water" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -24290,7 +24290,7 @@
 									"patching_rect" : [ 111.858245999999994, 616.0, 232.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 87.0, 138.0, 32.0 ],
-									"setminmax" : [ 0.0, 4.800000190734863 ],
+									"setminmax" : [ 0.0, 4.8 ],
 									"setstyle" : 5,
 									"slidercolor" : [ 0.811765, 0.372549, 0.372549, 1.0 ],
 									"varname" : "scroller"
@@ -24697,7 +24697,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 19.0, 127.0, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "2"
 								}
 
 							}
@@ -25171,7 +25171,7 @@
 									"patching_rect" : [ 620.25, 78.166663999999997, 81.5, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 86.266647000000006, 6.5, 73.46669, 22.0 ],
-									"text" : "Device",
+									"text" : "KhutiChime",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
 									"varname" : "device_name"
