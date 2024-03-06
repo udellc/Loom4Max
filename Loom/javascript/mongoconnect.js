@@ -72,6 +72,7 @@ async function connect() {
     connected = true;
     maxApi.outlet('status', 'connected');
   } catch (e) {
+    maxApi.outlet('status', 'error');
     maxApi.post('Error with MongoClient');
     maxApi.post(e.message);
   }
