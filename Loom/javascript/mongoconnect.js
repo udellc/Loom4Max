@@ -1,3 +1,4 @@
+// Connects to a MongoDB database and queries a collection for packets
 const maxApi = require('max-api');
 const { MongoClient } = require('mongodb');
 
