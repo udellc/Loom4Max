@@ -1,4 +1,3 @@
-// Connects to a MongoDB database and queries a collection for packets
 const maxApi = require('max-api');
 const { MongoClient } = require('mongodb');
 
@@ -24,13 +23,19 @@ function outletDocument(doc) {
  * @param {int} count - The maximum number of documents to fetch
  * @param {bool} reverse - If the query should be reversed. Also outputs documents in reverse order
  */
-function updateData(count=1, reverse=false) {
+function updateData(count=1, reverse) {
+  if (!collection || !device) return;
   // Limits the number of packets returned and which "end" to start search from
-  const cursor = collection.find().sort({ $natural: reverse ? -1 : 1 }).limit(count);
+  const cursor = collection.find().sort({"Timestamp.time_local": -1}).limit(count);
   cursor.toArray().then(packets => {  // To array is only necessary for reverse, could have performance penalty
-    if (reverse) packets.reverse();  // Need to reverse again because packets are still in order
+    packets.reverse(); // Reverse should be done unconditionally to ensure the correct order (oldest to newest, left to right)
+
+    // Packet numbering was not consistent with packet order, so we need to renumber them
+    let i = 0;
     packets.forEach((doc) => {
+      doc.Packet.Number = i;
       outletDocument(doc, device);
+      i++;
     });
   })
 }
@@ -55,9 +60,13 @@ function updateTimeData(startTime, endTime) {
       }
     }
   ]);
+  // Packet numbering is not consistent with packet order in database, so we need to renumber them
+  let i = 0;
   cursor.toArray().then(docs => {
     docs.forEach((doc) => {
+      doc.Packet.Number = i;
       outletDocument(doc, device)
+      i++;
     });
   });
 }
@@ -73,9 +82,9 @@ async function connect() {
     connected = true;
     maxApi.outlet('status', 'connected');
   } catch (e) {
-    maxApi.outlet('status', 'error');
     maxApi.post('Error with MongoClient');
     maxApi.post(e.message);
+    maxApi.outlet('status', 'error');
   }
 }
 
@@ -95,7 +104,7 @@ maxApi.addHandler('setState', (newUrl, newDevice, newPrescaler) => {
 /** Pulls a specified number of packets in order from oldest to newest **/
 maxApi.addHandler('getLast', (packetCount, reverse) => {
   if (!connected) connect();
-  updateData(packetCount, reverse === "true");
+  updateData(packetCount, true);
 });
 
 /** Pulls packets via a specified start and end time **/
