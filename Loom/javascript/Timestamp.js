@@ -6,22 +6,18 @@
 inlets = 1
 outlets = 6
 
-//Assembles the user input into an ISO UTC Timestamp
-function assembleTimeStamp(year,month,day,hour,min,sec)
-{
-	var t = year.toString()
-			.concat("-")
-			.concat(month.toString())
-			.concat("-")
-			.concat(day.toString())
-			.concat(" ")
-			.concat(hour.toString())
-			.concat(":")
-			.concat(min.toString())
-			.concat(":")
-			.concat(sec.toString());
-	t = fixTimeStamp(t);
-	outlet(0,t)
+function assembleTimeStamp(year, month, day, hour, min, sec) {
+    // Helper function to ensure each component has leading zero if needed
+    function pad(n) {
+        return n < 10 ? '0' + n : n.toString();
+    }
+
+    // Assemble the timestamp in ISO 8601 UTC format using concatenation
+    var t = year.toString() + "-" + pad(month) + "-" + pad(day) +
+            "T" + hour + ":" + min + ":" + sec + "Z";
+
+    outlet(0, t); // Output the formatted timestamp
+    post("assembled time: " + t);
 }
 
 /*
@@ -42,7 +38,7 @@ function fixTimeStamp(t)
 	if(t.substr(18,1) == "Z"){t = t.substr(0,17).concat("0").concat(t.substr(17))}
 	
 	t = t.slice(0, -1)
-
+	
 	outlet(0,t);
 	return t;
 }
@@ -55,6 +51,8 @@ function fixTimeStamp(t)
 */
 function findSamplingPeriod(t1, t2)
 {
+	post("t1: " + t1 + " t2: " + t2 + "\n")
+	
 	t1 = fixTimeStamp(t1);
 	t2 = fixTimeStamp(t2);
 	
@@ -134,7 +132,6 @@ function trimZeros(num){
 	return num;
 }
 function convertToDBTimestamp(from, to){
-	
 	var year = 	from.substr(0,4);
 	var month = trimZeros(from.substr(5,2));
 	var day = trimZeros(from.substr(8,2));
@@ -157,13 +154,3 @@ function convertToDBTimestamp(from, to){
 			.concat(hour).concat(":").concat(min).concat(":").concat(sec);
 	outlet(1, to)
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
